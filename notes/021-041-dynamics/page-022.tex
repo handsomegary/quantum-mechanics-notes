@@ -1,0 +1,56 @@
+\notepage{22}{Uncertainty and Measurements as Filters}
+For a normalized state $\ket{\psi}$, write
+$\langle A\rangle=\mel{\psi}{A}{\psi}$. The uncertainty of an observable is
+\[
+ \Delta\Omega=\sqrt{\bigl\langle(\Omega-\langle\Omega\rangle)^2\bigr\rangle}.
+\]
+Expanding the square gives
+\begin{align*}
+ \bigl\langle(\Omega-\langle\Omega\rangle)^2\bigr\rangle
+ &=\langle\Omega^2-2\langle\Omega\rangle\Omega+\langle\Omega\rangle^2I\rangle\\
+ &=\langle\Omega^2\rangle-2\langle\Omega\rangle^2+\langle\Omega\rangle^2\\
+ &=\langle\Omega^2\rangle-\langle\Omega\rangle^2,
+\end{align*}
+so $\Delta\Omega=\sqrt{\langle\Omega^2\rangle-\langle\Omega\rangle^2}$.
+\smallheading{A single filter}
+\begin{center}
+\begin{tikzpicture}[>=Stealth,baseline]
+ \node (a) at (0,0) {$\ket{\psi}$};
+ \node[draw,minimum width=0.7cm,minimum height=0.7cm] (b) at (2,0) {$\Omega$};
+ \node (c) at (4,0) {$\ket{\omega}$};
+ \draw[->] (a)--(b);\draw[->] (b)--(c);
+ \node at (2,-0.8) {$P(\omega)=\mel{\psi}{P_\omega}{\psi}$};
+\end{tikzpicture}
+\end{center}
+The output $\ket{\omega}$ denotes the normalized selected state; the
+simple ket notation assumes a nondegenerate outcome.
+\smallheading{Two successive filters}
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+ \node (a) at (0,0) {$\ket{\psi}$};
+ \node[draw] (b) at (1.5,0) {$\Omega$};
+ \node (c) at (3,0) {$\ket{\omega}$};
+ \node[draw] (d) at (4.5,0) {$\Lambda$};
+ \node (e) at (6,0) {$\ket{\lambda}$};
+ \draw[->] (a)--(b);\draw[->] (b)--(c);\draw[->] (c)--(d);\draw[->] (d)--(e);
+\end{tikzpicture}
+\end{center}
+The first probability is $P(\omega)=\mel{\psi}{P_\omega}{\psi}$;
+the conditional probability for the second result is
+$P(\lambda\mid\omega)=\mel{\omega}{P_\lambda}{\omega}$.
+When can the second filter leave the first eigenstate unchanged, as in
+\[
+ \ket\psi\ \xrightarrow{\ \Omega\ }\ \ket\omega
+ \ \xrightarrow{\ \Lambda\ }\ \ket\omega\ ?
+\]
+For simultaneous eigenstates,
+\[
+ \Omega\ket{\omega,\lambda}=\omega\ket{\omega,\lambda},\qquad
+ \Lambda\ket{\omega,\lambda}=\lambda\ket{\omega,\lambda},
+ \qquad \comm{\Omega}{\Lambda}\ket{\omega,\lambda}=0.
+\]
+If a complete common eigenbasis exists, $\comm{\Omega}{\Lambda}=0$:
+the observables are compatible. Noncommuting observables are incompatible.
+\editorial{Commutation is the finite-dimensional criterion used here.
+For unbounded operators, domains and the relevant spectral commutation
+conditions must also be specified.}

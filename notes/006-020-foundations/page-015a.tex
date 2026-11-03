@@ -1,0 +1,51 @@
+\notepage{15a}{Simultaneous diagonalization of two Hermitian operators}
+\smallheading{Theorem 13}
+If $\Omega$ and $\Lambda$ are Hermitian and commute,
+\[
+ \comm{\Omega}{\Lambda}=0,
+\]
+there exists a complete orthonormal basis of simultaneous eigenvectors:
+\[
+ \Omega\ket{\omega_i}=\omega_i\ket{\omega_i},\qquad
+ \Lambda\ket{\omega_i}=\lambda_i\ket{\omega_i}.
+\]
+
+\smallheading{Why each eigenspace is preserved}
+Starting with $\Omega\ket{\omega_i}=\omega_i\ket{\omega_i}$, multiply
+by $\Lambda$ and commute the two operators:
+\begin{align*}
+ \Lambda\Omega\ket{\omega_i}&=\omega_i\Lambda\ket{\omega_i},\\
+ \Omega\bigl(\Lambda\ket{\omega_i}\bigr)
+ &=\omega_i\bigl(\Lambda\ket{\omega_i}\bigr).
+\end{align*}
+Thus $\Lambda\ket{\omega_i}$ remains in the $\omega_i$ eigenspace
+(it may be zero).
+\begin{enumerate}[label=(\roman*)]
+\item If $\omega_i$ is nondegenerate, that eigenspace is
+one-dimensional, so $\Lambda\ket{\omega_i}=\lambda_i\ket{\omega_i}$.
+\item If $\omega_i$ is degenerate, $\Lambda$ can mix vectors inside
+that eigenspace, but cannot mix it with an eigenspace of different
+$\omega$. In particular,
+\[
+ \omega_i\ne\omega_j\quad\Longrightarrow\quad
+ \mel{\omega_j}{\Lambda}{\omega_i}=0.
+\]
+\end{enumerate}
+
+\smallheading{Block structure in an eigenbasis of $\Omega$}
+Group the equal eigenvalues together. The handwritten block sketches
+can be written as
+\[
+ [\Omega]=\begin{bmatrix}
+ \omega_1 I_{m_1}&0&\cdots\\
+ 0&\omega_2 I_{m_2}&\cdots\\
+ \vdots&\vdots&\ddots
+ \end{bmatrix},\qquad
+ [\Lambda]=\begin{bmatrix}
+ \Lambda_1&0&\cdots\\
+ 0&\Lambda_2&\cdots\\
+ \vdots&\vdots&\ddots
+ \end{bmatrix}.
+\]
+Each $\Lambda_a$ acts only inside the corresponding
+$\omega_a$ eigenspace. The off-block matrix elements vanish.

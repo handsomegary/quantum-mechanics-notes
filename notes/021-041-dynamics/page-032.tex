@@ -1,0 +1,54 @@
+\notepage{32}{The Heisenberg Equation of Motion}
+For a unitary transformation $U$, there are two equivalent ways to
+calculate a transformed matrix element:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+ & Transform the states & Transform the operator\\
+\midrule
+Ket & $\ket\psi\mapsto U\ket\psi$ & $\ket\psi$ fixed\\
+Bra & $\bra\phi\mapsto\bra\phi U^\dagger$ & $\bra\phi$ fixed\\
+Operator & $\Omega$ fixed & $\Omega\mapsto U^\dagger\Omega U$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both prescriptions give
+\[
+ (\bra\phi U^\dagger)\Omega(U\ket\psi)
+ =\mel\phi{U^\dagger\Omega U}\psi.
+\]
+Either can be used according to convenience. For example, parity gives
+$(\bra{x'}\Pi^\dagger)X(\Pi\ket x)=\mel{x'}{\Pi^\dagger X\Pi}x$.
+\smallheading{Two pictures of time evolution}
+In the Schr\"odinger picture,
+$\ket{\psi(t)}=U(t)\ket{\psi(0)}$, while an operator without explicit
+time dependence remains fixed. In the Heisenberg picture the state is
+fixed at $\ket{\psi(0)}$ and the operator evolves:
+\[
+ \Omega_H(t)=U^\dagger(t)\Omega U(t).
+\]
+The Schr\"odinger equation for arbitrary initial states implies
+\[
+ \ii\hbar\frac{\dd}{\dd t}U(t)\ket{\psi(0)}
+ =HU(t)\ket{\psi(0)},\qquad
+ \ii\hbar\frac{\dd U}{\dd t}=HU.
+\]
+Differentiating $U^\dagger\Omega U$ gives
+\[
+ \boxed{\ii\hbar\frac{\dd\Omega_H}{\dd t}
+ =\comm{\Omega_H}{H_H}.}
+\]
+This is useful when only expectations, rather than the full wavefunction,
+are needed. An explicitly time-dependent Schr\"odinger operator adds
+$\ii\hbar\,U^\dagger(\partial\Omega/\partial t)U$ to the right side.
+\smallheading{Comparison with Hamilton's equations}
+For $H=P^2/(2m)+V(X)$ and $\comm XP=\ii\hbar I$,
+\begin{align*}
+ \dot x&=\frac{\partial\mathcal H}{\partial p}=\frac pm,
+ &\dot X&=\frac1{\ii\hbar}\comm XH=\frac Pm,\\
+ \dot p&=-\frac{\partial\mathcal H}{\partial x}=-V'(x),
+ &\dot P&=\frac1{\ii\hbar}\comm PH=-V'(X).
+\end{align*}
+The commutator identities used here are
+$\comm X{f(P)}=\ii\hbar f'(P)$ and $\comm P{g(X)}=-\ii\hbar g'(X)$,
+for functions and domains where these formal derivatives are valid.

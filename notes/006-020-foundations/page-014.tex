@@ -1,0 +1,52 @@
+\notepage{14}{Unitary transformation to an eigenvector basis}
+Let $\{\ket{i}\}$ be an orthonormal basis and let
+$\{\ket{\omega_i}\}$ be an orthonormal eigenbasis of a Hermitian
+operator $\Omega$. Different labels may have the same eigenvalue.
+Define $U$ by
+\[
+ \ket{\omega_i}=U\ket{i},\qquad
+ \bra{\omega_i}=\bra{i}U^\dagger.
+\]
+Orthonormality gives
+\[
+ \mel{i}{U^\dagger U}{j}
+ =\braket{\omega_i}{\omega_j}
+ =\delta_{ij}=\mel{i}{I}{j}.
+\]
+Since $\{\ket{i}\}$ is complete, equality of all matrix elements
+implies $U^\dagger U=I$. Here $U$ is square, so it is unitary and
+$UU^\dagger=I$ as well.
+
+\smallheading{Columns of the transformation matrix}
+The $i$th component of the $j$th eigenvector is
+\[
+ \braket{i}{\omega_j}=\mel{i}{U}{j}=U_{ij}.
+\]
+Thus, in the original $\ket{i}$ basis,
+\[
+ [\ket{\omega_j}]=
+ \begin{bmatrix}\braket{1}{\omega_j}\\\braket{2}{\omega_j}\\\vdots\\\braket{n}{\omega_j}\end{bmatrix},
+ \qquad
+ [U]=\begin{bmatrix}
+ \braket{1}{\omega_1}&\braket{1}{\omega_2}&\cdots&\braket{1}{\omega_n}\\
+ \braket{2}{\omega_1}&\braket{2}{\omega_2}&\cdots&\braket{2}{\omega_n}\\
+ \vdots&\vdots&\ddots&\vdots\\
+ \braket{n}{\omega_1}&\braket{n}{\omega_2}&\cdots&\braket{n}{\omega_n}
+ \end{bmatrix}.
+\]
+The $j$th column of $[U]$ is the coordinate column of the $j$th
+normalized eigenvector.
+
+\smallheading{Transforming the operator}
+\begin{align*}
+ \mel{i}{U^\dagger\Omega U}{j}
+ &=\mel{\omega_i}{\Omega}{\omega_j}
+ =\omega_j\delta_{ij}
+ =\omega_i\delta_{ij}.
+\end{align*}
+Therefore
+\[
+ [U]^\dagger[\Omega][U]=\diag(\omega_1,\omega_2,\ldots,\omega_n).
+\]
+The columns of $[U]$ transform the original matrix into its diagonal
+eigenvector representation.

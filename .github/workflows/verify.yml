@@ -1,0 +1,24 @@
+name: Verify notes
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures texlive-fonts-recommended texlive-science texlive-plain-generic lmodern
+          python -m pip install -r requirements.txt
+      - name: Verify published archive
+        run: python tools/verify_archive.py --pdf
+      - name: Rebuild all notes
+        run: python tools/build.py
+      - name: Verify rebuilt documents
+        run: python tools/verify_archive.py --pdf --built

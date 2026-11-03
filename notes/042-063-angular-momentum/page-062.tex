@@ -1,0 +1,44 @@
+\notepage{62}{Spin and orbital operators on two-component wavefunctions}
+The three Pauli matrices are
+\[
+ \sigma_x=\begin{bmatrix}0&1\\1&0\end{bmatrix},\qquad
+ \sigma_y=\begin{bmatrix}0&-\ii\\\ii&0\end{bmatrix},\qquad
+ \sigma_z=\begin{bmatrix}1&0\\0&-1\end{bmatrix},
+ \qquad S_i=\frac\hbar2\sigma_i.
+\]
+Spin acts only on the two spin labels. In components,
+\[
+ \mel{\mathbf r,m_s}{S_i}{\Psi}
+ =\sum_{m_s'}\mel{m_s}{S_i}{m_s'}
+                \braket{\mathbf r,m_s'}{\Psi}.
+\]
+In column notation this is simply
+\[
+ (S_i\boldsymbol\Psi)(\mathbf r)
+ =\frac\hbar2\sigma_i
+ \begin{bmatrix}\Psi_+(\mathbf r)\\\Psi_-(\mathbf r)\end{bmatrix},
+\]
+where
+\[
+ \Psi_+(\mathbf r)=\braket{\mathbf r,+\tfrac12}{\Psi},\qquad
+ \Psi_-(\mathbf r)=\braket{\mathbf r,-\tfrac12}{\Psi}.
+\]
+
+\smallheading{Orbital operators are diagonal in spin space}
+For instance,
+\[
+ (L_z\boldsymbol\Psi)(\mathbf r)=
+ \begin{bmatrix}
+  -\ii\hbar\partial_\phi&0\\
+  0&-\ii\hbar\partial_\phi
+ \end{bmatrix}
+ \begin{bmatrix}\Psi_+(\mathbf r)\\\Psi_-(\mathbf r)\end{bmatrix}.
+\]
+Likewise $L^2$, $L_x$, $L_y$, and $L_\pm$ each act by the corresponding
+orbital differential operator on both components, without mixing
+the spin labels:
+\[
+ (A_r\otimes I_s)\boldsymbol\Psi
+ =\begin{bmatrix}A_r\Psi_+\\A_r\Psi_-\end{bmatrix}
+ \quad\text{for }A_r\in\{L^2,L_x,L_y,L_z,L_+,L_-\}.
+\]

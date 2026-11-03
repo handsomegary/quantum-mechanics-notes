@@ -1,0 +1,46 @@
+\notepage{47}{Integer and half-integer angular momentum}
+The endpoint result gives
+\[
+ \alpha=\ell\hbar(\ell\hbar+\hbar)=\ell(\ell+1)\hbar^2,
+ \qquad \beta=m\hbar,
+\]
+where $m=-\ell,-\ell+1,\ldots,\ell$ in steps of one. Relabeling the states,
+\[
+ L^2\ket{\ell,m}=\ell(\ell+1)\hbar^2\ket{\ell,m},\qquad
+ L_z\ket{\ell,m}=m\hbar\ket{\ell,m}.
+\]
+The algebra allows $\ell=0,\tfrac12,1,\tfrac32,\ldots$.
+
+\smallheading{The orbital coordinate representation}
+Starting instead from $L_z=-\ii\hbar\partial_\phi$,
+\[
+ -\ii\hbar\frac{\partial}{\partial\phi}
+ \braket{\phi}{\alpha,\beta}
+ =\beta\braket{\phi}{\alpha,\beta},
+ \qquad
+ \braket{\phi}{\alpha,\beta}\propto\ee^{\ii\beta\phi/\hbar}.
+\]
+For a scalar orbital wavefunction, single-valuedness under
+$\phi\mapsto\phi+2\pi$ requires
+\[
+ \ee^{2\pi\ii\beta/\hbar}=1\quad\Longrightarrow\quad
+ \beta=m\hbar,\qquad m\in\mathbb Z.
+\]
+Thus the orbital representation restricts $\ell$ and $m$ to integers,
+whereas the abstract commutation algebra also admits half-integers.
+
+\smallheading{Why the algebra is more general}
+The total angular momentum is
+\[
+ \mathbf J=\mathbf L\otimes I_s+I_r\otimes\mathbf S,
+\]
+usually abbreviated as $\mathbf J=\mathbf L+\mathbf S$.
+Spin satisfies $\mathbf S\times\mathbf S=\ii\hbar\mathbf S$;
+because spin and orbital operators act on different factors,
+\[
+ \mathbf J\times\mathbf J=\ii\hbar\mathbf J.
+\]
+Consequently, deriving eigenvalues only from this algebra does not
+specify that the operator must be $\mathbf R\times\mathbf P$.
+It includes spin and total angular momentum, for which half-integer
+representations occur.

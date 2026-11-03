@@ -1,0 +1,46 @@
+\notepage{53}{The hydrogen atom: radial quantization}
+Use the Coulomb convention of the notes,
+$V(r)=-e^2/r$. In SI units, each Coulomb factor $e^2$ here means
+$e_{\rm SI}^2/(4\pi\epsilon_0)$. With an infinitely heavy nucleus,
+\[
+ U''+\frac{2m}{\hbar^2}
+ \left[E+\frac{e^2}{r}-\frac{\ell(\ell+1)\hbar^2}{2mr^2}\right]U=0.
+\]
+For a bound state $E<0$, set
+$\lambda=\sqrt{-2mE}/\hbar$. The limiting equations give
+\begin{align*}
+ r\to\infty:&\quad U''-\lambda^2U\simeq0,
+       &&U\propto\ee^{-\lambda r},\\
+ r\to0:&\quad U''-\frac{\ell(\ell+1)}{r^2}U\simeq0,
+       &&U\propto r^{\ell+1}
+       \quad\text{(regular solution)}.
+\end{align*}
+For $\ell=0$, the regular boundary condition $U(0)=0$ chooses the
+same behavior. Introduce
+\[
+ \rho=\lambda r,\qquad U(\rho)=\ee^{-\rho}v(\rho),\qquad
+ q=\frac{2me^2}{\hbar^2\lambda}.
+\]
+The differential equation is
+\[
+ v''-2v'+\left[\frac q\rho-\frac{\ell(\ell+1)}{\rho^2}\right]v=0.
+\]
+Expand $v=\rho^{\ell+1}\sum_{k=0}^{\infty}c_k\rho^k$. Substitution gives
+\[
+ c_{k+1}=\frac{2(k+\ell+1)-q}{(k+1)(k+2\ell+2)}c_k.
+\]
+Normalizable bound-state solutions require termination at some
+$K=0,1,2,\ldots$, so $q=2(K+\ell+1)$. Therefore
+\[
+ E=-\frac{me^4}{2\hbar^2(K+\ell+1)^2}.
+\]
+\editorial{The rescaling coefficient has been written explicitly as
+$q=2me^2/(\hbar^2\lambda)$ to keep the dimensionless equation
+consistent with $\lambda$ as an inverse length.}
+Define the principal quantum number $n=K+\ell+1$. Then
+\[
+ \boxed{E_n=-\frac{me^4}{2\hbar^2n^2}},\qquad
+ n=1,2,\ldots,\quad \ell=0,1,\ldots,n-1.
+\]
+Each $\ell$ has $2\ell+1$ magnetic states. The orbital degeneracy is
+$\sum_{\ell=0}^{n-1}(2\ell+1)=n^2$, before including spin.

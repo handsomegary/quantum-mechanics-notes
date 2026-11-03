@@ -1,0 +1,48 @@
+\notepage{17}{From sampled functions to a continuum inner product}
+Consider a function $f(x)$ on $a\le x\le b$, sampled at $n$ points
+$x_1,\ldots,x_n$. Treat its samples as a coordinate column:
+\[
+ [\ket{f_n}]=\begin{bmatrix}f(x_1)\\f(x_2)\\\vdots\\f(x_n)\end{bmatrix}.
+\]
+\begin{center}
+\begin{tikzpicture}[>=Stealth,x=1cm,y=1cm]
+\draw[->] (0,0)--(6,0) node[right]{$x$};
+\draw[->] (0,0)--(0,1.5) node[above]{$f(x)$};
+\foreach \x/\lab in {1/x_1,2/x_2,4/x_i,5/x_n}
+ {\draw (\x,-.06)--(\x,.06);\node[below] at (\x,-.08){$\lab$};}
+\node at (3,.1){$\cdots$};
+\node[above] at (1,0){$a$};\node[above] at (5,0){$b$};
+\end{tikzpicture}
+\end{center}
+Introduce an orthonormal discrete coordinate basis $\ket{x_i}$ with
+\[
+ \braket{x_i}{x_j}=\delta_{ij},\qquad
+ \sum_{i=1}^{n}\ket{x_i}\bra{x_i}=I.
+\]
+For example, the coordinate column of $\ket{x_\ell}$ has a 1 in
+position $\ell$ and zeros elsewhere:
+\[
+ [\ket{x_\ell}]=
+ \begin{bmatrix}\braket{x_1}{x_\ell}\\\vdots\\\braket{x_\ell}{x_\ell}\\\vdots\\\braket{x_n}{x_\ell}\end{bmatrix}
+ =\begin{bmatrix}0\\\vdots\\1\\\vdots\\0\end{bmatrix}.
+\]
+The corresponding expansions and inner product are
+\begin{align*}
+ \ket{g_n}&=\sum_i\ket{x_i}\braket{x_i}{g_n}
+           =\sum_i g(x_i)\ket{x_i},\\
+ \bra{f_n}&=\sum_i f(x_i)^*\bra{x_i},\\
+ \braket{f_n}{g_n}&=\sum_i f(x_i)^*g(x_i).
+\end{align*}
+As the sampling grows denser, the unweighted sum need not have a
+finite limit. Introduce the Riemann-sum weight $\Delta_n=(b-a)/n$:
+\[
+ \braket{f_n}{g_n}_{\Delta}=\sum_i f(x_i)^*g(x_i)\Delta_n.
+\]
+For suitable functions the continuum limit is
+\[
+ \boxed{\braket{f}{g}=\lim_{n\to\infty}
+ \sum_i f(x_i)^*g(x_i)\Delta_n=\int_a^b f(x)^*g(x)\dd x.}
+\]
+\editorial{The weighted inner product is a new convention; the
+associated coordinate basis must be rescaled consistently in the
+continuum limit. Note 18 gives its Dirac-delta normalization.}

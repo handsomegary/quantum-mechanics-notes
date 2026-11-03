@@ -1,0 +1,46 @@
+\notepage{64}{Spin along an arbitrary direction}
+For a spin-$\tfrac12$ eigenstate of $S_z$, with $s_z=\pm\tfrac12$,
+\begin{align*}
+ \mel{\tfrac12,s_z}{\mathbf S}{\tfrac12,s_z}
+ &=\mel{\tfrac12,s_z}{S_x}{\tfrac12,s_z}\,\hat{\mathbf e}_x
+   +\mel{\tfrac12,s_z}{S_y}{\tfrac12,s_z}\,\hat{\mathbf e}_y
+   +\mel{\tfrac12,s_z}{S_z}{\tfrac12,s_z}\,\hat{\mathbf e}_z\\
+ &=s_z\hbar\hat{\mathbf e}_z.
+\end{align*}
+The first two matrix elements vanish. More generally, choose the commuting
+observables $S^2$ and $\mathbf S\cdot\hat{\mathbf n}$. Their simultaneous
+eigenstates may be denoted by $\ket{\hat{\mathbf n},\pm}$:
+\begin{align*}
+ S^2\ket{\hat{\mathbf n},\pm}
+   &=\tfrac12(\tfrac12+1)\hbar^2\ket{\hat{\mathbf n},\pm},\\
+ \mathbf S\cdot\hat{\mathbf n}\ket{\hat{\mathbf n},\pm}
+   &=\pm\frac{\hbar}{2}\ket{\hat{\mathbf n},\pm}.
+\end{align*}
+Do we obtain
+\[
+ \mel{\hat{\mathbf n},\pm}{\mathbf S}{\hat{\mathbf n},\pm}
+   =\pm\frac{\hbar}{2}\hat{\mathbf n}\,?
+\]
+Let $\hat{\mathbf n}$ point in the direction $(\theta,\phi)$:
+\[
+ n_z=\cos\theta,\qquad n_x=\sin\theta\cos\phi,\qquad
+ n_y=\sin\theta\sin\phi,\qquad
+ \hat{\mathbf n}=n_x\hat{\mathbf e}_x+n_y\hat{\mathbf e}_y+n_z\hat{\mathbf e}_z.
+\]
+In the $S_z$ representation,
+\begin{align*}
+ \hat{\mathbf n}\cdot\mathbf S
+ &=\frac{\hbar}{2}\left[
+ n_x\begin{pmatrix}0&1\\1&0\end{pmatrix}
+ +n_y\begin{pmatrix}0&-\ii\\\ii&0\end{pmatrix}
+ +n_z\begin{pmatrix}1&0\\0&-1\end{pmatrix}\right]\\
+ &=\frac{\hbar}{2}\begin{pmatrix}n_z&n_x-\ii n_y\\n_x+\ii n_y&-n_z\end{pmatrix}\\
+ &=\frac{\hbar}{2}\begin{pmatrix}
+ \cos\theta&\sin\theta\,\ee^{-\ii\phi}\\
+ \sin\theta\,\ee^{\ii\phi}&-\cos\theta
+ \end{pmatrix}.
+\end{align*}
+\smallheading{Exercise retained from the notes}
+Find the eigenvalues and eigenvectors of $\hat{\mathbf n}\cdot\mathbf S$
+in the $S_z$ representation. Then calculate the displayed vector expectation
+value explicitly.

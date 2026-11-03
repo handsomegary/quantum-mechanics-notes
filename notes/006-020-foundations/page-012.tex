@@ -1,0 +1,52 @@
+\notepage{12}{Degenerate eigenspaces and diagonalization}
+\smallheading{Consequences of Hermiticity}
+Setting $i=j$ in
+$(\omega_i-\omega_j^*)\braket{\omega_j}{\omega_i}=0$ and using
+$\braket{\omega_i}{\omega_i}>0$ shows that
+\[
+ \omega_i=\omega_i^*:
+ \quad\text{all eigenvalues are real.}
+\]
+For $i\ne j$, the relation becomes
+\[
+ (\omega_i-\omega_j)\braket{\omega_j}{\omega_i}=0.
+\]
+If $\omega_i\ne\omega_j$, the eigenvectors are orthogonal.
+If $\omega_i=\omega_j$, this equation does not impose orthogonality.
+
+\smallheading{Choosing an orthonormal basis within a degeneracy}
+Suppose $\omega$ is $m$-fold degenerate. Begin with $m$ linearly
+independent eigenvectors in that eigenspace. Gram--Schmidt
+orthonormalization replaces them by linear combinations that are
+orthonormal. Since these combinations remain in the same eigenspace,
+they are still eigenvectors with eigenvalue $\omega$:
+\[
+ \underbrace{\text{$m$ independent eigenvectors}}_{\text{same eigenvalue}}
+ \xrightarrow{\text{Gram--Schmidt}}
+ \underbrace{\ket{\omega,1},\ldots,\ket{\omega,m}}_{\text{$m$ orthonormal eigenvectors}}.
+\]
+The second label distinguishes states within the degeneracy. For
+example, a threefold degeneracy has states
+$\ket{\omega,1},\ket{\omega,2},\ket{\omega,3}$.
+
+\smallheading{Matrix in an eigenvector basis}
+With an orthonormal eigenbasis,
+\begin{align*}
+ \mel{\omega',k'}{\Omega}{\omega,k}
+ &=\omega\braket{\omega',k'}{\omega,k}\\
+ &=\omega\,\delta_{\omega'\omega}\delta_{k'k}.
+\end{align*}
+Different eigenvalues enforce the first delta; orthonormalization
+within each eigenspace supplies the second. The matrix is therefore
+diagonal:
+\[
+ [\Omega]_{\mathrm{eigenbasis}}=
+ \begin{bmatrix}
+ \omega_1&0&\cdots&0\\
+ 0&\omega_2&\cdots&0\\
+ \vdots&\vdots&\ddots&\vdots\\
+ 0&0&\cdots&\omega_n
+ \end{bmatrix}.
+\]
+For this reason, solving the eigenvalue problem is often called
+\emph{diagonalization}.

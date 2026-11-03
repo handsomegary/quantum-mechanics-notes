@@ -1,0 +1,49 @@
+\notepage{58}{Spin and the product Hilbert space}
+For a spin-$s$ system, the magnetic quantum number takes the values
+\[
+ m_s=-s,-s+1,\ldots,s-1,s,
+\]
+giving $2s+1$ spin states, with $S_z$ eigenvalues $m_s\hbar$.
+The spatial Hilbert space and spin Hilbert space are separate factors.
+For a product state, write
+\[
+ \ket{\Psi}=\ket{\psi}\otimes\ket{\chi},
+\]
+where $\ket{\psi}$ is spatial and $\ket{\chi}$ carries the spin.
+
+\smallheading{A discrete spatial basis}
+For spatial basis vectors $\ket{x_1},\ldots,\ket{x_N}$, the product
+basis coefficient is
+\[
+ (\bra{x_a}\otimes\bra{m_s})(\ket{\psi}\otimes\ket{\chi})
+ =\braket{x_a}{\psi}\braket{m_s}{\chi}.
+\]
+Ordering the coefficients first by spin label gives the column
+\[
+ \begin{bmatrix}
+  \braket{x_1}{\psi}\braket{s}{\chi}\\
+  \vdots\\
+  \braket{x_N}{\psi}\braket{s}{\chi}\\[2pt]
+  \braket{x_1}{\psi}\braket{s-1}{\chi}\\
+  \vdots\\
+  \braket{x_N}{\psi}\braket{-s}{\chi}
+ \end{bmatrix}.
+\]
+\smallheading{A continuous spatial representation}
+On replacing the discrete position labels by a continuous $x$, the
+same state is represented by a $(2s+1)$-component wavefunction,
+\[
+ \boldsymbol\Psi(x)=
+ \begin{bmatrix}
+  \braket{x}{\psi}\braket{s}{\chi}\\
+  \braket{x}{\psi}\braket{s-1}{\chi}\\
+  \vdots\\
+  \braket{x}{\psi}\braket{-s}{\chi}
+ \end{bmatrix},\qquad
+ \Psi_{m_s}(x)=\psi(x)\chi_{m_s}.
+\]
+The source also writes the product as $\psi(x)\chi_m$.
+\editorial{The factorized expression describes a product state.
+A general spin-position state may require independent component
+functions $\Psi_{m_s}(x)$ and need not factor into one common
+$\psi(x)$ times a spin vector.}

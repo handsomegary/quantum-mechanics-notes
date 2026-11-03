@@ -1,0 +1,50 @@
+\notepage{67}{Orbital magnetic moment in quantum theory}
+A particle of mass $m$ and charge $q$ in a magnetic field
+$\mathbf B(\mathbf R)=\boldsymbol\nabla_R\times\mathbf A$ has, in Gaussian
+units,
+\begin{align*}
+ H&=\frac{(\mathbf P-q\mathbf A/c)^2}{2m}\\
+  &=\underbrace{\frac{\mathbf P^2}{2m}}_{\text{zeroth order}}
+    -\underbrace{\frac{q}{2mc}(\mathbf P\cdot\mathbf A+
+                                \mathbf A\cdot\mathbf P)}_{\text{first order in }\mathbf A/c}
+    +\underbrace{\frac{q^2\mathbf A^2}{2mc^2}}_{\text{second order}}.
+\end{align*}
+Choose the Coulomb gauge, $\boldsymbol\nabla\cdot\mathbf A=0$. With
+$\braket{\mathbf r}{\psi}=\psi(\mathbf r)$,
+\begin{align*}
+ \mel{\mathbf r}{\mathbf P\cdot\mathbf A}{\psi}
+ &=-\ii\hbar\boldsymbol\nabla\cdot\bigl(\mathbf A(\mathbf r)\psi(\mathbf r)\bigr)\\
+ &=-\ii\hbar\bigl[(\boldsymbol\nabla\cdot\mathbf A)\psi
+                         +\mathbf A\cdot\boldsymbol\nabla\psi\bigr]\\
+ &=\mathbf A(\mathbf r)\cdot(-\ii\hbar\boldsymbol\nabla\psi)
+  =\mel{\mathbf r}{\mathbf A\cdot\mathbf P}{\psi}.
+\end{align*}
+Thus $\mathbf P\cdot\mathbf A=\mathbf A\cdot\mathbf P$ in this gauge.
+For a uniform field $\mathbf B=B\hat{\mathbf e}_z$, choose
+\[
+ \mathbf A=\frac B2(-Y\hat{\mathbf e}_x+X\hat{\mathbf e}_y),
+ \quad\boldsymbol\nabla\cdot\mathbf A=0,
+ \quad\boldsymbol\nabla\times\mathbf A=B\hat{\mathbf e}_z.
+\]
+The term linear in the field becomes
+\begin{align*}
+ H_1&=-\frac q{mc}\mathbf A\cdot\mathbf P
+     =-\frac q{mc}\frac B2(-YP_x+XP_y)\\
+    &=-\frac q{2mc}\mathbf L\cdot\mathbf B
+     =-\boldsymbol\mu\cdot\mathbf B,
+ \qquad \boldsymbol\mu=\frac q{2mc}\mathbf L.
+\end{align*}
+In an $L_z$ eigenstate,
+\[
+ \mu_z=\frac q{2mc}L_z,
+ \qquad\mu_z\text{ has eigenvalues }\frac{q\hbar}{2mc}(0,\pm1,\pm2,\ldots).
+\]
+The corresponding positive magneton scales are
+\[
+ \mu_B=\frac{e\hbar}{2m_ec},\qquad
+ \mu_N=\frac{e\hbar}{2m_pc}.
+\]
+\editorial{The standard nuclear magneton uses the proton mass $m_p$.
+Replacing it by a general nucleon mass $M$, as in the source's mnemonic,
+defines the analogous scale $e\hbar/(2Mc)$ rather than the conventional
+definition of $\mu_N$. Here $e>0$; an electron has charge $q=-e$.}

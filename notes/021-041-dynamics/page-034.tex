@@ -1,0 +1,49 @@
+\notepage{34}{The Parity Selection Rule}
+Let states and operators have definite parity:
+\[
+ \Pi\ket{\psi_\alpha}=(-1)^\alpha\ket{\psi_\alpha},\qquad
+ \Pi^\dagger O_\beta\Pi=(-1)^\beta O_\beta,\qquad
+ \alpha,\beta\in\{0,1\}.
+\]
+Inserting the identity twice,
+\begin{align*}
+ \mel{\psi_\alpha}{O_\beta}{\psi_\gamma}
+ &=\mel{\psi_\alpha}{\Pi^\dagger\Pi O_\beta\Pi^\dagger\Pi}{\psi_\gamma}\\
+ &=(-1)^\alpha(-1)^\beta(-1)^\gamma
+       \mel{\psi_\alpha}{O_\beta}{\psi_\gamma}.
+\end{align*}
+If the product of the three parities is odd, then
+\[
+ \alpha+\beta+\gamma\ \hbox{odd}
+ \quad\Longrightarrow\quad
+ \mel{\psi_\alpha}{O_\beta}{\psi_\gamma}
+ =-\mel{\psi_\alpha}{O_\beta}{\psi_\gamma}=0.
+\]
+\smallheading{Example: a Gaussian with a travelling phase}
+Consider again
+\[
+ \psi_u(x)=\ee^{\ii p_0x/\hbar}\ee^{-x^2/(2\Delta^2)}.
+\]
+When $p_0=0$ the state is even. Both $X$ and $P$ are odd, so their
+expectations vanish by the selection rule.
+When $p_0\ne0$, the state is not a parity eigenstate, so that rule cannot
+be applied directly. Nevertheless, the density is even:
+\begin{align*}
+ \langle X\rangle
+ &=\frac1{\braket{\psi_u}{\psi_u}}
+       \int_{-\infty}^{\infty}\psi_u(x)^*x\psi_u(x)\,\dd x\\
+ &=\frac1{\braket{\psi_u}{\psi_u}}
+       \int_{-\infty}^{\infty}x\ee^{-x^2/\Delta^2}\,\dd x=0.
+\end{align*}
+Equivalently, inserting $\Pi^\dagger\Pi$ on either side of $X$ changes
+$x$ into $-x$ and $\psi_u(x)$ into $\psi_u(-x)$; their squared moduli
+are equal. Thus the transformed integral is $-\langle X\rangle$.
+For momentum, direct differentiation instead gives
+\begin{align*}
+ -\ii\hbar\psi_u'(x)
+ &=\left(p_0+\frac{\ii\hbar x}{\Delta^2}\right)\psi_u(x),\\
+ \langle P\rangle&=p_0+\frac{\ii\hbar}{\Delta^2}\langle X\rangle=p_0.
+\end{align*}
+\editorial{The source ends with ``similarly, $\langle P\rangle=0$.''
+That conclusion is valid for $p_0=0$ only; the travelling-phase example
+has $\langle P\rangle=p_0$.}

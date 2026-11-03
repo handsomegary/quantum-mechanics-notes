@@ -1,0 +1,44 @@
+\notepage{68}{Spin magnetic moment and precession}
+Experiments show that electron spin also carries a magnetic moment:
+\[
+ \boldsymbol\mu=g\left(-\frac e{2mc}\right)\mathbf S,
+ \qquad
+ H_1=-\boldsymbol\mu\cdot\mathbf B
+   =\frac{ge}{2mc}\mathbf S\cdot\mathbf B
+   =\frac{ge\hbar}{4mc}\boldsymbol\sigma\cdot\mathbf B.
+\]
+The source quotes $g\simeq2\times1.001159652\simeq2$. Define the signed
+gyromagnetic ratio $\gamma=-ge/(2mc)$; for $g\simeq2$,
+$\gamma\simeq-e/(mc)$ and $H_1=-\gamma\mathbf S\cdot\mathbf B$.
+\smallheading{Time evolution of the spin state}
+For a constant magnetic field,
+\[
+ \ket{\chi(t)}=U(t)\ket{\chi(0)},\qquad
+ U(t)=\ee^{-\ii H_1t/\hbar}
+     =\ee^{\ii\gamma t\mathbf S\cdot\mathbf B/\hbar}.
+\]
+Set $\mathbf B=B\hat{\mathbf e}_z$ and $\omega_0=\gamma B$. In the
+$S_z$ representation,
+\begin{align*}
+ U(t)&=\begin{pmatrix}
+ \mel{+}{\ee^{\ii\omega_0tS_z/\hbar}}{+}&
+ \mel{+}{\ee^{\ii\omega_0tS_z/\hbar}}{-}\\
+ \mel{-}{\ee^{\ii\omega_0tS_z/\hbar}}{+}&
+ \mel{-}{\ee^{\ii\omega_0tS_z/\hbar}}{-}
+ \end{pmatrix}\\
+ &=\begin{pmatrix}\ee^{\ii\omega_0t/2}&0\\0&\ee^{-\ii\omega_0t/2}\end{pmatrix}.
+\end{align*}
+For the initial state pointing along $(\theta,\phi)$,
+\[
+ \ket{\chi(0)}=\ket{\hat{\mathbf n},+}
+ =\begin{pmatrix}\cos(\theta/2)\ee^{-\ii\phi/2}\\
+                   \sin(\theta/2)\ee^{\ii\phi/2}\end{pmatrix},
+\]
+and therefore
+\[
+ \ket{\chi(t)}=
+ \begin{pmatrix}\cos(\theta/2)\ee^{-\ii(\phi-\omega_0t)/2}\\
+                 \sin(\theta/2)\ee^{\ii(\phi-\omega_0t)/2}\end{pmatrix}.
+\]
+The polar angle remains fixed, while the azimuth changes from $\phi$ to
+$\phi-\omega_0t$. The sign follows the signed definition of $\gamma$ above.

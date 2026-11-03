@@ -1,0 +1,58 @@
+\notepage{16}{Commuting observables and functions of operators}
+\smallheading{A complete set of commuting observables}
+When a collection of mutually commuting Hermitian operators resolves
+all remaining degeneracies, its simultaneous eigenvalues label the
+joint eigenvectors unambiguously:
+\[
+ \Omega,\Lambda,\Gamma,\ldots
+ \quad\longleftrightarrow\quad
+ \ket{\omega,\lambda,\gamma,\ldots}.
+\]
+In the finite-dimensional setting, commuting operators can be added
+to refine any remaining degenerate subspaces.
+
+\smallheading{Power series}
+Define $\Omega^n$ as the product of $n$ copies of $\Omega$, with
+$\Omega^0=I$. If $f(x)=\sum_{n=0}^{\infty}a_nx^n$ converges in the
+required domain, define
+\[
+ f(\Omega)=\sum_{n=0}^{\infty}a_n\Omega^n.
+\]
+The most frequently used example is
+\[
+ \ee^{\Omega}=\sum_{n=0}^{\infty}\frac{\Omega^n}{n!}
+ =I+\Omega+\frac{\Omega^2}{2!}+\frac{\Omega^3}{3!}+\cdots.
+\]
+If $\Omega\ket{\omega}=\omega\ket{\omega}$, then
+\[
+ \ee^{\lambda\Omega}\ket{\omega}=\ee^{\lambda\omega}\ket{\omega}.
+\]
+For a Hermitian $\Omega$ with an orthonormal eigenbasis,
+\[
+ \mel{\omega'}{\ee^{\lambda\Omega}}{\omega}
+ =\delta_{\omega'\omega}\ee^{\lambda\omega},
+\]
+with additional Kronecker deltas for any degeneracy labels.
+
+\smallheading{Differentiation and an operator equation}
+For $\lambda$-independent $\Omega$,
+\[
+ \frac{\dd}{\dd\lambda}\ee^{\lambda\Omega}
+ =\Omega\ee^{\lambda\Omega}=\ee^{\lambda\Omega}\Omega,
+ \qquad \comm{\Omega}{\ee^{\lambda\Omega}}=0.
+\]
+Consequently,
+\[
+ \frac{\dd\Theta}{\dd\lambda}=\Omega\Theta
+ \quad\Longrightarrow\quad
+ \Theta(\lambda)=\ee^{\lambda\Omega}\Theta(0).
+\]
+\editorial{For an operator-valued initial constant, its position
+matters. The exponential belongs on the left for this differential
+equation. A scalar constant can be placed on either side.}
+In general $\ee^{\Omega}\ee^{\Theta}\ne\ee^{\Omega+\Theta}$, but
+\[
+ \comm{\Omega}{\Theta}=0
+ \quad\Longrightarrow\quad
+ \ee^{\Omega}\ee^{\Theta}=\ee^{\Omega+\Theta}.
+\]

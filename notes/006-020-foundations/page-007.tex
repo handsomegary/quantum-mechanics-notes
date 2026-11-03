@@ -1,0 +1,57 @@
+\notepage{7}{The adjoint of an operator}
+For a scalar multiple, $\ket{u}=\alpha\ket{v}$ implies
+$\bra{u}=\alpha^*\bra{v}$. For an operator, define its adjoint by
+\[
+ \ket{u}=\Omega\ket{v}
+ \quad\Longrightarrow\quad
+ \bra{u}=\bra{v}\Omega^\dagger.
+\]
+$\Omega^\dagger$ is also called the \emph{Hermitian conjugate} of
+$\Omega$.
+
+\smallheading{Matrix elements of the adjoint}
+Let $\ket{k_i}=\Omega\ket{i}$, so
+$\bra{k_i}=\bra{i}\Omega^\dagger$. Then
+\begin{align*}
+ \mel{i}{\Omega^\dagger}{j}
+ &=\braket{k_i}{j}
+ =\braket{j}{k_i}^{*}
+ =\mel{j}{\Omega}{i}^{*}.
+\end{align*}
+Consequently,
+\[
+ (\Omega^\dagger)_{ij}=\Omega_{ji}^{*},
+ \qquad [\Omega^\dagger]=[\Omega]^{*T}.
+\]
+Taking the adjoint therefore conjugates every matrix element and
+interchanges rows and columns.
+
+\smallheading{The adjoint reverses a product}
+\[
+ \boxed{(\Omega\Lambda)^\dagger=\Lambda^\dagger\Omega^\dagger.}
+\]
+To see this, let $\ket{w}=\Lambda\ket{v}$ and
+$\ket{u}=\Omega\ket{w}=\Omega\Lambda\ket{v}$. Taking adjoints gives
+\[
+ \bra{u}=\bra{w}\Omega^\dagger
+ =\bra{v}\Lambda^\dagger\Omega^\dagger.
+\]
+
+\smallheading{Example: conjugating a vector equation}
+If
+\[
+ \alpha_1\ket{v_1}
+ =\alpha_2\ket{v_2}
+ +\alpha_3\ket{v_3}\braket{v_4}{v_5}
+ +\alpha_4\Omega\Lambda\ket{v_6},
+\]
+then
+\begin{align*}
+ \alpha_1^*\bra{v_1}
+ &=\alpha_2^*\bra{v_2}
+ +\alpha_3^*\braket{v_4}{v_5}^{*}\bra{v_3}
+ +\alpha_4^*\bra{v_6}\Lambda^\dagger\Omega^\dagger\\
+ &=\alpha_2^*\bra{v_2}
+ +\alpha_3^*\braket{v_5}{v_4}\bra{v_3}
+ +\alpha_4^*\bra{v_6}\Lambda^\dagger\Omega^\dagger.
+\end{align*}

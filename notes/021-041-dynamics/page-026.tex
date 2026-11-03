@@ -1,0 +1,34 @@
+\notepage{26}{Momentum Eigenstates}
+Let $P\ket{p}=p\ket{p}$ and $\psi_p(x)=\braket{x}{p}$. In the position basis,
+\[
+ p\braket{x}{p}=\mel{x}{P}{p}
+ =-\ii\hbar\frac{\dd}{\dd x}\braket{x}{p},
+ \qquad \frac{\dd\psi_p}{\dd x}=\frac{\ii p}{\hbar}\psi_p(x).
+\]
+Thus $\psi_p(x)=A\ee^{\ii px/\hbar}$.
+\smallheading{Delta-function normalization}
+Use completeness in the position basis:
+\begin{align*}
+ \delta(p-p')=\braket{p'}{p}
+ &=\int_{-\infty}^{\infty}\braket{p'}{x}\braket{x}{p}\,\dd x\\
+ &=\int_{-\infty}^{\infty}
+ A^*\ee^{-\ii p'x/\hbar}A\ee^{\ii px/\hbar}\,\dd x\\
+ &=\abs A^2\int_{-\infty}^{\infty}\ee^{\ii(p-p')x/\hbar}\,\dd x\\
+ &=\abs A^2\,2\pi\hbar\,\delta(p-p').
+\end{align*}
+The last line uses the distributional Fourier identity. Hence
+\[
+ \abs A=\frac1{\sqrt{2\pi\hbar}},\qquad
+ A=\frac1{\sqrt{2\pi\hbar}}\quad\hbox{by phase convention},
+\]
+and
+\[
+ \boxed{\braket{x}{p}=\frac1{\sqrt{2\pi\hbar}}\ee^{\ii px/\hbar}.}
+\]
+\smallheading{Three dimensions}
+For $\mathbf P\ket{\mathbf p}=\mathbf p\ket{\mathbf p}$,
+\[
+ \braket{\mathbf r}{\mathbf p}
+ =\frac1{(2\pi\hbar)^{3/2}}\ee^{\ii\mathbf p\cdot\mathbf r/\hbar},
+ \qquad \braket{\mathbf p'}{\mathbf p}=\delta^{(3)}(\mathbf p-\mathbf p').
+\]

@@ -1,0 +1,47 @@
+\notepage{23}{Infinitesimal Translations}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Concept & Classical mechanics & Quantum mechanics\\
+\midrule
+Translation & $x\mapsto x+\epsilon$, $p\mapsto p$
+ & $\langle X\rangle\mapsto\langle X\rangle+\epsilon$\\
+ & & $\langle P\rangle\mapsto\langle P\rangle$\\
+Translation invariance & $\mathcal H$ unchanged & $\langle H\rangle$ unchanged\\
+Conservation law & $\dot p=0$ & $\dd\langle P\rangle/\dd t=0$\\
+\bottomrule
+\end{tabular}
+\end{center}
+For any normalized state, let $\ket{\psi_\epsilon}=T(\epsilon)\ket{\psi}$.
+A spatial translation must satisfy
+\begin{align*}
+ \mel{\psi_\epsilon}{X}{\psi_\epsilon}&=\mel{\psi}{X}{\psi}+\epsilon,\\
+ \mel{\psi_\epsilon}{P}{\psi_\epsilon}&=\mel{\psi}{P}{\psi}.
+\end{align*}
+Equivalently,
+\begin{align*}
+ \mel{\psi}{T^\dagger XT}{\psi}
+ &=\mel{\psi}{X}{\psi}+\mel{\psi}{\epsilon I}{\psi},\\
+ \mel{\psi}{T^\dagger PT}{\psi}&=\mel{\psi}{P}{\psi}.
+\end{align*}
+Since these hold for every state,
+\[
+ T^\dagger XT=X+\epsilon I,\qquad T^\dagger PT=P.
+\]
+\smallheading{The infinitesimal generator}
+Since $T(0)=I$, expand a small translation as
+\[
+ T(\epsilon)=I-\frac{\ii\epsilon}{\hbar}G+O(\epsilon^2).
+\]
+Norm preservation requires $T^\dagger(\epsilon)T(\epsilon)=I$.
+Reversing the displacement undoes the transformation:
+\[
+ T(-\epsilon)=T^{-1}(\epsilon)=T^\dagger(\epsilon).
+\]
+Comparing the first-order expansions,
+\[
+ I+\frac{\ii\epsilon}{\hbar}G^\dagger
+ =I+\frac{\ii\epsilon}{\hbar}G+O(\epsilon^2),
+ \qquad G^\dagger=G.
+\]
+Thus the generator of a unitary translation is Hermitian.

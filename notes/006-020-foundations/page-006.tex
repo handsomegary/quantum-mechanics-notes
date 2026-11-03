@@ -1,0 +1,46 @@
+\notepage{6}{The identity and projection operators}
+\smallheading{A simple matrix-element example}
+In an orthonormal basis,
+\[
+ I_{ij}=\mel{i}{I}{j}=\braket{i}{j}=\delta_{ij}.
+\]
+The full sum $\sum_{i=1}^{n}\ket{i}\bra{i}$ equals the identity. What
+happens if only the first $m<n$ terms are retained?
+
+\smallheading{Projection onto a subspace}
+Expand an arbitrary vector as
+\begin{align*}
+ \ket{v}&=\sum_{i=1}^{n}\ket{i}\braket{i}{v}\\
+ &=\ket{1}\braket{1}{v}+\cdots+\ket{m}\braket{m}{v}
+   +\ket{m+1}\braket{m+1}{v}+\cdots+\ket{n}\braket{n}{v}.
+\end{align*}
+Keeping only $\sum_{i=1}^{m}\ket{i}\braket{i}{v}$ preserves the first
+$m$ components and discards those along $\ket{m+1},\ldots,\ket{n}$.
+This is the orthogonal projection onto
+$\mathcal S=\operatorname{span}\{\ket{1},\ldots,\ket{m}\}$:
+\[
+ \boxed{P=\sum_{i=1}^{m}\ket{i}\bra{i}.}
+\]
+Writing $v_i=\braket{i}{v}$ gives
+\[
+ P\ket{v}=\sum_{i=1}^{m}v_i\ket{i},
+ \qquad
+ \bra{v}P=\sum_{i=1}^{m}v_i^*\bra{i}.
+\]
+\editorial{The second expression is a bra expansion. The handwritten
+line places a ket at its end; the bra above restores the correct type.}
+
+\smallheading{Projection onto one basis vector}
+For $P_i=\ket{i}\bra{i}$,
+\begin{align*}
+ P_iP_j
+ &=\ket{i}\braket{i}{j}\bra{j}
+ =\delta_{ij}\ket{i}\bra{j}
+ =\delta_{ij}P_i,\\
+ (P_i)_{k\ell}
+ &=\mel{k}{P_i}{\ell}
+ =\braket{k}{i}\braket{i}{\ell}
+ =\delta_{ki}\delta_{i\ell}.
+\end{align*}
+Thus the only nonzero matrix element of $P_i$ is the unit entry in
+row $i$, column $i$.

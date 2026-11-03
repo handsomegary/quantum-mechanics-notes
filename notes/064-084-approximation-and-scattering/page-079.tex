@@ -1,0 +1,50 @@
+\notepage{79}{Three-dimensional scattering}
+The differential cross section relates the rate of scattering into a
+small solid angle $\dd\Omega$ to the incident particle flux:
+\[
+ \frac{\dd\sigma}{\dd\Omega}\,\dd\Omega
+ =\dd\sigma
+ =\frac{\text{number scattered into }\dd\Omega\text{ per unit time}}
+        {\text{number incident per unit time per unit area}}.
+\]
+To calculate it quantum mechanically, consider an incident plane wave
+$\ee^{\ii kz}$ and an eigenfunction of $H=T+V$ of the form
+\[
+ \psi=\ee^{\ii kz}+\psi_{\rm sc}(r,\theta,\phi).
+\]
+The scattered wave is centered on the scattering center. Far outside
+the potential, both terms satisfy the free Helmholtz equation at the
+same energy:
+\[
+ (\nabla^2+k^2)\ee^{\ii kz}=0,\qquad
+ (\nabla^2+k^2)\psi_{\rm sc}=0\quad(r\to\infty).
+\]
+The scattered wave can be expanded in spherical harmonics:
+\[
+ \psi_{\rm sc}\sim\sum_{\ell,m}
+ \bigl[A_{\ell m}j_\ell(kr)+B_{\ell m}n_\ell(kr)\bigr]
+ Y_\ell^m(\theta,\phi).
+\]
+Here $j_\ell$ and $n_\ell$ are spherical Bessel and Neumann functions.
+Their large-$r$ limits are
+\[
+ j_\ell(kr)\sim\frac{\sin(kr-\ell\pi/2)}{kr},\qquad
+ n_\ell(kr)\sim-\frac{\cos(kr-\ell\pi/2)}{kr}.
+\]
+Consequently, each radial combination has the asymptotic form
+\[
+ A_{\ell m}j_\ell(kr)+B_{\ell m}n_\ell(kr)
+ \sim C_{\ell m}\frac{\ee^{\ii kr}}r
+      +D_{\ell m}\frac{\ee^{-\ii kr}}r.
+\]
+Including the time factor gives
+\[
+ C_{\ell m}\frac{\ee^{\ii kr-\ii\omega t}}r
+ +D_{\ell m}\frac{\ee^{-\ii kr-\ii\omega t}}r.
+\]
+The first term is outgoing, while the second is incoming. The physical
+scattering setup chooses an outgoing scattered wave.
+\editorial{The radial expansion coefficients are written with both
+$\ell$ and $m$ indices for a general angular distribution. The source
+abbreviates these coefficients by a single $\ell$ index. Its reading
+reminder gives textbook page 348 without identifying an edition.}

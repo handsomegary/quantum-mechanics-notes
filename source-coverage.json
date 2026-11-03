@@ -1,0 +1,930 @@
+{
+  "scope": "All supplied notes labeled 5-84, including two sheets for note 15; notes 1-4 were not supplied.",
+  "total_source_pages": 81,
+  "total_output_pages": 81,
+  "publication_policy": "Only rewritten English TeX, generated native PDFs, build tools, and documentation. Original scans are excluded.",
+  "endpoint": "Note 84 ends at a Fourier-contour setup, as in the supplied source.",
+  "source_documents": [
+    {
+      "file": "10.pdf",
+      "pages": 1
+    },
+    {
+      "file": "11.pdf",
+      "pages": 1
+    },
+    {
+      "file": "12.pdf",
+      "pages": 1
+    },
+    {
+      "file": "13.pdf",
+      "pages": 1
+    },
+    {
+      "file": "14.pdf",
+      "pages": 1
+    },
+    {
+      "file": "15 w 2 papges.pdf",
+      "pages": 2
+    },
+    {
+      "file": "16a.pdf",
+      "pages": 1
+    },
+    {
+      "file": "17a.pdf",
+      "pages": 1
+    },
+    {
+      "file": "18a.pdf",
+      "pages": 1
+    },
+    {
+      "file": "19a.pdf",
+      "pages": 1
+    },
+    {
+      "file": "20a.pdf",
+      "pages": 1
+    },
+    {
+      "file": "21to41.pdf",
+      "pages": 21
+    },
+    {
+      "file": "42to84.pdf",
+      "pages": 43
+    },
+    {
+      "file": "5.pdf",
+      "pages": 1
+    },
+    {
+      "file": "6.pdf",
+      "pages": 1
+    },
+    {
+      "file": "7.pdf",
+      "pages": 1
+    },
+    {
+      "file": "8.pdf",
+      "pages": 1
+    },
+    {
+      "file": "9.pdf",
+      "pages": 1
+    }
+  ],
+  "parts": [
+    {
+      "id": "005",
+      "entry_point": "notes/005-matrix-elements/note.tex",
+      "pdf": "notes/005-matrix-elements/note.pdf",
+      "source_pages": 1,
+      "output_pages": 1
+    },
+    {
+      "id": "006-020",
+      "entry_point": "notes/006-020-foundations/main.tex",
+      "pdf": "notes/006-020-foundations/main.pdf",
+      "source_pages": 16,
+      "output_pages": 16
+    },
+    {
+      "id": "021-041",
+      "entry_point": "notes/021-041-dynamics/main.tex",
+      "pdf": "notes/021-041-dynamics/main.pdf",
+      "source_pages": 21,
+      "output_pages": 21
+    },
+    {
+      "id": "042-063",
+      "entry_point": "notes/042-063-angular-momentum/main.tex",
+      "pdf": "notes/042-063-angular-momentum/main.pdf",
+      "source_pages": 22,
+      "output_pages": 22
+    },
+    {
+      "id": "064-084",
+      "entry_point": "notes/064-084-approximation-and-scattering/main.tex",
+      "pdf": "notes/064-084-approximation-and-scattering/main.pdf",
+      "source_pages": 21,
+      "output_pages": 21
+    }
+  ],
+  "pages": [
+    {
+      "note_label": "5",
+      "title": "Matrix Elements of a Linear Operator",
+      "source_file": "5.pdf",
+      "source_page": 1,
+      "tex": "notes/005-matrix-elements/note.tex",
+      "part": "005",
+      "pdf_page": 1,
+      "source_blank": false
+    },
+    {
+      "note_label": "6",
+      "title": "The identity and projection operators",
+      "source_file": "6.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-006.tex",
+      "part": "006-020",
+      "pdf_page": 1,
+      "source_blank": false
+    },
+    {
+      "note_label": "7",
+      "title": "The adjoint of an operator",
+      "source_file": "7.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-007.tex",
+      "part": "006-020",
+      "pdf_page": 2,
+      "source_blank": false
+    },
+    {
+      "note_label": "8",
+      "title": "Classes of operators, determinant, and trace",
+      "source_file": "8.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-008.tex",
+      "part": "006-020",
+      "pdf_page": 3,
+      "source_blank": false
+    },
+    {
+      "note_label": "9",
+      "title": "The eigenvalue problem",
+      "source_file": "9.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-009.tex",
+      "part": "006-020",
+      "pdf_page": 4,
+      "source_blank": false
+    },
+    {
+      "note_label": "10",
+      "title": "Finding and normalizing eigenvectors",
+      "source_file": "10.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-010.tex",
+      "part": "006-020",
+      "pdf_page": 5,
+      "source_blank": false
+    },
+    {
+      "note_label": "11",
+      "title": "Hermitian operators: eigenvalues and orthogonality",
+      "source_file": "11.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-011.tex",
+      "part": "006-020",
+      "pdf_page": 6,
+      "source_blank": false
+    },
+    {
+      "note_label": "12",
+      "title": "Degenerate eigenspaces and diagonalization",
+      "source_file": "12.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-012.tex",
+      "part": "006-020",
+      "pdf_page": 7,
+      "source_blank": false
+    },
+    {
+      "note_label": "13",
+      "title": "Blank source page",
+      "source_file": "13.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-013.tex",
+      "part": "006-020",
+      "pdf_page": 8,
+      "source_blank": true
+    },
+    {
+      "note_label": "14",
+      "title": "Unitary transformation to an eigenvector basis",
+      "source_file": "14.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-014.tex",
+      "part": "006-020",
+      "pdf_page": 9,
+      "source_blank": false
+    },
+    {
+      "note_label": "15a",
+      "title": "Simultaneous diagonalization of two Hermitian operators",
+      "source_file": "15 w 2 papges.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-015a.tex",
+      "part": "006-020",
+      "pdf_page": 10,
+      "source_blank": false
+    },
+    {
+      "note_label": "15b",
+      "title": "Diagonalizing within each degenerate eigenspace",
+      "source_file": "15 w 2 papges.pdf",
+      "source_page": 2,
+      "tex": "notes/006-020-foundations/page-015b.tex",
+      "part": "006-020",
+      "pdf_page": 11,
+      "source_blank": false
+    },
+    {
+      "note_label": "16",
+      "title": "Commuting observables and functions of operators",
+      "source_file": "16a.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-016.tex",
+      "part": "006-020",
+      "pdf_page": 12,
+      "source_blank": false
+    },
+    {
+      "note_label": "17",
+      "title": "From sampled functions to a continuum inner product",
+      "source_file": "17a.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-017.tex",
+      "part": "006-020",
+      "pdf_page": 13,
+      "source_blank": false
+    },
+    {
+      "note_label": "18",
+      "title": "Continuum normalization and the Dirac delta",
+      "source_file": "18a.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-018.tex",
+      "part": "006-020",
+      "pdf_page": 14,
+      "source_blank": false
+    },
+    {
+      "note_label": "19",
+      "title": "Chapter 4: the postulates of quantum mechanics",
+      "source_file": "19a.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-019.tex",
+      "part": "006-020",
+      "pdf_page": 15,
+      "source_blank": false
+    },
+    {
+      "note_label": "20",
+      "title": "Time evolution and position and energy measurements",
+      "source_file": "20a.pdf",
+      "source_page": 1,
+      "tex": "notes/006-020-foundations/page-020.tex",
+      "part": "006-020",
+      "pdf_page": 16,
+      "source_blank": false
+    },
+    {
+      "note_label": "21",
+      "title": "Measurement of a General Observable",
+      "source_file": "21to41.pdf",
+      "source_page": 1,
+      "tex": "notes/021-041-dynamics/page-021.tex",
+      "part": "021-041",
+      "pdf_page": 1,
+      "source_blank": false
+    },
+    {
+      "note_label": "22",
+      "title": "Uncertainty and Measurements as Filters",
+      "source_file": "21to41.pdf",
+      "source_page": 2,
+      "tex": "notes/021-041-dynamics/page-022.tex",
+      "part": "021-041",
+      "pdf_page": 2,
+      "source_blank": false
+    },
+    {
+      "note_label": "23",
+      "title": "Infinitesimal Translations",
+      "source_file": "21to41.pdf",
+      "source_page": 3,
+      "tex": "notes/021-041-dynamics/page-023.tex",
+      "part": "021-041",
+      "pdf_page": 3,
+      "source_blank": false
+    },
+    {
+      "note_label": "24",
+      "title": "Momentum as the Generator of Translations",
+      "source_file": "21to41.pdf",
+      "source_page": 4,
+      "tex": "notes/021-041-dynamics/page-024.tex",
+      "part": "021-041",
+      "pdf_page": 4,
+      "source_blank": false
+    },
+    {
+      "note_label": "25",
+      "title": "Infinitesimal Translation: Recap",
+      "source_file": "21to41.pdf",
+      "source_page": 5,
+      "tex": "notes/021-041-dynamics/page-025.tex",
+      "part": "021-041",
+      "pdf_page": 5,
+      "source_blank": false
+    },
+    {
+      "note_label": "26",
+      "title": "Momentum Eigenstates",
+      "source_file": "21to41.pdf",
+      "source_page": 6,
+      "tex": "notes/021-041-dynamics/page-026.tex",
+      "part": "021-041",
+      "pdf_page": 6,
+      "source_blank": false
+    },
+    {
+      "note_label": "27",
+      "title": "The Time-Evolution Operator",
+      "source_file": "21to41.pdf",
+      "source_page": 7,
+      "tex": "notes/021-041-dynamics/page-027.tex",
+      "part": "021-041",
+      "pdf_page": 7,
+      "source_blank": false
+    },
+    {
+      "note_label": "28",
+      "title": "Propagators and the Choice of Representation",
+      "source_file": "21to41.pdf",
+      "source_page": 8,
+      "tex": "notes/021-041-dynamics/page-028.tex",
+      "part": "021-041",
+      "pdf_page": 8,
+      "source_blank": false
+    },
+    {
+      "note_label": "29",
+      "title": "Examples and Fourier Transformation",
+      "source_file": "21to41.pdf",
+      "source_page": 9,
+      "tex": "notes/021-041-dynamics/page-029.tex",
+      "part": "021-041",
+      "pdf_page": 9,
+      "source_blank": false
+    },
+    {
+      "note_label": "30",
+      "title": "A Free Particle and the Parity Operator",
+      "source_file": "21to41.pdf",
+      "source_page": 10,
+      "tex": "notes/021-041-dynamics/page-030.tex",
+      "part": "021-041",
+      "pdf_page": 10,
+      "source_blank": false
+    },
+    {
+      "note_label": "31",
+      "title": "Parity Eigenstates of the Free Particle",
+      "source_file": "21to41.pdf",
+      "source_page": 11,
+      "tex": "notes/021-041-dynamics/page-031.tex",
+      "part": "021-041",
+      "pdf_page": 11,
+      "source_blank": false
+    },
+    {
+      "note_label": "32",
+      "title": "The Heisenberg Equation of Motion",
+      "source_file": "21to41.pdf",
+      "source_page": 12,
+      "tex": "notes/021-041-dynamics/page-032.tex",
+      "part": "021-041",
+      "pdf_page": 12,
+      "source_blank": false
+    },
+    {
+      "note_label": "33",
+      "title": "Free-Particle Motion and Wavepacket Moments",
+      "source_file": "21to41.pdf",
+      "source_page": 13,
+      "tex": "notes/021-041-dynamics/page-033.tex",
+      "part": "021-041",
+      "pdf_page": 13,
+      "source_blank": false
+    },
+    {
+      "note_label": "34",
+      "title": "The Parity Selection Rule",
+      "source_file": "21to41.pdf",
+      "source_page": 14,
+      "tex": "notes/021-041-dynamics/page-034.tex",
+      "part": "021-041",
+      "pdf_page": 14,
+      "source_blank": false
+    },
+    {
+      "note_label": "35",
+      "title": "Classically Allowed and Forbidden Regions",
+      "source_file": "21to41.pdf",
+      "source_page": 15,
+      "tex": "notes/021-041-dynamics/page-035.tex",
+      "part": "021-041",
+      "pdf_page": 15,
+      "source_blank": false
+    },
+    {
+      "note_label": "36",
+      "title": "Nondegeneracy of One-Dimensional Bound States",
+      "source_file": "21to41.pdf",
+      "source_page": 16,
+      "tex": "notes/021-041-dynamics/page-036.tex",
+      "part": "021-041",
+      "pdf_page": 16,
+      "source_blank": false
+    },
+    {
+      "note_label": "37",
+      "title": "The Harmonic Oscillator: Factorization",
+      "source_file": "21to41.pdf",
+      "source_page": 17,
+      "tex": "notes/021-041-dynamics/page-037.tex",
+      "part": "021-041",
+      "pdf_page": 17,
+      "source_blank": false
+    },
+    {
+      "note_label": "38",
+      "title": "Ladder Operators and the Ground-State Energy",
+      "source_file": "21to41.pdf",
+      "source_page": 18,
+      "tex": "notes/021-041-dynamics/page-038.tex",
+      "part": "021-041",
+      "pdf_page": 18,
+      "source_blank": false
+    },
+    {
+      "note_label": "39",
+      "title": "The Oscillator Spectrum and Normalized Ladder States",
+      "source_file": "21to41.pdf",
+      "source_page": 19,
+      "tex": "notes/021-041-dynamics/page-039.tex",
+      "part": "021-041",
+      "pdf_page": 19,
+      "source_blank": false
+    },
+    {
+      "note_label": "40",
+      "title": "Number Operator and Oscillator Matrix Elements",
+      "source_file": "21to41.pdf",
+      "source_page": 20,
+      "tex": "notes/021-041-dynamics/page-040.tex",
+      "part": "021-041",
+      "pdf_page": 20,
+      "source_blank": false
+    },
+    {
+      "note_label": "41",
+      "title": "Oscillator Wavefunctions and Heisenberg Motion",
+      "source_file": "21to41.pdf",
+      "source_page": 21,
+      "tex": "notes/021-041-dynamics/page-041.tex",
+      "part": "021-041",
+      "pdf_page": 21,
+      "source_blank": false
+    },
+    {
+      "note_label": "42",
+      "title": "Rotations and angular momentum",
+      "source_file": "42to84.pdf",
+      "source_page": 1,
+      "tex": "notes/042-063-angular-momentum/page-042.tex",
+      "part": "042-063",
+      "pdf_page": 1,
+      "source_blank": false
+    },
+    {
+      "note_label": "43",
+      "title": "Operator cross products and rotational invariance",
+      "source_file": "42to84.pdf",
+      "source_page": 2,
+      "tex": "notes/042-063-angular-momentum/page-043.tex",
+      "part": "042-063",
+      "pdf_page": 2,
+      "source_blank": false
+    },
+    {
+      "note_label": "44",
+      "title": "Rotational invariance and compatible observables",
+      "source_file": "42to84.pdf",
+      "source_page": 3,
+      "tex": "notes/042-063-angular-momentum/page-044.tex",
+      "part": "042-063",
+      "pdf_page": 3,
+      "source_blank": false
+    },
+    {
+      "note_label": "45",
+      "title": "Angular-momentum eigenstates and ladder operators",
+      "source_file": "42to84.pdf",
+      "source_page": 4,
+      "tex": "notes/042-063-angular-momentum/page-045.tex",
+      "part": "042-063",
+      "pdf_page": 4,
+      "source_blank": false
+    },
+    {
+      "note_label": "46",
+      "title": "The endpoints of an angular-momentum ladder",
+      "source_file": "42to84.pdf",
+      "source_page": 5,
+      "tex": "notes/042-063-angular-momentum/page-046.tex",
+      "part": "042-063",
+      "pdf_page": 5,
+      "source_blank": false
+    },
+    {
+      "note_label": "47",
+      "title": "Integer and half-integer angular momentum",
+      "source_file": "42to84.pdf",
+      "source_page": 6,
+      "tex": "notes/042-063-angular-momentum/page-047.tex",
+      "part": "042-063",
+      "pdf_page": 6,
+      "source_blank": false
+    },
+    {
+      "note_label": "48",
+      "title": "Total angular momentum and ladder coefficients",
+      "source_file": "42to84.pdf",
+      "source_page": 7,
+      "tex": "notes/042-063-angular-momentum/page-048.tex",
+      "part": "042-063",
+      "pdf_page": 7,
+      "source_blank": false
+    },
+    {
+      "note_label": "49",
+      "title": "Orbital eigenfunctions in position space",
+      "source_file": "42to84.pdf",
+      "source_page": 8,
+      "tex": "notes/042-063-angular-momentum/page-049.tex",
+      "part": "042-063",
+      "pdf_page": 8,
+      "source_blank": false
+    },
+    {
+      "note_label": "50",
+      "title": "Normalized spherical harmonics",
+      "source_file": "42to84.pdf",
+      "source_page": 9,
+      "tex": "notes/042-063-angular-momentum/page-050.tex",
+      "part": "042-063",
+      "pdf_page": 9,
+      "source_blank": false
+    },
+    {
+      "note_label": "51",
+      "title": "Central potentials and radial separation",
+      "source_file": "42to84.pdf",
+      "source_page": 10,
+      "tex": "notes/042-063-angular-momentum/page-051.tex",
+      "part": "042-063",
+      "pdf_page": 10,
+      "source_blank": false
+    },
+    {
+      "note_label": "52",
+      "title": "The reduced radial wavefunction",
+      "source_file": "42to84.pdf",
+      "source_page": 11,
+      "tex": "notes/042-063-angular-momentum/page-052.tex",
+      "part": "042-063",
+      "pdf_page": 11,
+      "source_blank": false
+    },
+    {
+      "note_label": "53",
+      "title": "The hydrogen atom: radial quantization",
+      "source_file": "42to84.pdf",
+      "source_page": 12,
+      "tex": "notes/042-063-angular-momentum/page-053.tex",
+      "part": "042-063",
+      "pdf_page": 12,
+      "source_blank": false
+    },
+    {
+      "note_label": "54",
+      "title": "The Rydberg energy and the Bohr-radius correspondence",
+      "source_file": "42to84.pdf",
+      "source_page": 13,
+      "tex": "notes/042-063-angular-momentum/page-054.tex",
+      "part": "042-063",
+      "pdf_page": 13,
+      "source_blank": false
+    },
+    {
+      "note_label": "55",
+      "title": "Ehrenfest's theorem and the virial theorem",
+      "source_file": "42to84.pdf",
+      "source_page": 14,
+      "tex": "notes/042-063-angular-momentum/page-055.tex",
+      "part": "042-063",
+      "pdf_page": 14,
+      "source_blank": false
+    },
+    {
+      "note_label": "56",
+      "title": "The Coulomb virial relation and the mean inverse radius",
+      "source_file": "42to84.pdf",
+      "source_page": 15,
+      "tex": "notes/042-063-angular-momentum/page-056.tex",
+      "part": "042-063",
+      "pdf_page": 15,
+      "source_blank": false
+    },
+    {
+      "note_label": "57",
+      "title": "Atomic energy, length, and speed scales",
+      "source_file": "42to84.pdf",
+      "source_page": 16,
+      "tex": "notes/042-063-angular-momentum/page-057.tex",
+      "part": "042-063",
+      "pdf_page": 16,
+      "source_blank": false
+    },
+    {
+      "note_label": "58",
+      "title": "Spin and the product Hilbert space",
+      "source_file": "42to84.pdf",
+      "source_page": 17,
+      "tex": "notes/042-063-angular-momentum/page-058.tex",
+      "part": "042-063",
+      "pdf_page": 17,
+      "source_blank": false
+    },
+    {
+      "note_label": "59",
+      "title": "Spin commutators and the spin-one-half matrices",
+      "source_file": "42to84.pdf",
+      "source_page": 18,
+      "tex": "notes/042-063-angular-momentum/page-059.tex",
+      "part": "042-063",
+      "pdf_page": 18,
+      "source_blank": false
+    },
+    {
+      "note_label": "60",
+      "title": "Position-spin wavefunctions and momentum",
+      "source_file": "42to84.pdf",
+      "source_page": 19,
+      "tex": "notes/042-063-angular-momentum/page-060.tex",
+      "part": "042-063",
+      "pdf_page": 19,
+      "source_blank": false
+    },
+    {
+      "note_label": "61",
+      "title": "Fixed spin and normalization of a spinor wavefunction",
+      "source_file": "42to84.pdf",
+      "source_page": 20,
+      "tex": "notes/042-063-angular-momentum/page-061.tex",
+      "part": "042-063",
+      "pdf_page": 20,
+      "source_blank": false
+    },
+    {
+      "note_label": "62",
+      "title": "Spin and orbital operators on two-component wavefunctions",
+      "source_file": "42to84.pdf",
+      "source_page": 21,
+      "tex": "notes/042-063-angular-momentum/page-062.tex",
+      "part": "042-063",
+      "pdf_page": 21,
+      "source_blank": false
+    },
+    {
+      "note_label": "63",
+      "title": "Independent orbital and spin degrees of freedom",
+      "source_file": "42to84.pdf",
+      "source_page": 22,
+      "tex": "notes/042-063-angular-momentum/page-063.tex",
+      "part": "042-063",
+      "pdf_page": 22,
+      "source_blank": false
+    },
+    {
+      "note_label": "64",
+      "title": "Spin along an arbitrary direction",
+      "source_file": "42to84.pdf",
+      "source_page": 23,
+      "tex": "notes/064-084-approximation-and-scattering/page-064.tex",
+      "part": "064-084",
+      "pdf_page": 1,
+      "source_blank": false
+    },
+    {
+      "note_label": "65",
+      "title": "Pauli matrices",
+      "source_file": "42to84.pdf",
+      "source_page": 24,
+      "tex": "notes/064-084-approximation-and-scattering/page-065.tex",
+      "part": "064-084",
+      "pdf_page": 2,
+      "source_blank": false
+    },
+    {
+      "note_label": "66",
+      "title": "A vector identity for Pauli matrices",
+      "source_file": "42to84.pdf",
+      "source_page": 25,
+      "tex": "notes/064-084-approximation-and-scattering/page-066.tex",
+      "part": "064-084",
+      "pdf_page": 3,
+      "source_blank": false
+    },
+    {
+      "note_label": "67",
+      "title": "Orbital magnetic moment in quantum theory",
+      "source_file": "42to84.pdf",
+      "source_page": 26,
+      "tex": "notes/064-084-approximation-and-scattering/page-067.tex",
+      "part": "064-084",
+      "pdf_page": 4,
+      "source_blank": false
+    },
+    {
+      "note_label": "68",
+      "title": "Spin magnetic moment and precession",
+      "source_file": "42to84.pdf",
+      "source_page": 27,
+      "tex": "notes/064-084-approximation-and-scattering/page-068.tex",
+      "part": "064-084",
+      "pdf_page": 5,
+      "source_blank": false
+    },
+    {
+      "note_label": "69",
+      "title": "Time-independent perturbation theory",
+      "source_file": "42to84.pdf",
+      "source_page": 28,
+      "tex": "notes/064-084-approximation-and-scattering/page-069.tex",
+      "part": "064-084",
+      "pdf_page": 6,
+      "source_blank": false
+    },
+    {
+      "note_label": "70",
+      "title": "The first-order state correction",
+      "source_file": "42to84.pdf",
+      "source_page": 29,
+      "tex": "notes/064-084-approximation-and-scattering/page-070.tex",
+      "part": "064-084",
+      "pdf_page": 7,
+      "source_blank": false
+    },
+    {
+      "note_label": "71",
+      "title": "Second-order energy and the validity criterion",
+      "source_file": "42to84.pdf",
+      "source_page": 30,
+      "tex": "notes/064-084-approximation-and-scattering/page-071.tex",
+      "part": "064-084",
+      "pdf_page": 8,
+      "source_blank": false
+    },
+    {
+      "note_label": "72",
+      "title": "Selection rules",
+      "source_file": "42to84.pdf",
+      "source_page": 31,
+      "tex": "notes/064-084-approximation-and-scattering/page-072.tex",
+      "part": "064-084",
+      "pdf_page": 9,
+      "source_blank": false
+    },
+    {
+      "note_label": "73",
+      "title": "Hydrogen in a uniform electric field",
+      "source_file": "42to84.pdf",
+      "source_page": 32,
+      "tex": "notes/064-084-approximation-and-scattering/page-073.tex",
+      "part": "064-084",
+      "pdf_page": 10,
+      "source_blank": false
+    },
+    {
+      "note_label": "74",
+      "title": "Degenerate perturbation theory",
+      "source_file": "42to84.pdf",
+      "source_page": 33,
+      "tex": "notes/064-084-approximation-and-scattering/page-074.tex",
+      "part": "064-084",
+      "pdf_page": 11,
+      "source_blank": false
+    },
+    {
+      "note_label": "75",
+      "title": "Choosing a basis in the degenerate subspace",
+      "source_file": "42to84.pdf",
+      "source_page": 34,
+      "tex": "notes/064-084-approximation-and-scattering/page-075.tex",
+      "part": "064-084",
+      "pdf_page": 12,
+      "source_blank": false
+    },
+    {
+      "note_label": "76",
+      "title": "Blank source page",
+      "source_file": "42to84.pdf",
+      "source_page": 35,
+      "tex": "notes/064-084-approximation-and-scattering/page-076.tex",
+      "part": "064-084",
+      "pdf_page": 13,
+      "source_blank": true
+    },
+    {
+      "note_label": "77",
+      "title": "The linear Stark effect for hydrogen at n = 2",
+      "source_file": "42to84.pdf",
+      "source_page": 36,
+      "tex": "notes/064-084-approximation-and-scattering/page-077.tex",
+      "part": "064-084",
+      "pdf_page": 14,
+      "source_blank": false
+    },
+    {
+      "note_label": "78",
+      "title": "One-dimensional scattering",
+      "source_file": "42to84.pdf",
+      "source_page": 37,
+      "tex": "notes/064-084-approximation-and-scattering/page-078.tex",
+      "part": "064-084",
+      "pdf_page": 15,
+      "source_blank": false
+    },
+    {
+      "note_label": "79",
+      "title": "Three-dimensional scattering",
+      "source_file": "42to84.pdf",
+      "source_page": 38,
+      "tex": "notes/064-084-approximation-and-scattering/page-079.tex",
+      "part": "064-084",
+      "pdf_page": 16,
+      "source_blank": false
+    },
+    {
+      "note_label": "80",
+      "title": "Scattering amplitude and differential cross section",
+      "source_file": "42to84.pdf",
+      "source_page": 39,
+      "tex": "notes/064-084-approximation-and-scattering/page-080.tex",
+      "part": "064-084",
+      "pdf_page": 17,
+      "source_blank": false
+    },
+    {
+      "note_label": "81",
+      "title": "Introduction to Green's functions",
+      "source_file": "42to84.pdf",
+      "source_page": 40,
+      "tex": "notes/064-084-approximation-and-scattering/page-081.tex",
+      "part": "064-084",
+      "pdf_page": 18,
+      "source_blank": false
+    },
+    {
+      "note_label": "82",
+      "title": "Time-dependent Green's functions",
+      "source_file": "42to84.pdf",
+      "source_page": 41,
+      "tex": "notes/064-084-approximation-and-scattering/page-082.tex",
+      "part": "064-084",
+      "pdf_page": 19,
+      "source_blank": false
+    },
+    {
+      "note_label": "83",
+      "title": "The Born approximation and a Fourier-space Green's function",
+      "source_file": "42to84.pdf",
+      "source_page": 42,
+      "tex": "notes/064-084-approximation-and-scattering/page-083.tex",
+      "part": "064-084",
+      "pdf_page": 20,
+      "source_blank": false
+    },
+    {
+      "note_label": "84",
+      "title": "Radial Fourier integral and the contour prescription",
+      "source_file": "42to84.pdf",
+      "source_page": 43,
+      "tex": "notes/064-084-approximation-and-scattering/page-084.tex",
+      "part": "064-084",
+      "pdf_page": 21,
+      "source_blank": false
+    }
+  ]
+}

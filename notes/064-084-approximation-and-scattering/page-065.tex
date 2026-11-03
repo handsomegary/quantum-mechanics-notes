@@ -1,0 +1,48 @@
+\notepage{65}{Pauli matrices}
+In the spin-up/spin-down basis,
+\[
+ \mathbf S=\frac{\hbar}{2}\boldsymbol\sigma,
+ \qquad \{A,B\}\equiv AB+BA.
+\]
+The following identities are useful:
+\begin{enumerate}[label=(\arabic*)]
+ \item For $i\ne j$, $\anticomm{\sigma_i}{\sigma_j}=0$, or
+       $\sigma_i\sigma_j=-\sigma_j\sigma_i$.
+ \item Since $S_xS_y-S_yS_x=\ii\hbar S_z$,
+ \[
+ \sigma_x\sigma_y-\sigma_y\sigma_x=2\ii\sigma_z.
+ \]
+ Together with (1), this gives $\sigma_x\sigma_y=\ii\sigma_z$ and the
+ cyclic permutations.
+ \item $\Tr\sigma_i=0$.
+ \item $\sigma_i^2=I$; more generally,
+       $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2=I$ for a unit vector
+       $\hat{\mathbf n}$.
+\end{enumerate}
+\smallheading{Proof of the fourth identity}
+Write an arbitrary spin-$\tfrac12$ state as
+\[
+ \ket{\psi}=\alpha\ket{+}+\beta\ket{-},\qquad
+ \ket{\pm}\equiv\ket{\hat{\mathbf n},\pm}.
+\]
+Then
+\begin{align*}
+ &\left(\hat{\mathbf n}\cdot\mathbf S+\frac{\hbar}{2}I\right)
+  \left(\hat{\mathbf n}\cdot\mathbf S-\frac{\hbar}{2}I\right)\ket{\psi}\\
+ &\qquad=\left(\hat{\mathbf n}\cdot\mathbf S+\frac{\hbar}{2}I\right)
+      (-\beta\hbar\ket{-})=0.
+\end{align*}
+Because this holds for every state,
+\[
+ (\hat{\mathbf n}\cdot\mathbf S)^2=\frac{\hbar^2}{4}I,
+ \qquad(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2=I.
+\]
+\editorial{The intermediate action of the second factor is
+$-\beta\hbar\ket{-}$; the handwritten intermediate line omits its minus
+sign. The final identity is unchanged.}
+Combining these results gives the compact Pauli algebra:
+\[
+ \boxed{\anticomm{\sigma_i}{\sigma_j}=2\delta_{ij}I},\qquad
+ \comm{\sigma_x}{\sigma_y}=2\ii\sigma_z
+ \quad\text{and cyclic permutations}.
+\]

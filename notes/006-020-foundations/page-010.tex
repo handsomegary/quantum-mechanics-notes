@@ -1,0 +1,44 @@
+\notepage{10}{Finding and normalizing eigenvectors}
+For a known eigenvalue $\omega_k$, solve the homogeneous linear system
+\[
+ \begin{bmatrix}
+ \Omega_{11}-\omega_k&\Omega_{12}&\cdots&\Omega_{1n}\\
+ \Omega_{21}&\Omega_{22}-\omega_k&\cdots&\Omega_{2n}\\
+ \vdots&\vdots&\ddots&\vdots\\
+ \Omega_{n1}&\Omega_{n2}&\cdots&\Omega_{nn}-\omega_k
+ \end{bmatrix}
+ \begin{bmatrix}v_1\\v_2\\\vdots\\v_n\end{bmatrix}=0.
+\]
+For a one-dimensional eigenspace, this fixes the component ratios;
+some components may be zero. The notes suggest checking the $n=2$
+and $n=3$ cases directly.
+
+\smallheading{Normalization convention}
+The solutions $\{v_i\}$ and $\{\alpha v_i\}$ describe proportional
+eigenvectors, $\ket{v}$ and $\alpha\ket{v}$. Their lengths can differ,
+so we conventionally choose
+\[
+ \braket{v}{v}=1.
+\]
+Starting with any nonzero eigenvector, the normalized vector is
+\[
+ \boxed{\ket{v}_{\mathrm{norm}}
+       =\frac{\ket{v}}{\sqrt{\braket{v}{v}}}.}
+\]
+Normalization leaves an overall phase undetermined.
+
+\smallheading{Repeated eigenvalues}
+If several eigenvalues coincide,
+\[
+ \omega_{k_1}=\omega_{k_2}=\cdots=\omega_{k_m}=\omega_k,
+\]
+the eigenvalue alone need not fix a unique direction: different
+linearly independent vectors can belong to the same eigenspace.
+For a Hermitian operator, an eigenvalue of multiplicity $m$ has
+$m$ linearly independent eigenvectors.
+\editorial{The source states this conclusion for a repeated
+characteristic root without qualifying the operator. In general,
+algebraic multiplicity need not equal eigenspace dimension. For
+example, $\left[\begin{smallmatrix}\omega&1\\0&\omega\end{smallmatrix}\right]$
+has a double root but only one independent eigenvector. The equality
+used in the following notes holds for Hermitian operators.}

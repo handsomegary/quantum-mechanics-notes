@@ -1,0 +1,54 @@
+\notepage{39}{The Oscillator Spectrum and Normalized Ladder States}
+Starting at $\epsilon_0=1/2$, successive raising gives
+\[
+ \frac12,\ 1+\frac12,\ 2+\frac12,\ldots,
+ \qquad \epsilon_n=n+\frac12,\qquad
+ E_n=\left(n+\frac12\right)\hbar\omega,\quad n=0,1,2,\ldots.
+\]
+These are all the eigenvalues: any other ladder would have a lowest
+state annihilated by $a$, again with energy $\hbar\omega/2$, but this
+one-dimensional bound-state ground energy is nondegenerate.
+\smallheading{Determining the ladder coefficients}
+Relabel $\ket\epsilon$ by $\ket n$ and write
+\[
+ a\ket n=B_n\ket{n-1},\qquad
+ \bra n a^\dagger=B_n^*\bra{n-1}.
+\]
+Normalization gives
+\begin{align*}
+ \abs{B_n}^2\braket{n-1}{n-1}
+ &=\mel n{a^\dagger a}n
+ =\mel n{\widehat H-1/2}n=n\braket nn=n,
+\end{align*}
+so $B_n=\sqrt n\,\ee^{\ii\phi_n}$. Similarly,
+\[
+ a^\dagger\ket n=\sqrt{n+1}\,\ee^{\ii\lambda_n}\ket{n+1}.
+\]
+Acting successively with $a$ and $a^\dagger$,
+\[
+ a^\dagger a\ket n
+ =n\ee^{\ii(\phi_n+\lambda_{n-1})}\ket n=n\ket n,
+ \qquad\lambda_{n-1}=-\phi_n\pmod{2\pi}.
+\]
+Thus $a^\dagger\ket n=\sqrt{n+1}\,\ee^{-\ii\phi_{n+1}}\ket{n+1}$.
+\smallheading{Removing the arbitrary phases}
+For the first two steps,
+\begin{align*}
+ a^\dagger\ket0&=\ee^{-\ii\phi_1}\ket1=\ket{1}',\\
+ a^\dagger\ket{1}'&=\sqrt2\,
+       \ee^{-\ii(\phi_1+\phi_2)}\ket2=\sqrt2\ket{2}'.
+\end{align*}
+In general choose
+$\ket n'=\exp[-\ii\sum_{k=1}^n\phi_k]\ket n$.
+Then $a^\dagger\ket{n-1}'=\sqrt n\ket n'$.
+Dropping the primes for this phase convention,
+\[
+ \boxed{a\ket n=\sqrt n\ket{n-1},\qquad
+        a^\dagger\ket n=\sqrt{n+1}\ket{n+1}.}
+\]
+Repeated raising constructs the normalized states:
+\[
+ \ket n=\frac{a^\dagger}{\sqrt n}\ket{n-1}
+ =\frac{a^\dagger}{\sqrt n}\frac{a^\dagger}{\sqrt{n-1}}\ket{n-2}
+ =\frac{(a^\dagger)^n}{\sqrt{n!}}\ket0.
+\]

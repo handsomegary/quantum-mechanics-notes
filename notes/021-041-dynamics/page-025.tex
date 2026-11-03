@@ -1,0 +1,45 @@
+\notepage{25}{Infinitesimal Translation: Recap}
+\editorial{This source sheet is crossed through as a repeated derivation.
+Its substantive steps are retained below in consistent operator notation.}
+For a small displacement,
+\[
+ T(\epsilon)=I-\frac{\ii\epsilon}{\hbar}G+O(\epsilon^2),\qquad
+ T(\epsilon)\ket{x}=\ket{x+\epsilon}.
+\]
+Reversal and norm preservation give
+\[
+ T(-\epsilon)=T^\dagger(\epsilon),\qquad
+ T(\epsilon)T^\dagger(\epsilon)=T(-\epsilon)T(\epsilon)=I.
+\]
+Acting on a position eigenket,
+\begin{align*}
+ XT\ket{x}&=X\ket{x+\epsilon}=(x+\epsilon)\ket{x+\epsilon},\\
+ TX\ket{x}&=x\ket{x+\epsilon},\\
+ (XT-TX)\ket{x}&=\epsilon T\ket{x}.
+\end{align*}
+Completeness gives $T^\dagger XT=X+\epsilon I$ and
+\[
+ XT=TX+\epsilon T=TX+\epsilon I+O(\epsilon^2),\quad
+ \comm{X}{G}=\ii\hbar I.
+\]
+The momentum is unchanged by translation:
+\[
+ T^\dagger PT=P\quad\Longrightarrow\quad\comm{P}{G}=0.
+\]
+With the standard identification $G=P$, the wavefunction transformation is
+\[
+ \psi(x)=\braket{x}{\psi},\qquad
+ \mel{x}{T(\epsilon)}{\psi}=\psi(x-\epsilon).
+\]
+Matching the infinitesimal expansions,
+\[
+ \psi(x)-\frac{\ii\epsilon}{\hbar}\mel{x}{P}{\psi}
+ =\psi(x)-\epsilon\psi'(x)+O(\epsilon^2),
+ \qquad \mel{x}{P}{\psi}=-\ii\hbar\frac{\dd}{\dd x}\braket{x}{\psi}.
+\]
+\editorial{The crossed-through calculation writes expectations in ideal
+position eigenkets as if their norms were one. Such kets are
+delta-normalized; the operator calculation above avoids assigning a
+finite value to $\braket{x}{x}$. For an ordinary normalized wavepacket,
+the intended statements are $\langle X\rangle\mapsto\langle X\rangle+\epsilon$
+and $\langle P\rangle\mapsto\langle P\rangle$.}

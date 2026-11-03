@@ -1,0 +1,47 @@
+\notepage{40}{Number Operator and Oscillator Matrix Elements}
+Since $a^\dagger a\ket n=n\ket n$, define the number operator
+\[
+ N=a^\dagger a,\qquad\widehat H=N+\frac12.
+\]
+The ladder-operator matrix elements are
+\begin{align*}
+ \mel{n'}an&=\sqrt n\braket{n'}{n-1}=\sqrt n\,\delta_{n',n-1},\\
+ \mel{n'}{a^\dagger}n&=\sqrt{n+1}\braket{n'}{n+1}
+ =\sqrt{n+1}\,\delta_{n',n+1}.
+\end{align*}
+Invert the definitions of $a$ and $a^\dagger$:
+\[
+ X=\sqrt{\frac{\hbar}{2m\omega}}(a+a^\dagger),\qquad
+ P=\ii\sqrt{\frac{m\omega\hbar}{2}}(a^\dagger-a),
+\]
+which determine $\mel{n'}Xn$ and $\mel{n'}Pn$. Also,
+\[
+ \mel{n'}Hn=\left(n+\frac12\right)\hbar\omega\,\delta_{n'n}.
+\]
+\smallheading{Example: a matrix element of the cube of position}
+Powers such as $X^\ell$ or $P^\ell$ can be evaluated by successive ladder
+actions; moments also determine uncertainties such as
+$\Delta X=\sqrt{\langle X^2\rangle-\langle X\rangle^2}$.
+For the example $\mel3{X^3}2$, set $c=\sqrt{\hbar/(2m\omega)}$. Then
+\begin{align*}
+ X^3=c^3(a+a^\dagger)^3
+ =c^3\bigl(&a^3+a^2a^\dagger+aa^\dagger a+a(a^\dagger)^2\\
+            &+a^\dagger a^2+a^\dagger aa^\dagger+(a^\dagger)^2a
+              +(a^\dagger)^3\bigr).
+\end{align*}
+The order of factors matters. To connect $\ket2$ to $\bra3$, a term
+must contain one more raising operator than lowering operators.
+For example $a^\dagger aa\ket2$ ends on $\ket1$ and does not contribute.
+The three surviving terms give
+\begin{align*}
+ (a^\dagger)^2a\ket2
+ &=\sqrt2(a^\dagger)^2\ket1=2a^\dagger\ket2=2\sqrt3\ket3,\\
+ a^\dagger aa^\dagger\ket2
+ &=\sqrt3a^\dagger a\ket3=3\sqrt3\ket3,\\
+ a(a^\dagger)^2\ket2
+ &=\sqrt3\sqrt4\,a\ket4=4\sqrt3\ket3.
+\end{align*}
+Therefore
+\[
+ \boxed{\mel3{X^3}2=9\sqrt3\left(\frac{\hbar}{2m\omega}\right)^{3/2}.}
+\]

@@ -1,0 +1,44 @@
+\notepage{27}{The Time-Evolution Operator}
+The Schr\"odinger equation and the definition of $U(t)$ are
+\[
+ \ii\hbar\frac{\dd}{\dd t}\ket{\psi(t)}=H\ket{\psi(t)},\qquad
+ \ket{\psi(t)}=U(t)\ket{\psi(0)}.
+\]
+First assume a time-independent Hamiltonian with a nondegenerate discrete
+energy basis:
+\[
+ H\ket E=E\ket E,\qquad\sum_E\ket E\bra E=I,\qquad
+ \ket{\psi(t)}=\sum_E\ket E\braket E{\psi(t)}=\sum_Ea_E(t)\ket E.
+\]
+Substitution yields
+\begin{align*}
+ 0&=\Bigl(\ii\hbar\frac{\dd}{\dd t}-H\Bigr)\ket{\psi(t)}\\
+ &=\sum_E\Bigl(\ii\hbar\frac{\dd}{\dd t}-H\Bigr)a_E(t)\ket E\\
+ &=\sum_E\bigl(\ii\hbar\dot a_E-Ea_E\bigr)\ket E.
+\end{align*}
+Independence of the basis vectors gives
+\[
+ \ii\hbar\dot a_E=Ea_E,\qquad
+ a_E(t)=a_E(0)\ee^{-\ii Et/\hbar},\qquad
+ \braket E{\psi(t)}=\braket E{\psi(0)}\ee^{-\ii Et/\hbar}.
+\]
+Consequently,
+\begin{align*}
+ \ket{\psi(t)}&=\sum_E\ket E\braket E{\psi(0)}\ee^{-\ii Et/\hbar},\\
+ U(t)&=\sum_E\ket E\bra E\ee^{-\ii Et/\hbar}.
+\end{align*}
+For degeneracy label $\alpha$, replace this by
+\[
+ U(t)=\sum_{E,\alpha}\ket{E,\alpha}\bra{E,\alpha}\ee^{-\ii Et/\hbar}.
+\]
+A continuous part of the spectrum requires the corresponding integral
+over $E$, with its proper spectral normalization.
+\smallheading{Stationary states}
+An energy eigenstate acquires only a phase,
+$\ket{E(t)}=\ee^{-\ii Et/\hbar}\ket E$. Thus a measurement in a fixed
+observable basis has time-independent probabilities:
+\[
+ \abs{\braket{\omega}{E(t)}}^2
+ =\abs{\braket{\omega}{E}\ee^{-\ii Et/\hbar}}^2
+ =\abs{\braket{\omega}{E}}^2.
+\]

@@ -1,0 +1,55 @@
+\notepage{38}{Ladder Operators and the Ground-State Energy}
+Define
+\[
+ a=\alpha X+\ii\beta P,\qquad a^\dagger=\alpha X-\ii\beta P,
+ \qquad\comm a{a^\dagger}=I,
+ \qquad H=\hbar\omega\left(a^\dagger a+\frac12\right).
+\]
+For convenience, use $\widehat H=H/(\hbar\omega)=a^\dagger a+1/2$ and
+$\widehat H\ket\epsilon=\epsilon\ket\epsilon$. Then
+\begin{align*}
+ \comm a{\widehat H}
+ &=\comm a{a^\dagger a}=\comm a{a^\dagger}a=a,\\
+ \comm{a^\dagger}{\widehat H}
+ &=a^\dagger\comm{a^\dagger}a=-a^\dagger.
+\end{align*}
+Consequently,
+\begin{align*}
+ \widehat H a\ket\epsilon
+ &=(a\widehat H-\comm a{\widehat H})\ket\epsilon
+ =(a\widehat H-a)\ket\epsilon
+ =(\epsilon-1)a\ket\epsilon,\\
+ \widehat H a^\dagger\ket\epsilon
+ &=(a^\dagger\widehat H-\comm{a^\dagger}{\widehat H})\ket\epsilon
+ =(\epsilon+1)a^\dagger\ket\epsilon.
+\end{align*}
+Since this is a one-dimensional bound-state problem, nonzero states on
+each rung are unique up to normalization:
+\[
+ a\ket\epsilon=B_\epsilon\ket{\epsilon-1},\qquad
+ a^\dagger\ket\epsilon=C_\epsilon\ket{\epsilon+1}.
+\]
+The oscillator is confining:
+\begin{center}
+\begin{tikzpicture}[x=0.7cm,y=0.4cm,>=Stealth]
+ \draw[->] (-2,0)--(2,0) node[right] {$x$};
+ \draw[ink,thick,domain=-1.6:1.6] plot (\x,{\x*\x});
+ \node[anchor=west] at (2.1,1.7) {$V(x)=\frac12m\omega^2x^2$};
+\end{tikzpicture}
+\end{center}
+Could lowering continue indefinitely to $\epsilon-1,\epsilon-2,\ldots$?
+For every normalizable state in the Hamiltonian's domain,
+\begin{align*}
+ \mel\psi H\psi
+ &=\frac1{2m}\mel\psi{P^\dagger P}\psi
+       +\frac12m\omega^2\mel\psi{X^\dagger X}\psi\\
+ &=\frac1{2m}\norm{P\ket\psi}^2
+       +\frac12m\omega^2\norm{X\ket\psi}^2\ge0.
+\end{align*}
+An indefinitely descending ladder would eventually have negative energy.
+Hence there is a lowest state annihilated by $a$:
+\[
+ a\ket{\epsilon_0}=0\ \Longrightarrow\
+ a^\dagger a\ket{\epsilon_0}=0\ \Longrightarrow\
+ \widehat H\ket{\epsilon_0}=\frac12\ket{\epsilon_0},\qquad\epsilon_0=\frac12.
+\]

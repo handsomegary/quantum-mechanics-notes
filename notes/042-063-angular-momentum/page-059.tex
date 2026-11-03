@@ -1,0 +1,48 @@
+\notepage{59}{Spin commutators and the spin-one-half matrices}
+The full angular-momentum operator is
+\[
+ \mathbf J=\mathbf L\otimes I_s+I_r\otimes\mathbf S,
+ \qquad \comm{J_i}{J_j}=\ii\hbar\sum_k\epsilon_{ijk}J_k.
+\]
+The abbreviated commutator $\comm{L_i}{S_j}$ means
+\[
+ \comm{L_i\otimes I_s}{I_r\otimes S_j}=0,
+\]
+because the two operators act on different factors. Expanding
+$\comm{L_i+S_i}{L_j+S_j}$, the mixed terms vanish. Subtracting the
+orbital commutator from the total one gives
+\[
+ \boxed{\comm{S_i}{S_j}=\ii\hbar\sum_k\epsilon_{ijk}S_k},\qquad
+ \mathbf S\times\mathbf S=\ii\hbar\mathbf S.
+\]
+
+\smallheading{An electron has \texorpdfstring{$s=\tfrac12$}{s=1/2}}
+The two $S_z$ eigenvalues are $+\hbar/2$ and $-\hbar/2$.
+In the ordered basis
+$\ket{+}=\ket{\tfrac12,\tfrac12}$,
+$\ket{-}=\ket{\tfrac12,-\tfrac12}$,
+\[
+ S_z=\frac\hbar2\begin{bmatrix}1&0\\0&-1\end{bmatrix}.
+\]
+The ladder formula supplies the individual matrix entries,
+\[
+ \mel{\tfrac12,m'}{S_\pm}{\tfrac12,m}
+ =\hbar\sqrt{(\tfrac12\mp m)(\tfrac12\pm m+1)}\,
+   \delta_{m',m\pm1}.
+\]
+Consequently,
+\[
+ S_+=\hbar\begin{bmatrix}0&1\\0&0\end{bmatrix},\qquad
+ S_-=\hbar\begin{bmatrix}0&0\\1&0\end{bmatrix},
+\]
+or equivalently
+$S_\pm=(\hbar/2)\begin{bmatrix}0&1\pm1\\1\mp1&0\end{bmatrix}$.
+It follows that
+\[
+ S_x=\tfrac12(S_++S_-)
+ =\frac\hbar2\begin{bmatrix}0&1\\1&0\end{bmatrix},\qquad
+ S_y=\tfrac1{2\ii}(S_+-S_-)
+ =\frac\hbar2\begin{bmatrix}0&-\ii\\\ii&0\end{bmatrix}.
+\]
+The dimensionless matrices $\sigma_i=2S_i/\hbar$ are the Pauli
+matrices; the $S_i$ themselves retain the units of angular momentum.

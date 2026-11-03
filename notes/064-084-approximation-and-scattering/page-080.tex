@@ -1,0 +1,55 @@
+\notepage{80}{Scattering amplitude and differential cross section}
+Keeping only the outgoing radial wave gives
+\begin{align*}
+ \psi_{\rm sc}&\sim\frac{\ee^{\ii kr}}{kr}
+ \sum_{\ell,m}(-\ii)^\ell(-B_{\ell m})Y_\ell^m(\theta,\phi)\\
+ &=\frac{\ee^{\ii kr}}r f(\theta,\phi),
+\end{align*}
+which defines the scattering amplitude $f$. Thus
+\[
+ \boxed{\psi_k\sim\ee^{\ii kz}
+              +f(\theta,\phi)\frac{\ee^{\ii kr}}r.}
+\]
+For a finite beam of transverse extent $\rho_{\max}$, the notes distinguish
+the forward incident-beam cone, $\theta\lesssim\rho_{\max}/r$, from
+detectors outside that cone. The incident plane-wave current is
+\begin{align*}
+ \mathbf j_{\rm inc}
+ &=\frac{\hbar}{2\mu\ii}
+ \left(\ee^{-\ii kz}\boldsymbol\nabla\ee^{\ii kz}
+      -\ee^{\ii kz}\boldsymbol\nabla\ee^{-\ii kz}\right)
+ =\frac{\hbar k}{\mu}\hat{\mathbf e}_z,
+\end{align*}
+where $\mu$ is the reduced mass. For the scattered wave,
+\[
+ \mathbf j_{\rm sc}=\frac{\hbar}{2\mu\ii}
+ (\psi_{\rm sc}^*\boldsymbol\nabla\psi_{\rm sc}
+           -\psi_{\rm sc}\boldsymbol\nabla\psi_{\rm sc}^*).
+\]
+Using the spherical-coordinate gradient,
+\[
+ \boldsymbol\nabla
+ =\hat{\mathbf r}\frac\partial{\partial r}
+  +\hat{\boldsymbol\theta}\frac1r\frac\partial{\partial\theta}
+  +\hat{\boldsymbol\phi}\frac1{r\sin\theta}\frac\partial{\partial\phi},
+\]
+we find
+\[
+ \boldsymbol\nabla\left(f\frac{\ee^{\ii kr}}r\right)
+ =\hat{\mathbf r}\,\ii kf\frac{\ee^{\ii kr}}r+O(r^{-2}),
+ \qquad
+ \mathbf j_{\rm sc}\sim
+ \hat{\mathbf r}\,\frac{|f|^2}{r^2}\frac{\hbar k}{\mu}.
+\]
+The probability flow into $\dd\Omega$ per unit time is therefore
+\[
+ \mathcal R(\theta,\phi;\dd\Omega)
+ =\mathbf j_{\rm sc}\cdot\hat{\mathbf r}\,r^2\dd\Omega
+ =|f|^2\frac{\hbar k}{\mu}\dd\Omega.
+\]
+Dividing by the incident flux yields
+\[
+ \frac{\dd\sigma}{\dd\Omega}\dd\Omega
+ =\frac{\mathcal R}{j_{\rm inc}}=|f(\theta,\phi)|^2\dd\Omega,
+ \qquad\boxed{\frac{\dd\sigma}{\dd\Omega}=|f(\theta,\phi)|^2.}
+\]

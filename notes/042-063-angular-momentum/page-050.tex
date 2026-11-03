@@ -1,0 +1,58 @@
+\notepage{50}{Normalized spherical harmonics}
+Define the highest-weight angular function by
+$Y_\ell^\ell(\theta,\phi)\propto\sin^\ell\theta\ee^{\ii\ell\phi}$.
+With
+\[
+ \dd^3r=r^2\dd r\,\dd\Omega,\qquad
+ \dd\Omega=\sin\theta\,\dd\theta\,\dd\phi,
+\]
+choose $\int\abs{Y_\ell^\ell}^2\dd\Omega=1$.
+The needed polar integral is
+\[
+ \int_0^\pi\sin^{2\ell+1}\theta\,\dd\theta
+ =\frac{2^{2\ell+1}(\ell!)^2}{(2\ell+1)!}.
+\]
+Using the conventional Condon--Shortley phase gives
+\[
+ \boxed{Y_\ell^\ell(\theta,\phi)
+ =\frac{(-1)^\ell}{2^\ell\ell!}
+   \sqrt{\frac{(2\ell+1)!}{4\pi}}
+   \sin^\ell\theta\,\ee^{\ii\ell\phi}.}
+\]
+
+\smallheading{Generating the other magnetic states}
+For $\ell>0$, the first lowering step gives
+\[
+ L_-\ket{\ell,\ell}=\hbar\sqrt{2\ell}\ket{\ell,\ell-1}.
+\]
+Hence, using the differential operator from note 49,
+\[
+ Y_\ell^{\ell-1}
+ =-\frac{\ee^{-\ii\phi}}{\sqrt{2\ell}}
+   \left(\partial_\theta-\ii\cot\theta\partial_\phi\right)
+   Y_\ell^\ell.
+\]
+Before including its common normalization and phase, the differential
+operation on the highest-weight angular factor is
+\begin{align*}
+ &\left(\partial_\theta-\ii\cot\theta\partial_\phi\right)
+   \left(\sin^\ell\theta\ee^{\ii\ell\phi}\right)\\
+ &\qquad=\left(\ell\cos\theta\sin^{\ell-1}\theta
+       +\ell\cos\theta\sin^{\ell-1}\theta\right)\ee^{\ii\ell\phi}\\
+ &\qquad=2\ell\cos\theta\sin^{\ell-1}\theta\ee^{\ii\ell\phi}.
+\end{align*}
+Repeated lowering generates all $Y_\ell^m$, called the spherical
+harmonics. One may also start at $m=-\ell$ and raise toward $m=0$.
+\[
+ \ket{\ell,\ell}\xrightarrow{\ L_-\ }\cdots
+ \xrightarrow{\ L_-\ }\ket{\ell,0}
+ \xleftarrow{\ L_+\ }\cdots\xleftarrow{\ L_+\ }\ket{\ell,-\ell}.
+\]
+The corresponding phase relation is
+\[
+ \boxed{Y_\ell^{-m}(\theta,\phi)=(-1)^m
+   \bigl(Y_\ell^m(\theta,\phi)\bigr)^*.}
+\]
+\editorial{The minus sign in the differential form of $L_-$ is kept
+explicitly; it is required for consistency with the chosen
+Condon--Shortley phase and the positive ladder coefficients.}

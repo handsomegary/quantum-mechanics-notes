@@ -1,0 +1,52 @@
+\notepage{19}{Chapter 4: the postulates of quantum mechanics}
+The four postulates concern (I) the state, (II) observables,
+(III) measurement, and (IV) time evolution.
+
+\smallheading{I. State}
+\textbf{Classical mechanics.} A particle is specified by its position
+and momentum $(x,p)$, a point in phase space. A succession of states
+traces a phase-space trajectory.
+\begin{center}
+\begin{tikzpicture}[>=Stealth,scale=.8]
+\draw[->] (0,0)--(4,0)node[right]{$x$};
+\draw[->] (0,0)--(0,2)node[above]{$p$};
+\draw[thick,ink,->] (.6,.45)..controls (1.2,1.4) and (2,.3)..(2.7,1.5)
+ ..controls (2.9,1.9) and (3.2,1.8)..(3.5,1.9);
+\fill[ink] (.6,.45)circle(2pt);
+\node[below right,font=\small] at (.6,.45){a state};
+\end{tikzpicture}
+\end{center}
+\textbf{Quantum mechanics.} A pure state is represented by a nonzero
+vector $\ket{\psi}$ in the physical Hilbert space, conventionally
+normalized to unit norm. Proportional vectors represent the same ray.
+
+\smallheading{II. Observable}
+A classical observable is a real-valued function $\omega(x,p)$.
+Quantum observables are represented by Hermitian operators. In
+particular,
+\[
+ X\ket{x}=x\ket{x},\qquad P\ket{p}=p\ket{p},
+\]
+\[
+ \comm{X}{P}=\ii\hbar I,
+ \qquad \comm{X_i}{P_j}=\ii\hbar\delta_{ij}I,
+ \qquad \comm{X_i}{X_j}=\comm{P_i}{P_j}=0.
+\]
+The source denotes the classical-to-quantum correspondence by
+$\Omega(X,P)=\omega(x\to X,p\to P)$.
+\editorial{For products of noncommuting variables, operator ordering
+must also be specified; simple substitution alone does not settle it.}
+
+\smallheading{III. Measurement}
+In a classical state $(x_0,p_0)$, measuring $\omega$ yields
+$\omega(x_0,p_0)$ and, ideally, leaves the state unchanged.
+In a quantum state $\ket{\psi}$, measuring $\Omega$ yields one of its
+eigenvalues $\omega$. For a normalized state and a nondegenerate
+discrete eigenvalue,
+\[
+ P(\omega)=\abs{\braket{\omega}{\psi}}^2,
+ \qquad \ket{\psi}\xrightarrow{\text{measurement}}\ket{\omega}.
+\]
+The probability is the squared magnitude of the component along
+the corresponding eigenvector. Degenerate outcomes are treated by
+projection onto the entire eigenspace (note 21).

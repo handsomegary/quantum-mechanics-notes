@@ -1,0 +1,53 @@
+\notepage{43}{Operator cross products and rotational invariance}
+For an ordinary numerical vector, $\mathbf a\times\mathbf a=0$.
+An operator vector need not have this property:
+\[
+ \mathbf A\times\mathbf A
+ =\comm{A_y}{A_z}\hat{\mathbf e}_x
+ +\comm{A_z}{A_x}\hat{\mathbf e}_y
+ +\comm{A_x}{A_y}\hat{\mathbf e}_z.
+\]
+Thus $\mathbf A\times\mathbf A=0$ when all component commutators vanish.
+For example,
+\[
+ \mathbf R\times\mathbf R=0,\qquad
+ \mathbf P\times\mathbf P=0,\qquad
+ \mathbf L\times\mathbf L=\ii\hbar\mathbf L.
+\]
+The last equality follows component by component from
+$\comm{L_y}{L_z}=\ii\hbar L_x$ and its cyclic partners.
+
+\smallheading{Infinitesimal rotation about an arbitrary axis}
+For a unit vector $\hat{\mathbf n}$, put
+$\epsilon_i=\epsilon n_i$. Then
+\begin{align*}
+ U_{\hat{\mathbf n}}(\epsilon)
+ &=I-\frac{\ii\epsilon}{\hbar}\mathbf L\cdot\hat{\mathbf n}
+   +O(\epsilon^2)\\
+ &=I-\frac{\ii}{\hbar}(L_x\epsilon_x+L_y\epsilon_y+L_z\epsilon_z)
+   +O(\epsilon^2)\\
+ &=\left(I-\frac{\ii L_x\epsilon_x}{\hbar}\right)
+   \left(I-\frac{\ii L_y\epsilon_y}{\hbar}\right)
+   \left(I-\frac{\ii L_z\epsilon_z}{\hbar}\right)+O(\epsilon^2)\\
+ &=U_x(\epsilon_x)U_y(\epsilon_y)U_z(\epsilon_z)+O(\epsilon^2).
+\end{align*}
+The equality between the different-axis product and the single-axis
+rotation is a first-order statement, since finite rotations do not in
+general commute.
+
+\smallheading{Invariance of the Hamiltonian}
+A system is rotationally invariant if
+\[
+ U_{\hat{\mathbf n}}^\dagger(\epsilon)HU_{\hat{\mathbf n}}(\epsilon)=H
+ \quad\text{for every axis and angle}.
+\]
+This implies invariance about the three coordinate axes. Conversely,
+if the Hamiltonian is invariant under each coordinate-axis rotation,
+then to first order
+\begin{align*}
+ U_{\hat{\mathbf n}}^\dagger H U_{\hat{\mathbf n}}
+ &=U_z^\dagger U_y^\dagger U_x^\dagger H U_xU_yU_z+O(\epsilon^2)\\
+ &=U_z^\dagger U_y^\dagger H U_yU_z+O(\epsilon^2)\\
+ &=U_z^\dagger H U_z+O(\epsilon^2)=H+O(\epsilon^2).
+\end{align*}
+The infinitesimal condition generates the corresponding finite rotations.

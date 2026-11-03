@@ -1,0 +1,47 @@
+\notepage{21}{Measurement of a General Observable}
+For a normalized state, expand in an orthonormal eigenbasis of $\Omega$:
+\[
+ \ket{\psi}=\sum_i\ket{\omega_i}\braket{\omega_i}{\psi},\qquad
+ P(\omega)=\abs{\braket{\omega}{\psi}}^2
+ =\braket{\psi}{\omega}\braket{\omega}{\psi}
+ =\mel{\psi}{P_\omega}{\psi}.
+\]
+Here $P_\omega=\ket{\omega}\bra{\omega}$ is the projection operator for a
+nondegenerate outcome. If $\braket{\psi}{\psi}\ne1$, divide by the norm:
+\[
+ P(\omega)=\frac{\abs{\braket{\omega}{\psi}}^2}{\braket{\psi}{\psi}}.
+\]
+\smallheading{Degenerate outcomes and state reduction}
+For a degenerate eigenspace, with degeneracy label $\lambda$,
+\[
+ P_\omega=\sum_\lambda\ket{\omega,\lambda}\bra{\omega,\lambda},\qquad
+ P(\omega)=\mel{\psi}{P_\omega}{\psi},\qquad
+ \ket{\psi}\longmapsto\frac{P_\omega\ket{\psi}}{\norm{P_\omega\ket{\psi}}}.
+\]
+The last two expressions assume a normalized input and a nonzero outcome
+probability. For example, let
+\[
+ \ket{\psi}=\alpha\ket{\omega,1}+\beta\ket{\omega,2}+\gamma\ket{\omega_3},
+ \quad \abs\alpha^2+\abs\beta^2+\abs\gamma^2=1,
+ \quad \omega_3\ne\omega.
+\]
+Then
+\begin{align*}
+ P_\omega&=\ket{\omega,1}\bra{\omega,1}+\ket{\omega,2}\bra{\omega,2},\\
+ P(\omega)&=\bra{\psi}\bigl(\alpha\ket{\omega,1}+\beta\ket{\omega,2}\bigr)
+          =\abs\alpha^2+\abs\beta^2,\\
+ \ket{\psi}_{\mathrm{after}}
+ &=\frac{\alpha\ket{\omega,1}+\beta\ket{\omega,2}}
+         {\sqrt{\abs\alpha^2+\abs\beta^2}}.
+\end{align*}
+\smallheading{Expectation value}
+Probability theory gives, for a normalized state,
+\begin{align*}
+ \langle\Omega\rangle
+ &=\sum_iP(\omega_i)\omega_i
+ =\sum_i\abs{\braket{\omega_i}{\psi}}^2\omega_i\\
+ &=\sum_i\braket{\psi}{\omega_i}\braket{\omega_i}{\psi}\omega_i\\
+ &=\sum_i\mel{\psi}{\Omega}{\omega_i}\braket{\omega_i}{\psi}\\
+ &=\bra{\psi}\Omega\Bigl(\sum_i\ket{\omega_i}\bra{\omega_i}\Bigr)\ket{\psi}
+ =\mel{\psi}{\Omega}{\psi}.
+\end{align*}

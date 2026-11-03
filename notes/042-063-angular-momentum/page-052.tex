@@ -1,0 +1,40 @@
+\notepage{52}{The reduced radial wavefunction}
+Separate the simultaneous eigenfunction as
+\[
+ \Psi_{E\ell m}(r,\theta,\phi)
+ =R_{E\ell}(r)Y_\ell^m(\theta,\phi).
+\]
+The radial function obeys
+\[
+ \left\{-\frac{\hbar^2}{2m}
+ \left[\frac1{r^2}\frac\dd{\dd r}\left(r^2\frac\dd{\dd r}\right)
+       -\frac{\ell(\ell+1)}{r^2}\right]+V(r)\right\}
+ R_{E\ell}(r)=E R_{E\ell}(r).
+\]
+The equation contains no magnetic quantum number $m$, so the radial
+function may be chosen independent of that label.
+
+\smallheading{Normalization}
+Because the spherical harmonics are normalized,
+\begin{align*}
+ 1&=\int\abs{\Psi_{E\ell m}(\mathbf r)}^2\dd^3r\\
+  &=\int_0^\infty r^2\abs{R_{E\ell}(r)}^2\dd r
+     \underbrace{\int\abs{Y_\ell^m(\theta,\phi)}^2\dd\Omega}_{1}\\
+  &=\int_0^\infty\abs{rR_{E\ell}(r)}^2\dd r.
+\end{align*}
+Define the reduced radial function
+\[
+ U_{E\ell}(r)=rR_{E\ell}(r),\qquad
+ R_{E\ell}(r)=\frac{U_{E\ell}(r)}r.
+\]
+Then $\int_0^\infty\abs{U_{E\ell}(r)}^2\dd r=1$, and
+\[
+ \boxed{\left\{\frac{\dd^2}{\dd r^2}
+ +\frac{2m}{\hbar^2}\left[E-V(r)
+       -\frac{\ell(\ell+1)\hbar^2}{2mr^2}\right]\right\}
+       U_{E\ell}(r)=0.}
+\]
+The centrifugal term acts as part of the effective one-dimensional
+radial potential. Absolute squares above also cover complex radial
+functions; ordinary squares are sufficient only when they are chosen
+real.

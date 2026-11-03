@@ -1,0 +1,45 @@
+\notepage{77}{The linear Stark effect for hydrogen at n = 2}
+Ignoring spin, the hydrogen $n=2$ subspace contains the four degenerate
+states $\ket{200}$, $\ket{210}$, $\ket{211}$, and $\ket{21,-1}$.
+Although every diagonal element
+\[
+ \mel{2\ell m}{eE_0Z}{2\ell m}=0
+\]
+vanishes by parity, the off-diagonal matrix elements need not vanish.
+In the ordered basis
+\[
+ \{\ket{200},\ket{210},\ket{211},\ket{21,-1}\},
+\]
+the perturbation is
+\[
+ H'\big|_{n=2}=
+ \begin{pmatrix}
+ 0&\Delta&0&0\\
+ \Delta&0&0&0\\
+ 0&0&0&0\\
+ 0&0&0&0
+ \end{pmatrix},\qquad
+ \Delta=\mel{200}{eE_0Z}{210}.
+\]
+The phases of the basis vectors may be chosen so that $\Delta$ is real.
+\smallheading{Exercise retained from the notes}
+Calculate $\Delta$ explicitly using the hydrogen eigenfunctions. The
+source suggests its textbook's Eq.~(13.1.27); the textbook and edition
+are not specified on this page.
+\smallheading{Diagonalization}
+Use the basis
+\[
+ \left\{\frac{\ket{200}-\ket{210}}{\sqrt2},\quad
+        \frac{\ket{200}+\ket{210}}{\sqrt2},\quad
+        \ket{211},\quad\ket{21,-1}\right\}.
+\]
+The perturbation becomes
+\[
+ H'\big|_{n=2}=\diag(-\Delta,\Delta,0,0).
+\]
+The corresponding first-order shifts are $-\Delta$, $\Delta$, $0$, and
+$0$. In this basis, off-diagonal perturbation elements between different
+vectors of the original degenerate subspace vanish.
+\editorial{As in note 74, the source's drawn diagonal matrix has the
+signs interchanged relative to its stated order of the symmetric and
+antisymmetric states. The matrix and basis order agree here.}

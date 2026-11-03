@@ -1,0 +1,44 @@
+\notepage{70}{The first-order state correction}
+Project the first-order equation onto $\bra{m^0}$, where $m\ne n$:
+\[
+ \mel{m^0}{H^0}{n^1}+\mel{m^0}{H'}{n^0}
+ =E_n^0\braket{m^0}{n^1}.
+\]
+Using $\bra{m^0}H^0=E_m^0\bra{m^0}$ gives
+\[
+ \braket{m^0}{n^1}=\frac{\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}.
+\]
+The expansion of the correction thus has the form
+\[
+ \ket{n^1}=\sum_m\ket{m^0}\braket{m^0}{n^1}
+ =\underbrace{\sum_{m\ne n}
+ \frac{\ket{m^0}\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}}_{\ket{n^1_\perp}}
+ +\ket{n^1_\parallel},
+\]
+where $\ket{n^1_\parallel}\parallel\ket{n^0}$ and
+$\ket{n^1_\perp}\perp\ket{n^0}$.
+\editorial{The perpendicular relation includes the explicit correction
+written on the source page.}
+Normalization, to first order, requires
+\begin{align*}
+ 1=\braket n n
+ &=\bigl(\bra{n^0}+\bra{n^1_\parallel}+\bra{n^1_\perp}\bigr)
+   \bigl(\ket{n^0}+\ket{n^1_\parallel}+\ket{n^1_\perp}\bigr)
+   +O((H')^2)\\
+ &=1+\braket{n^1_\parallel}{n^0}
+     +\braket{n^0}{n^1_\parallel}+O((H')^2).
+\end{align*}
+Hence $\braket{n^0}{n^1_\parallel}=\ii\alpha$, with $\alpha$ real and
+first order in $H'$. Since $1+\ii\alpha=\ee^{\ii\alpha}+O(\alpha^2)$,
+\[
+ \ket n=\ee^{\ii\alpha}\ket{n^0}
+ +\sum_{m\ne n}\frac{\ket{m^0}\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}
+ +O((H')^2).
+\]
+Redefining the overall phase, $\ket n\mapsto\ee^{-\ii\alpha}\ket n$,
+therefore yields
+\[
+ \boxed{\ket n=\ket{n^0}
+ +\sum_{m\ne n}\frac{\ket{m^0}\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}
+ +O((H')^2).}
+\]

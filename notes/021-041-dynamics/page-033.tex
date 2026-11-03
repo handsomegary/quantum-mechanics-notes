@@ -1,0 +1,51 @@
+\notepage{33}{Free-Particle Motion and Wavepacket Moments}
+Expectation values can be computed without first finding the evolving state:
+\[
+ \mel{\psi(t)}\Omega{\psi(t)}
+ =\mel{\psi(0)}{\Omega_H(t)}{\psi(0)}.
+\]
+For a free particle, the Heisenberg equations are
+\begin{align*}
+ \frac{\dd P(t)}{\dd t}&=\frac1{\ii\hbar}
+       \comm{P(t)}{P(t)^2/(2m)}=0,\\
+ \frac{\dd X(t)}{\dd t}&=\frac1{\ii\hbar}
+       \comm{X(t)}{P(t)^2/(2m)}=\frac{P(t)}m.
+\end{align*}
+Equal-time commutators are invariant under the unitary change of picture:
+\begin{align*}
+ \comm{X(t)}{P(t)}
+ &=U^\dagger XUU^\dagger PU-U^\dagger PUU^\dagger XU\\
+ &=U^\dagger\comm XP U=\ii\hbar I.
+\end{align*}
+Also $\comm X{P^2}=\comm XP P+P\comm XP=2\ii\hbar P$,
+and more generally $\comm X{f(P)}=\ii\hbar f'(P)$.
+Integration yields
+\begin{align*}
+ P(t)&=P(0),&P(t)^2&=P(0)^2,\\
+ X(t)&=X(0)+\frac{t}{m}P(0),\\
+ X(t)^2&=X(0)^2+\frac{t}{m}\bigl[X(0)P(0)+P(0)X(0)\bigr]
+                  +\frac{t^2}{m^2}P(0)^2.
+\end{align*}
+Therefore
+\[
+ \langle P(t)\rangle=\langle P(0)\rangle,\qquad
+ \langle X(t)\rangle=\langle X(0)\rangle+\frac{\langle P(0)\rangle}{m}t.
+\]
+For a momentum-labelled energy eigenstate, $\langle P\rangle=\pm\sqrt{2mE}$
+formally; normalizable wavepackets have ordinary finite moments.
+\smallheading{Exercise retained from the source}
+Start from the unnormalized Gaussian wavepacket
+\[
+ \braket x{\psi_u}=\ee^{\ii p_0x/\hbar}\ee^{-x^2/(2\Delta^2)},\qquad
+ \ket\psi=\frac{\ket{\psi_u}}{\sqrt{\braket{\psi_u}{\psi_u}}}.
+\]
+Calculate $\langle X(0)\rangle$, $\langle X(0)^2\rangle$,
+$\langle P(0)\rangle$, and $\langle P(0)^2\rangle$, then use the operator
+solutions to find their time-dependent counterparts and
+\[
+ \Delta X(t)\Delta P(t)=
+ \sqrt{\langle X(t)^2\rangle-\langle X(t)\rangle^2}
+ \sqrt{\langle P(t)^2\rangle-\langle P(t)\rangle^2}.
+\]
+\editorial{The handwritten cross term $2X(0)P(0)t/m$ in $X(t)^2$
+is replaced by the symmetrized product because $X(0)$ and $P(0)$ do not commute.}

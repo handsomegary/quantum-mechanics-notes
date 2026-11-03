@@ -1,0 +1,50 @@
+\notepage{30}{A Free Particle and the Parity Operator}
+For a free particle in one dimension,
+\[
+ H=\frac{P^2}{2m},\qquad H\ket E=E\ket E,\qquad\comm HP=0.
+\]
+We can choose simultaneous eigenstates of $H$ and $P$. In position space,
+$-\hbar^2\psi_E''/(2m)=E\psi_E$; equivalently, using momentum eigenstates,
+\[
+ \frac{P^2}{2m}\ket p=\frac{p^2}{2m}\ket p=E\ket p,
+ \qquad p=\pm\sqrt{2mE}.
+\]
+For each $E>0$ there are two propagation directions:
+\[
+ \ket{E,r}=\ket{p=\sqrt{2mE}},\qquad
+ \ket{E,l}=\ket{p=-\sqrt{2mE}}.
+\]
+The threshold $E=0$ does not have two distinct momenta. Is momentum the
+only useful second label for the energy eigenstates?
+\smallheading{Parity}
+Classically parity reverses $\mathbf r$ and $\mathbf p$. Quantum mechanically,
+\[
+ \Pi\ket{\mathbf r}=\ket{-\mathbf r},\qquad
+ \Pi\ket{\mathbf p}=\ket{-\mathbf p}.
+\]
+In one dimension, insert position completeness:
+\begin{align*}
+ \Pi\ket\psi
+ &=\Pi\int\ket x\braket x\psi\,\dd x
+ =\int\ket{-x}\braket x\psi\,\dd x\\
+ &=\int\ket{x'}\braket{-x'}\psi\,\dd x',\\
+ \mel x\Pi\psi
+ &=\int\underbrace{\braket x{x'}}_{\delta(x-x')}
+          \psi(-x')\,\dd x'=\psi(-x).
+\end{align*}
+The parity operator is unitary and satisfies $\Pi^2=I$. Hence
+\[
+ \Pi^{-1}=\Pi^\dagger=\Pi,\qquad \hbox{parity eigenvalues }=\pm1.
+\]
+Since $\Pi X\ket x=x\ket{-x}$ whereas $X\Pi\ket x=-x\ket{-x}$,
+\[
+ \Pi X=-X\Pi,\quad\Pi^\dagger X\Pi=-X,\qquad
+ \Pi^\dagger P\Pi=-P.
+\]
+Inserting $\Pi\Pi^\dagger=I$ between powers gives
+\[
+ \Pi^\dagger X^n\Pi=(-1)^nX^n,\qquad
+ \Pi^\dagger P^n\Pi=(-1)^nP^n.
+\]
+\editorial{Commutation allows a common eigenbasis; a generic vector in a
+degenerate energy eigenspace need not itself be a momentum eigenvector.}

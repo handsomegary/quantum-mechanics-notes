@@ -1,0 +1,48 @@
+\notepage{51}{Central potentials and radial separation}
+A spherically symmetric Hamiltonian has the form
+\[
+ H=\frac{\mathbf P^2}{2m}+V(R),\qquad
+ \mathbf P^2\longleftrightarrow-\hbar^2\nabla^2.
+\]
+The kinetic operator separates into radial and angular parts,
+\[
+ \mathbf P^2=P_r^2+\frac{L^2}{R^2},\qquad
+ P_r^2\longleftrightarrow
+ -\hbar^2\frac1{r^2}\frac\partial{\partial r}
+       r^2\frac\partial{\partial r}.
+\]
+Here $P_r^2$ denotes the radial kinetic differential expression.
+For a position-space wavefunction,
+\begin{align*}
+ \mel{r,\theta,\phi}{\mathbf P^2}{\psi}
+ &=-\hbar^2\frac1{r^2}\frac\partial{\partial r}
+     \left(r^2\frac{\partial\psi}{\partial r}\right)\\
+ &\quad-\frac{\hbar^2}{r^2}
+   \left[\frac1{\sin\theta}\frac\partial{\partial\theta}
+     \left(\sin\theta\frac\partial{\partial\theta}\right)
+     +\frac1{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right]\psi.
+\end{align*}
+Thus the angular operator is
+\[
+ L^2\longleftrightarrow-\hbar^2
+ \left[\frac1{\sin\theta}\frac\partial{\partial\theta}
+     \left(\sin\theta\frac\partial{\partial\theta}\right)
+     +\frac1{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right].
+\]
+The three operators $H,L^2,L_z$ commute, so choose states
+$\ket{E,\ell,m}$ with
+\[
+ \mel{r,\theta,\phi}{L^2}{E,\ell,m}
+ =\ell(\ell+1)\hbar^2\braket{r,\theta,\phi}{E,\ell,m}.
+\]
+Writing $\Psi_{E\ell m}(r,\theta,\phi)
+=\braket{r,\theta,\phi}{E,\ell,m}$, the Schr\"odinger equation becomes
+\[
+ \left[-\frac{\hbar^2}{2m r^2}\frac\partial{\partial r}
+       \left(r^2\frac\partial{\partial r}\right)
+       +\frac{\ell(\ell+1)\hbar^2}{2mr^2}+V(r)\right]
+       \Psi_{E\ell m}=E\Psi_{E\ell m}.
+\]
+The radial derivative acts only on $r$; the angular part is an
+$L^2$ eigenfunction. This motivates separating the radial function from
+the spherical harmonic.

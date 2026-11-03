@@ -1,0 +1,47 @@
+\notepage{74}{Degenerate perturbation theory}
+When $E_n^0=E_m^0$, the criterion
+\[
+ \abs{\frac{\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}}\ll1
+\]
+breaks down. To understand the choice of basis, introduce
+$H(\lambda)=H^0+\lambda H'$ and increase $\lambda$ from $0$ to $1$.
+At $\lambda=0$ there is freedom to choose any orthonormal basis of a
+degenerate eigenspace. Not every such basis connects smoothly to the
+eigenstates selected when the perturbation is turned on.
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,node distance=10mm]
+ \node (a) {$\lambda=0:\quad\ket{\bar n^0},\ket{\bar m^0},\quad E_n^0=E_m^0$};
+ \node[below=of a] (b) {$\lambda=1:\quad\ket n,\ket m,\quad E_n\ne E_m$};
+ \draw[->] (a) -- node[right,font=\small] {suitable basis: smooth branches} (b);
+\end{tikzpicture}
+\end{center}
+\smallheading{A two-state example}
+Let
+\[
+ H^0=\begin{pmatrix}E&0\\0&E\end{pmatrix},\qquad
+ H'=\begin{pmatrix}0&\Delta\\\Delta&0\end{pmatrix},\qquad\Delta\in\mathbb R.
+\]
+The exact eigenvalues follow from
+\[
+ \det\begin{pmatrix}E-\varepsilon&\Delta\\\Delta&E-\varepsilon\end{pmatrix}=0,
+ \qquad\varepsilon=E\pm\Delta,
+\]
+with eigenstates
+\[
+ \ket{\pm}=\frac1{\sqrt2}\bigl(\ket{1^0}\pm\ket{2^0}\bigr).
+\]
+Choose instead the unperturbed basis
+\[
+ \ket{\bar1^0}=\frac{\ket{1^0}-\ket{2^0}}{\sqrt2},\qquad
+ \ket{\bar2^0}=\frac{\ket{1^0}+\ket{2^0}}{\sqrt2}.
+\]
+In this ordered basis,
+\[
+ H'=\begin{pmatrix}-\Delta&0\\0&\Delta\end{pmatrix}.
+\]
+The perturbed eigenvectors are the same symmetric and antisymmetric
+combinations, now already selected by the unperturbed basis.
+\editorial{The source writes these basis vectors in the order
+antisymmetric, symmetric, but reverses their eigenvalues in its drawn
+diagonal matrix. The ordering is made consistent above.}

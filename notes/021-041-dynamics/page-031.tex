@@ -1,0 +1,50 @@
+\notepage{31}{Parity Eigenstates of the Free Particle}
+Since $\Pi^\dagger P^2\Pi=P^2$, we have $\comm\Pi{P^2}=0$ and, for
+the free-particle Hamiltonian, $\comm\Pi H=0$.
+For a fixed $E>0$, use $\ket r=\ket{|p|}$ and $\ket l=\ket{-|p|}$.
+The parity matrix in this two-direction basis is
+\[
+ \Pi\ \longleftrightarrow\
+ \begin{bmatrix}
+ \mel r\Pi r&\mel r\Pi l\\
+ \mel l\Pi r&\mel l\Pi l
+ \end{bmatrix}
+ =\begin{bmatrix}
+ \braket rl&\braket rr\\
+ \braket ll&\braket lr
+ \end{bmatrix}
+ =\begin{bmatrix}0&1\\1&0\end{bmatrix}.
+\]
+Its eigenvalues and normalized coefficient vectors are
+\[
+ +1:\quad\frac{\ee^{\ii\alpha}}{\sqrt2}\begin{bmatrix}1\\1\end{bmatrix},
+ \qquad
+ -1:\quad\frac{\ee^{\ii\beta}}{\sqrt2}\begin{bmatrix}1\\-1\end{bmatrix}.
+\]
+Thus
+\[
+ \ket+=\frac{\ee^{\ii\alpha}}{\sqrt2}
+       \bigl(\ket{|p|}+\ket{-|p|}\bigr),\qquad
+ \ket-=\frac{\ee^{\ii\beta}}{\sqrt2}
+       \bigl(\ket{|p|}-\ket{-|p|}\bigr).
+\]
+These are generalized eigenstates; the two-component normalization here
+is the relative normalization of the two channels at fixed $|p|$.
+\smallheading{Position-space wavefunctions}
+Using the plane-wave convention of note 26,
+\begin{align*}
+ \braket x+
+ &=\frac{\ee^{\ii\alpha}}{\sqrt2}
+       \bigl(\braket x{|p|}+\braket x{-|p|}\bigr)\\
+ &=\frac{\ee^{\ii\alpha}}{\sqrt{4\pi\hbar}}
+       \bigl(\ee^{\ii|p|x/\hbar}+\ee^{-\ii|p|x/\hbar}\bigr)
+ =\frac{\ee^{\ii\alpha}}{\sqrt{\pi\hbar}}\cos\frac{|p|x}{\hbar},\\
+ \braket x-
+ &=\frac{\ee^{\ii\beta}}{\sqrt2}
+       \bigl(\braket x{|p|}-\braket x{-|p|}\bigr)\\
+ &=\frac{\ii\ee^{\ii\beta}}{\sqrt{\pi\hbar}}\sin\frac{|p|x}{\hbar}.
+\end{align*}
+A convenient real-wavefunction phase convention is
+$\alpha=0$, $\beta=3\pi/2$.
+\editorial{The source's intermediate odd-parity line repeats a plus sign;
+the minus sign above is required by its eigenvector and sine result.}

@@ -1,0 +1,40 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.75in,headheight=14pt,headsep=18pt,footskip=24pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{microtype,xcolor,fancyhdr,enumitem,array,booktabs}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,patterns,positioning}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+\definecolor{ink}{HTML}{243E53}
+\hypersetup{pdfauthor={Anonymous},pdfsubject={Rewritten quantum mechanics notes}}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\braket}[2]{\langle #1\mid #2\rangle}
+\newcommand{\mel}[3]{\langle #1\rvert #2\lvert #3\rangle}
+\newcommand{\comm}[2]{\left[#1,#2\right]}
+\newcommand{\anticomm}[2]{\left\{#1,#2\right\}}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\dd}{\mathop{}\!\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\smallheading}[1]{\par\vspace{8pt}{\sffamily\bfseries\color{ink}#1}\par\vspace{3pt}}
+\newcommand{\editorial}[1]{\par\smallskip\noindent{\small\textit{Clarification.} #1}\par\smallskip}
+\newcommand{\notepage}[2]{\clearpage\gdef\currentnote{#1}\pdfbookmark[1]{Note #1: #2}{note-#1}{\Large\sffamily\bfseries\color{ink}#2}\par\vspace{5pt}}
+\newcommand{\currentnote}{}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\abovedisplayskip}{7pt}
+\setlength{\belowdisplayskip}{7pt}
+\setlist{nosep,leftmargin=*}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{ink}QUANTUM MECHANICS NOTES}
+\fancyhead[R]{\small\sffamily\color{ink}NOTE \currentnote}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}

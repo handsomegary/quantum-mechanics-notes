@@ -1,0 +1,47 @@
+\notepage{60}{Position-spin wavefunctions and momentum}
+For a product state $\ket{\Psi}=\ket{\varphi}\otimes\ket{\chi}$,
+the $S_z$ representation first replaces the spin factor by its two
+coefficients:
+\[
+ \begin{bmatrix}
+  \braket{+}{\chi}\ket{\varphi}\\
+  \braket{-}{\chi}\ket{\varphi}
+ \end{bmatrix}.
+\]
+Taking spatial position matrix elements gives the position-plus-$S_z$
+representation,
+\begin{align*}
+ \boldsymbol\Psi(\mathbf r)
+ &=\begin{bmatrix}
+   \braket{+}{\chi}\braket{\mathbf r}{\varphi}\\
+   \braket{-}{\chi}\braket{\mathbf r}{\varphi}
+  \end{bmatrix}
+ =\begin{bmatrix}\Psi_+(\mathbf r)\\\Psi_-(\mathbf r)\end{bmatrix}\\
+ &=\Psi_+(\mathbf r)\begin{bmatrix}1\\0\end{bmatrix}
+  +\Psi_-(\mathbf r)\begin{bmatrix}0\\1\end{bmatrix}.
+\end{align*}
+The two-component expression also represents general, nonfactorized
+states when the two functions are allowed to vary independently.
+
+\smallheading{Momentum acts on the spatial factor}
+In the product Hilbert space,
+\[
+ \mathbf P_{r+s}=\mathbf P_r\otimes I_s.
+\]
+Therefore its action in the position-plus-$S_z$ representation is
+\[
+ \mathbf P_{r+s}\ \longleftrightarrow\
+ \begin{bmatrix}
+  -\ii\hbar\boldsymbol\nabla&0\\
+  0&-\ii\hbar\boldsymbol\nabla
+ \end{bmatrix},
+\]
+so
+\[
+ (\mathbf P\boldsymbol\Psi)(\mathbf r)=
+ \begin{bmatrix}
+  -\ii\hbar\boldsymbol\nabla\Psi_+(\mathbf r)\\
+  -\ii\hbar\boldsymbol\nabla\Psi_-(\mathbf r)
+ \end{bmatrix}.
+\]
+The gradient does not mix spin-up and spin-down components.

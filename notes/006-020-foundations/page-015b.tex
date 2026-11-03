@@ -1,0 +1,47 @@
+\notepage{15b}{Diagonalizing within each degenerate eigenspace}
+The eigenvalue problem for $\Lambda$ can be solved independently
+inside every eigenspace of $\Omega$. Since each restricted block
+$\Lambda_a$ is Hermitian, choose an orthonormal eigenbasis for that
+block. This replaces the old basis by linear combinations within
+each block, with no mixing between distinct $\omega$ eigenspaces.
+
+\smallheading{The block transformation}
+Let $W_a$ diagonalize $\Lambda_a$, and combine the transformations as
+$W=\diag(W_1,W_2,\ldots)$. Then
+\[
+ W^\dagger[\Lambda]W=
+ \begin{bmatrix}
+ D_1&0&\cdots\\0&D_2&\cdots\\\vdots&\vdots&\ddots
+ \end{bmatrix},\qquad
+ D_a=\diag(\lambda_{a1},\ldots,\lambda_{am_a}).
+\]
+The matrix of $\Omega$ is unchanged because every block is a multiple
+of the identity:
+\[
+ W^\dagger[\Omega]W
+ =\diag(\omega_1 I_{m_1},\omega_2 I_{m_2},\ldots)=[\Omega].
+\]
+\begin{center}
+\begin{tikzpicture}[>=Stealth,node distance=1.1cm]
+\node[draw=ink,rounded corners,align=center,text width=5.2cm,inner sep=8pt] (a)
+ {Original $\Omega$ eigenbasis\\$\Omega$: diagonal\\$\Lambda$: block diagonal};
+\node[draw=ink,rounded corners,align=center,text width=5.2cm,inner sep=8pt,right=1.5cm of a] (b)
+ {Joint eigenbasis\\$\Omega$: same diagonal matrix\\$\Lambda$: diagonal};
+\draw[->,thick,ink] (a)--node[above,font=\small]{$W$}(b);
+\end{tikzpicture}
+\end{center}
+The diagram expresses the source's observation: $\Omega$ has the same
+matrix in the two bases, while the remaining blocks of $\Lambda$
+become diagonal.
+
+\smallheading{Labeling simultaneous eigenvectors}
+The new vectors are eigenvectors of both operators. A more informative
+label therefore includes both eigenvalues:
+\[
+ \Omega\ket{\omega,\lambda}=\omega\ket{\omega,\lambda},
+ \qquad
+ \Lambda\ket{\omega,\lambda}=\lambda\ket{\omega,\lambda}.
+\]
+If these two eigenvalues still leave a degeneracy, an additional
+degeneracy label can be retained. The construction proves the
+simultaneous-diagonalization statement on note~15a.

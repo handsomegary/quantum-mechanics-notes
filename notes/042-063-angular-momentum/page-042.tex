@@ -1,0 +1,51 @@
+\notepage{42}{Rotations and angular momentum}
+\smallheading{Infinitesimal rotation about the \texorpdfstring{$z$}{z} axis}
+To first order in the angle $\epsilon$,
+\[
+ U_z(\epsilon)=I-\frac{\ii\epsilon L_z}{\hbar}+O(\epsilon^2),
+ \qquad U_z(-\epsilon)=U_z^\dagger(\epsilon),
+ \qquad U_z^\dagger U_z=U_zU_z^\dagger=I.
+\]
+At fixed $(r,\theta)$, a rotation acts on the azimuthal coordinate by
+$U_z(\epsilon)\ket{\phi}=\ket{\phi+\epsilon}$.
+\textit{Exercise from the notes:} show that
+\[
+ \mel{\phi}{L_z}{\psi}=-\ii\hbar\frac{\partial}{\partial\phi}
+ \braket{\phi}{\psi}.
+\]
+\smallheading{Orbital angular momentum}
+\[
+ \mathbf L=\mathbf R\times\mathbf P
+ =L_x\hat{\mathbf e}_x+L_y\hat{\mathbf e}_y+L_z\hat{\mathbf e}_z,
+ \qquad
+ \begin{cases}
+ L_x=YP_z-ZP_y,\\
+ L_y=ZP_x-XP_z,\\
+ L_z=XP_y-YP_x.
+ \end{cases}
+\]
+Using $\comm{X_i}{P_j}=\ii\hbar\delta_{ij}$ and commuting distinct
+position or momentum components,
+\begin{align*}
+ \comm{L_x}{L_y}
+ &=\comm{YP_z-ZP_y}{ZP_x-XP_z}\\
+ &=\comm{YP_z}{ZP_x}+\comm{ZP_y}{XP_z}
+   -\comm{ZP_y}{ZP_x}-\comm{YP_z}{XP_z}.
+\end{align*}
+The last two commutators vanish. For the others,
+\begin{align*}
+ \comm{YP_z}{ZP_x}
+ &=\comm{YP_z}{Z}P_x+Z\comm{YP_z}{P_x}
+ =Y\comm{P_z}{Z}P_x=-\ii\hbar YP_x,\\
+ \comm{ZP_y}{XP_z}
+ &=\comm{ZP_y}{X}P_z+X\comm{ZP_y}{P_z}
+ =X\comm{Z}{P_z}P_y=\ii\hbar XP_y.
+\end{align*}
+Consequently,
+\[
+ \comm{L_x}{L_y}=\ii\hbar L_z.
+\]
+Cyclic permutation of $x,y,z$ gives the compact form
+\[
+ \boxed{\comm{L_i}{L_j}=\ii\hbar\sum_{k=1}^{3}\epsilon_{ijk}L_k.}
+\]

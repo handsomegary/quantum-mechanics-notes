@@ -1,0 +1,48 @@
+\notepage{72}{Selection rules}
+\smallheading{Parity}
+For a rotationally invariant $H^0$, label states by $\ket{\alpha\ell m}$.
+Their angular dependence is
+\[
+ \braket{\mathbf r}{\alpha\ell m}\propto Y_\ell^m(\theta,\phi),
+ \qquad Y_\ell^m(\pi-\theta,\pi+\phi)=(-1)^\ell Y_\ell^m(\theta,\phi).
+\]
+Thus parity acts according to
+\[
+ \mel{\mathbf r}{\Pi}{\alpha\ell m}
+   =(-1)^\ell\braket{\mathbf r}{\alpha\ell m}.
+\]
+Decompose a perturbation into its even and odd parts,
+\[
+ H'=H'_0+H'_1,\qquad
+ \Pi H'_p\Pi^{-1}=(-1)^pH'_p,\qquad p=0,1.
+\]
+Then
+\[
+ \mel{\alpha_2\ell_2m_2}{H'_p}{\alpha_1\ell_1m_1}=0
+ \quad\text{if }p+\ell_1+\ell_2\text{ is odd}.
+\]
+If the sum is even, parity alone does not determine whether the matrix
+element vanishes.
+\smallheading{Angular momentum and spherical tensors}
+A perturbation may also be expanded into spherical-tensor components
+$T_L^M$. A rank-$L$ tensor component carries the angular-momentum labels
+$(L,M)$. For a multiplicative angular tensor, its coordinate action has
+the form
+\[
+ \mel{\theta,\phi}{T_L^M}{\psi}
+ \propto Y_L^M(\theta,\phi)\braket{\theta,\phi}{\psi}.
+\]
+The angular-momentum selection rules following from the Wigner--Eckart
+theorem are
+\[
+ \mel{\alpha_2\ell_2m_2}{T_L^M}{\alpha_1\ell_1m_1}=0
+ \quad\text{unless}\quad
+ \begin{cases}
+ |\ell_1-L|\le\ell_2\le\ell_1+L,\\
+ m_2=m_1+M.
+ \end{cases}
+\]
+\editorial{The coordinate multiplication formula describes a
+multiplicative tensor, such as an angular factor in a potential; it is
+not the definition of every spherical-tensor operator. The parity label
+$p$ and the tensor rank $L$ are kept distinct here.}

@@ -1,0 +1,48 @@
+\notepage{45}{Angular-momentum eigenstates and ladder operators}
+Within a fixed energy subspace, suppress the energy label and write
+\[
+ L^2\ket{\alpha,\beta}=\alpha\ket{\alpha,\beta},
+ \qquad L_z\ket{\alpha,\beta}=\beta\ket{\alpha,\beta}.
+\]
+Define $L_\pm=L_x\pm\ii L_y$, so $L_+^\dagger=L_-$.
+Because $L^2=L_x^2+L_y^2+L_z^2$,
+\begin{align*}
+ L_-L_+&=(L_x-\ii L_y)(L_x+\ii L_y)
+ =L_x^2+L_y^2+\ii\comm{L_x}{L_y}\\
+ &=L^2-L_z^2-\hbar L_z,\\
+ L_+L_-&=L^2-L_z^2+\hbar L_z.
+\end{align*}
+In particular,
+\[
+ L_-L_+\ket{\alpha,\beta}
+ =(\alpha-\beta^2-\hbar\beta)\ket{\alpha,\beta}.
+\]
+\editorial{Here $\alpha$ is the eigenvalue of $L^2$, not its square
+root. Thus the intermediate $\alpha^2$ in the handwriting is replaced
+by $\alpha$.}
+
+The commutators are
+\[
+ \comm{L^2}{L_\pm}=0,\qquad
+ \comm{L_z}{L_\pm}
+ =\comm{L_z}{L_x}\pm\ii\comm{L_z}{L_y}
+ =\pm\hbar L_\pm.
+\]
+As in the harmonic-oscillator ladder construction,
+\begin{align*}
+ L_zL_+\ket{\alpha,\beta}
+ &=\bigl(L_+L_z+\comm{L_z}{L_+}\bigr)\ket{\alpha,\beta}\\
+ &=(\beta+\hbar)L_+\ket{\alpha,\beta},\\
+ L^2L_+\ket{\alpha,\beta}
+ &=L_+L^2\ket{\alpha,\beta}
+ =\alpha L_+\ket{\alpha,\beta}.
+\end{align*}
+Choosing a single irreducible ladder, with any additional labels
+suppressed, therefore gives
+\[
+ L_+\ket{\alpha,\beta}=C_+^{\alpha\beta}
+ \ket{\alpha,\beta+\hbar},\qquad
+ L_-\ket{\alpha,\beta}=C_-^{\alpha\beta}
+ \ket{\alpha,\beta-\hbar}.
+\]
+The zero vector is allowed at either endpoint of the ladder.

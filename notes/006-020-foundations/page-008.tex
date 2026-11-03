@@ -1,0 +1,50 @@
+\notepage{8}{Classes of operators, determinant, and trace}
+A matrix is \emph{symmetric} if $A=A^T$. An operator is
+\emph{Hermitian} if $\Omega^\dagger=\Omega$, and
+\emph{anti-Hermitian} if $\Omega^\dagger=-\Omega$.
+
+\smallheading{Analogy with complex numbers}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Property & Complex number & Operator\\
+\midrule
+Conjugation & $\alpha\mapsto\alpha^*$ & $\Omega\mapsto\Omega^\dagger$\\
+Real / Hermitian & $\alpha^*=\alpha$ & $\Omega^\dagger=\Omega$\\
+Imaginary / anti-Hermitian & $\alpha^*=-\alpha$ & $\Omega^\dagger=-\Omega$\\
+Unit modulus / unitary & $\alpha\alpha^*=1$ & $UU^\dagger=U^\dagger U=I$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Every complex number splits into a real part and a purely imaginary part:
+\[
+ \alpha=\underbrace{\frac{\alpha+\alpha^*}{2}}_{\text{real}}
+       +\underbrace{\frac{\alpha-\alpha^*}{2}}_{\text{purely imaginary}}.
+\]
+Similarly, every operator admits the decomposition
+\[
+ \Omega=
+ \underbrace{\frac{\Omega+\Omega^\dagger}{2}}_{\text{Hermitian}}
+ +\underbrace{\frac{\Omega-\Omega^\dagger}{2}}_{\text{anti-Hermitian}}.
+\]
+A \emph{unitary} operator satisfies
+\[
+ UU^\dagger=U^\dagger U=I.
+\]
+
+\smallheading{Basis-independent quantities}
+In a finite-dimensional space, the determinant and trace are
+\[
+ \det\Omega=\det(\Omega_{ij}),
+ \qquad \Tr\Omega=\sum_i\Omega_{ii}.
+\]
+Although the matrix entries depend on the basis, these two quantities
+do not. The trace is invariant under cyclic permutations:
+\[
+ \Tr(\Omega\Lambda)=\Tr(\Lambda\Omega),
+\]
+\[
+ \Tr(\Omega\Lambda\Theta)
+ =\Tr(\Theta\Omega\Lambda)
+ =\Tr(\Lambda\Theta\Omega).
+\]

@@ -1,0 +1,48 @@
+\notepage{24}{Momentum as the Generator of Translations}
+Starting from $T^\dagger XT=X+\epsilon I$ and using unitarity,
+\[
+ XT=TX+\epsilon T=TX+\epsilon I+O(\epsilon^2).
+\]
+Substitution of $T=I-\ii\epsilon G/\hbar+O(\epsilon^2)$ gives
+\[
+ XT-TX=-\frac{\ii\epsilon}{\hbar}\comm{X}{G}
+ =\epsilon I+O(\epsilon^2),\qquad \comm{X}{G}=\ii\hbar I.
+\]
+Likewise, $T^\dagger PT=P$ implies $\comm{P}{G}=0$.
+Identifying the translation generator with momentum gives
+\[
+ G=P,\qquad \boxed{\comm{X}{P}=\ii\hbar I.}
+\]
+\editorial{The source identifies $G$ with $P$ by the usual momentum and
+phase convention for spatial translations. The two commutators alone
+do not fix an additive scalar multiple of the identity.}
+\smallheading{Translation of a wavefunction}
+Write $\psi(x)=\braket{x}{\psi}$ and use $T(\epsilon)\ket{x}=\ket{x+\epsilon}$:
+\begin{align*}
+ T(\epsilon)\ket{\psi}
+ &=T(\epsilon)\int_{-\infty}^{\infty}\ket{x}\braket{x}{\psi}\,\dd x\\
+ &=\int_{-\infty}^{\infty}\ket{x+\epsilon}\braket{x}{\psi}\,\dd x\\
+ &=\int_{-\infty}^{\infty}\ket{x'}\braket{x'-\epsilon}{\psi}\,\dd x'.
+\end{align*}
+Therefore
+\[
+ \mel{x}{T(\epsilon)}{\psi}
+ =\int\underbrace{\braket{x}{x'}}_{\delta(x-x')}
+       \braket{x'-\epsilon}{\psi}\,\dd x'
+ =\psi(x-\epsilon).
+\]
+\begin{center}
+\begin{tikzpicture}[>=Stealth,x=1cm,y=0.65cm]
+ \draw[->] (-2,0)--(3.4,0) node[right] {$x$};
+ \draw[ink,thick,domain=-1.9:2,samples=60] plot (\x,{exp(-2*\x*\x)});
+ \draw[dashed,thick,domain=-0.9:3,samples=60] plot (\x,{exp(-2*(\x-1)*(\x-1))});
+ \draw[->] (0,1.35)--(1,1.35) node[midway,above] {$\epsilon$};
+ \node at (-1.3,1) {$\psi(x)$};\node at (2.4,1) {$\psi(x-\epsilon)$};
+\end{tikzpicture}
+\end{center}
+Expanding both sides to first order,
+\[
+ \psi(x)-\frac{\ii\epsilon}{\hbar}\mel{x}{P}{\psi}
+ =\psi(x)-\epsilon\frac{\dd\psi}{\dd x}+O(\epsilon^2),
+ \qquad\boxed{\mel{x}{P}{\psi}=-\ii\hbar\frac{\dd}{\dd x}\braket{x}{\psi}.}
+\]

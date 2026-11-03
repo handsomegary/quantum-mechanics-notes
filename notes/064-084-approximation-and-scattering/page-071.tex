@@ -1,0 +1,37 @@
+\notepage{71}{Second-order energy and the validity criterion}
+The second-order energy correction is
+\begin{align*}
+ E_n^2&=\mel{n^0}{H'}{n^1}\\
+ &=\sum_{m\ne n}
+ \frac{\mel{n^0}{H'}{m^0}\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}\\
+ &=\boxed{\displaystyle\sum_{m\ne n}
+ \frac{\abs{\mel{n^0}{H'}{m^0}}^2}{E_n^0-E_m^0}},
+\end{align*}
+where Hermiticity of $H'$ is used in the last step.
+\smallheading{When is the expansion useful?}
+A necessary requirement is that the first-order state correction be
+small compared with the unperturbed state. In particular, each mixing
+coefficient should satisfy
+\[
+ \abs{\frac{\mel{m^0}{H'}{n^0}}{E_n^0-E_m^0}}\ll1\qquad(m\ne n).
+\]
+This depends on three things:
+\begin{enumerate}
+ \item The overall magnitude of $H'$.
+ \item The matrix element $\mel{m^0}{H'}{n^0}$, which also depends on
+       the nature of the two states.
+ \item The energy spacing $\abs{E_n^0-E_m^0}$.
+\end{enumerate}
+If $E_n^0=E_m^0$, the nondegenerate expression has a zero denominator.
+One must use degenerate perturbation theory instead.
+\editorial{Small individual coefficients are a useful necessary check;
+the norm of their combined correction must also remain small.}
+\smallheading{Exercise retained from the notes}
+Consider a charged harmonic oscillator in a uniform electric field
+$\mathcal E$:
+\[
+ H=\frac{P^2}{2m}+\frac12m\omega^2X^2-q\mathcal E X.
+\]
+Solve the problem both by first-order perturbation theory and exactly.
+The handwritten reading reminder refers to textbook pages 454--456;
+the textbook and edition are not identified on this page.

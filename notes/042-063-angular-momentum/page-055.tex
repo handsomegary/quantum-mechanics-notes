@@ -1,0 +1,48 @@
+\notepage{55}{Ehrenfest's theorem and the virial theorem}
+For an operator $\Omega$ with no explicit time dependence, the
+Heisenberg equation implies
+\[
+ \ii\hbar\frac{\dd}{\dd t}\langle\Omega\rangle
+ =\langle\comm{\Omega}{H}\rangle.
+\]
+In an energy eigenstate,
+\begin{align*}
+ \mel{E}{\comm{\Omega}{H}}{E}
+ &=\mel{E}{\Omega H}{E}-\mel{E}{H\Omega}{E}\\
+ &=E\bigl(\mel{E}{\Omega}{E}-\mel{E}{\Omega}{E}\bigr)=0.
+\end{align*}
+Consequently all well-defined expectation values of such operators are
+stationary in an energy eigenstate.
+
+\smallheading{Choose \texorpdfstring{$\Omega=\mathbf R\cdot\mathbf P$}{Omega=R dot P}}
+For $H=\mathbf P^2/(2m)+V(\mathbf R)$, the operator equations give
+\begin{align*}
+ \dot X_i&=\frac1{\ii\hbar}\comm{X_i}{H}
+   =\frac1{2m\ii\hbar}\comm{X_i}{P_i^2}=\frac{P_i}{m},\\
+ \dot P_i&=\frac1{\ii\hbar}\comm{P_i}{H}
+   =\frac1{\ii\hbar}\comm{P_i}{V}
+   =-\frac{\partial V}{\partial X_i}.
+\end{align*}
+In vector notation, $\dot{\mathbf R}=\mathbf P/m$ and
+$\dot{\mathbf P}=-\boldsymbol\nabla_RV$. Therefore a stationary state
+satisfies
+\[
+ 0=\left\langle\dot{\mathbf R}\cdot\mathbf P\right\rangle
+   +\left\langle\mathbf R\cdot\dot{\mathbf P}\right\rangle
+ =\frac{\langle\mathbf P^2\rangle}{m}
+  -\langle\mathbf R\cdot\boldsymbol\nabla_RV\rangle.
+\]
+If $V(\mathbf R)=cR^k=c(X_1^2+X_2^2+X_3^2)^{k/2}$, then
+\[
+ -\frac{\partial V}{\partial X_i}=-ckX_iR^{k-2},\qquad
+ \mathbf R\cdot\boldsymbol\nabla_RV=ckR^k=kV.
+\]
+Hence
+\[
+ \boxed{\langle T\rangle
+ =\left\langle\frac{\mathbf P^2}{2m}\right\rangle
+ =\frac{k}{2}\langle V\rangle.}
+\]
+This is the virial theorem for a homogeneous power-law potential,
+for stationary states where the indicated expectations and boundary
+conditions are well defined.

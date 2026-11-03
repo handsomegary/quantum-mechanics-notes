@@ -1,0 +1,48 @@
+\notepage{73}{Hydrogen in a uniform electric field}
+Let the external electric potential be
+\[
+ \varphi_{\rm ext}(\mathbf r)=-\mathbf E\cdot\mathbf r,
+ \qquad-\boldsymbol\nabla\varphi_{\rm ext}=\mathbf E.
+\]
+If the electron is at $\mathbf r_1$ and the proton at $\mathbf r_2$,
+the perturbation is
+\begin{align*}
+ H'&=-e\varphi_{\rm ext}(\mathbf r_1)+e\varphi_{\rm ext}(\mathbf r_2)\\
+ &=e\bigl[\varphi_{\rm ext}(\mathbf r_2)-\varphi_{\rm ext}(\mathbf r_1)\bigr]\\
+ &=e(\mathbf r_1-\mathbf r_2)\cdot\mathbf E
+  =e\mathbf r\cdot\mathbf E,
+ \qquad\mathbf r\equiv\mathbf r_1-\mathbf r_2.
+\end{align*}
+In a state of definite orbital parity,
+\[
+ \mel{n\ell m}{e\mathbf r\cdot\mathbf E}{n\ell m}
+ =e\mathbf E\cdot\mel{n\ell m}{\mathbf r}{n\ell m}=0.
+\]
+Indeed, $\mathbf r$ is an odd-parity operator, so $1+\ell+\ell$ is odd.
+It is also a rank-one tensor, with components proportional to $T_1^{m'}$.
+\editorial{A zero diagonal matrix element does not rule out a linear
+Stark effect in an excited, degenerate hydrogen level. For $n\ge2$, the
+perturbation must first be diagonalized within the degenerate subspace.}
+\smallheading{Ground-state second-order shift}
+For $\mathbf E=E_0\hat{\mathbf e}_z$, $H'=eE_0Z$, and
+\[
+ E_{100}^2=\sum_{n\ell m\ne100}
+ \frac{e^2E_0^2\abs{\mel{n\ell m}{Z}{100}}^2}
+      {E_{100}^0-E_{n\ell m}^0}.
+\]
+Since $Z\propto Y_1^0$ is the $M=0$ component of a vector,
+\begin{itemize}
+ \item parity requires $\ell$ to be odd;
+ \item the triangle rule gives $|0-1|\le\ell\le0+1$, hence $\ell=1$;
+ \item the magnetic selection rule gives $m=0+0=0$.
+\end{itemize}
+For the bound-state terms, this reduces to
+\[
+ \sum_{n=2}^{\infty}
+ \frac{e^2E_0^2\abs{\mel{n10}{Z}{100}}^2}
+      {-\mathrm{Ry}\,(1-1/n^2)}.
+\]
+\editorial{The bound-state sum displayed in the source is only part of
+the complete spectral sum: continuum states with the same angular
+selection rules also contribute. No continuum evaluation is supplied
+on this page.}

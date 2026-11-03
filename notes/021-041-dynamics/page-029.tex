@@ -1,0 +1,47 @@
+\notepage{29}{Examples and Fourier Transformation}
+\smallheading{Example 1: a potential simple in position space}
+For the source's potential $V(X)=1/\cosh^2X$, write
+\[
+ H=\frac{P^2}{2m}+\frac1{\cosh^2X}.
+\]
+The position-space equation is an ordinary second-order differential equation:
+\[
+ \left[-\frac{\hbar^2}{2m}\frac{\dd^2}{\dd x^2}
+       +\frac1{\cosh^2x}\right]\psi_E(x)=E\psi_E(x).
+\]
+In momentum space it becomes
+\[
+ \left[\frac{p^2}{2m}
+       +\frac1{\cosh^2\!\left(\ii\hbar\frac{\dd}{\dd p}\right)}\right]
+       \phi_E(p)=E\phi_E(p).
+\]
+Formally expanding $1/\cosh^2$ as a Taylor series produces an
+infinite-order differential operator, so the position representation is
+more convenient. The argument and coefficient scales are suppressed in
+the source's schematic potential.
+\smallheading{Example 2: a constant force}
+Let $H=P^2/(2m)-fX$, with $f$ constant. Then
+\begin{align*}
+ \left[-\frac{\hbar^2}{2m}\frac{\dd^2}{\dd x^2}-fx\right]\psi_E(x)
+ &=E\psi_E(x),\\
+ \left[\frac{p^2}{2m}-\ii\hbar f\frac{\dd}{\dd p}\right]\phi_E(p)
+ &=E\phi_E(p).
+\end{align*}
+Here momentum space gives the simpler first-order equation.
+If $\phi_E(p)$ is found but $\psi_E(x)$ is wanted, change representation.
+\smallheading{The transformation between position and momentum}
+Insert momentum completeness:
+\begin{align*}
+ \braket x\psi
+ &=\int_{-\infty}^{\infty}\braket xp\braket p\psi\,\dd p\\
+ &=\frac1{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}
+       \ee^{\ii px/\hbar}\braket p\psi\,\dd p.
+\end{align*}
+Thus the position wavefunction is the inverse Fourier transform of the
+momentum wavefunction. Conversely,
+\begin{align*}
+ \braket p\psi
+ &=\int_{-\infty}^{\infty}\braket px\braket x\psi\,\dd x\\
+ &=\frac1{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}
+       \ee^{-\ii px/\hbar}\braket x\psi\,\dd x.
+\end{align*}

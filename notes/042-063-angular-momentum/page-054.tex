@@ -1,0 +1,48 @@
+\notepage{54}{The Rydberg energy and the Bohr-radius correspondence}
+The natural Coulomb energy scale is the Rydberg,
+\[
+ R_y=\frac{me^4}{2\hbar^2}\simeq13.6057\ \mathrm{eV},\qquad
+ E_n=-\frac{R_y}{n^2}.
+\]
+The handwritten notes quote the numerical value
+$13.605\,692\,53(30)\ \mathrm{eV}$ and attribute it to NIST; this is
+retained as a historical quotation, not as a current precision value.
+
+\smallheading{Radial asymptotics}
+The source points to textbook pages 356--357 for explicit
+eigenfunctions, without identifying the textbook. Their large-radius
+behavior is
+\[
+ R_{n\ell}(r)\propto r^{n-1}\ee^{-r/(na_0)}\qquad(r\to\infty),
+\]
+whose power and exponential are independent of $\ell$ at fixed $n$.
+Indeed,
+\[
+ \lambda=\frac{\sqrt{-2mE_n}}{\hbar}
+ =\frac{1}{n(\hbar^2/me^2)}=\frac1{na_0},\qquad
+ a_0=\frac{\hbar^2}{me^2}.
+\]
+
+\smallheading{Connection with the Bohr model}
+For the largest orbital angular momentum at a given $n$, take
+$\ell=n-1$. In that case the radial polynomial has no additional
+nodes, and
+\[
+ \Psi_{n,n-1,m}(\mathbf r)\propto
+ r^{n-1}\ee^{-r/(na_0)}Y_{n-1}^{m}(\theta,\phi).
+\]
+The probability of finding the electron in a spherical shell of radius
+$r$ and thickness $\dd r$ is
+\[
+ \left(\int\abs{\Psi(\mathbf r)}^2r^2\dd\Omega\right)\dd r
+ \propto r^{2n}\ee^{-2r/(na_0)}\dd r.
+\]
+Thus the radial probability density has its maximum at
+\[
+ \frac\dd{\dd r}\left(r^{2n}\ee^{-2r/(na_0)}\right)=0
+ \quad\Longrightarrow\quad
+ \boxed{r_{\max}=n^2a_0.}
+\]
+This equals the $n$th Bohr-orbit radius. The statement concerns the
+maximum of a radial probability distribution, rather than a definite
+electron trajectory.

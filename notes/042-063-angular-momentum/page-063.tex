@@ -1,0 +1,51 @@
+\notepage{63}{Independent orbital and spin degrees of freedom}
+Suppose the Hamiltonian separates into independent spatial and spin
+parts,
+\[
+ H=H_0\otimes I_s+I_r\otimes H_s,
+\]
+often abbreviated to $H=H_0+H_s$. Here $H_0$ contains only spatial
+operators, and $H_s$ contains only spin operators.
+
+By contrast, an interaction $H_{so}$ involving both sectors cannot
+generally be written as such a sum. A familiar example is
+\[
+ H=H_0+H_s+H_{so},\qquad H_{so}=\xi\,\mathbf L\cdot\mathbf S,
+\]
+with a coupling coefficient $\xi$ (which can depend on radius in
+a central-field model).
+
+\smallheading{Separated time evolution}
+For time-independent independent parts, a product initial state stays
+factorized:
+\[
+ \ket{\Psi(t)}=\ket{\psi_0(t)}\otimes\ket{\chi(t)},
+\]
+where
+\[
+ \ket{\psi_0(t)}=\ee^{-\ii H_0t/\hbar}\ket{\psi_0(0)},\qquad
+ \ket{\chi(t)}=\ee^{-\ii H_st/\hbar}\ket{\chi(0)}.
+\]
+\editorial{The spin propagator acts on the initial spin ket
+$\ket{\chi(0)}$. A factorized Hamiltonian alone does not imply that
+every initial state is a product; an initially entangled state
+still evolves by the product of the two propagators.}
+
+\smallheading{The spin factor alone}
+For spin one half,
+\[
+ \ket{\chi}=\alpha\ket{+}+\beta\ket{-}
+ \quad\longleftrightarrow\quad
+ \begin{bmatrix}\alpha\\\beta\end{bmatrix},
+ \qquad
+ \ket{+}\longleftrightarrow\begin{bmatrix}1\\0\end{bmatrix},\quad
+ \ket{-}\longleftrightarrow\begin{bmatrix}0\\1\end{bmatrix},
+\]
+with $\alpha=\braket{+}{\chi}$ and $\beta=\braket{-}{\chi}$.
+Inserting the spin completeness relation gives
+\begin{align*}
+ 1=\braket{\chi}{\chi}
+ &=\sum_{m_s=\pm1/2}\braket{\chi}{m_s}\braket{m_s}{\chi}\\
+ &=\abs{\braket{+}{\chi}}^2+\abs{\braket{-}{\chi}}^2
+ =\abs\alpha^2+\abs\beta^2.
+\end{align*}

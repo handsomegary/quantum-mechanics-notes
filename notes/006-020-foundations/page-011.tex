@@ -1,0 +1,45 @@
+\notepage{11}{Hermitian operators: eigenvalues and orthogonality}
+\smallheading{Degeneracy}
+A repeated root of the characteristic equation
+$\det(\Omega-\omega I)=0$ has an \emph{algebraic multiplicity}.
+A double or triple root has multiplicity 2 or 3. In the Hermitian case,
+this equals the dimension of the corresponding eigenspace, called
+its degeneracy.
+
+If $\ket{v_1},\ldots,\ket{v_m}$ are independent eigenvectors with the
+same eigenvalue $\omega$, then any nonzero combination satisfies
+\[
+ \Omega\sum_{a=1}^{m}a_a\ket{v_a}
+ =\omega\sum_{a=1}^{m}a_a\ket{v_a}.
+\]
+Thus every nonzero vector in their span is an eigenvector with
+eigenvalue $\omega$.
+
+\smallheading{Theorem 10}
+Every finite-dimensional Hermitian operator has real eigenvalues and
+admits a complete orthonormal set of eigenvectors.
+
+To prove reality and orthogonality, suppose
+\[
+ \Omega\ket{\omega_i}=\omega_i\ket{\omega_i},\qquad
+ \Omega\ket{\omega_j}=\omega_j\ket{\omega_j}.
+\]
+These equations also allow $i=j$, or $i\ne j$ with
+$\omega_i=\omega_j$. Taking matrix elements gives
+\begin{align*}
+ \mel{\omega_j}{\Omega}{\omega_i}
+ &=\omega_i\braket{\omega_j}{\omega_i},\\
+ \mel{\omega_i}{\Omega}{\omega_j}
+ &=\omega_j\braket{\omega_i}{\omega_j}.
+\end{align*}
+Conjugating the second equation and using
+$\Omega^\dagger=\Omega$ yields
+\begin{align*}
+ \mel{\omega_j}{\Omega}{\omega_i}
+ &=\omega_j^*\braket{\omega_j}{\omega_i}.
+\end{align*}
+Subtracting the two expressions,
+\[
+ \boxed{(\omega_i-\omega_j^*)\braket{\omega_j}{\omega_i}=0.}
+\]
+The consequences for equal and unequal eigenvalues follow on note~12.

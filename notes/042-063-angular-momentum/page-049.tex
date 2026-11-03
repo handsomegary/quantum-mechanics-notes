@@ -1,0 +1,57 @@
+\notepage{49}{Orbital eigenfunctions in position space}
+The highest-weight state satisfies $L_+\ket{\ell,\ell}=0$.
+To use this in position space, first express the operators in spherical
+coordinates. With $\psi(\mathbf r)=\braket{\mathbf r}{\psi}$,
+\[
+ \mel{\mathbf r}{L_x}{\psi}
+ =-\ii\hbar\left(y\frac{\partial}{\partial z}
+                 -z\frac{\partial}{\partial y}\right)\psi(\mathbf r).
+\]
+\editorial{The Cartesian prefactor is $-\ii\hbar$, from
+$\mathbf P=-\ii\hbar\boldsymbol\nabla$; the handwritten line has the
+opposite sign.}
+Using $y=r\sin\theta\sin\phi$, $z=r\cos\theta$,
+\[
+ \cos\phi=\frac{x}{\sqrt{x^2+y^2}},\qquad
+ \cos\theta=\frac{z}{r},
+\]
+the chain rule gives
+\begin{align*}
+ y\partial_z-z\partial_y
+ &=r\sin\theta\sin\phi
+   \left(\cos\theta\partial_r-\frac{\sin\theta}{r}\partial_\theta\right)\\
+ &\quad-r\cos\theta
+   \left(\sin\theta\sin\phi\partial_r
+    +\frac{\cos\theta\sin\phi}{r}\partial_\theta
+    +\frac{\cos\phi}{r\sin\theta}\partial_\phi\right)\\
+ &=-\sin\phi\partial_\theta-\cos\phi\cot\theta\partial_\phi.
+\end{align*}
+Thus
+\begin{align*}
+ L_x&=\ii\hbar\left(\sin\phi\partial_\theta
+                         +\cos\phi\cot\theta\partial_\phi\right),\\
+ L_y&=\ii\hbar\left(-\cos\phi\partial_\theta
+                         +\sin\phi\cot\theta\partial_\phi\right),\\
+ L_\pm&=\pm\hbar\ee^{\pm\ii\phi}
+          \left(\partial_\theta\pm\ii\cot\theta\partial_\phi\right).
+\end{align*}
+The $L_y$ expression also follows by a $\pi/2$ azimuthal rotation of
+the $L_x$ expression.
+
+Since $L_z\ket{\ell,\ell}=\ell\hbar\ket{\ell,\ell}$, write
+$\braket{r,\theta,\phi}{\ell,\ell}
+=u_\ell^\ell(r,\theta)\ee^{\ii\ell\phi}$. Then
+\[
+ (\partial_\theta-\ell\cot\theta)u_\ell^\ell=0,
+ \qquad
+ \frac{\dd u_\ell^\ell}{u_\ell^\ell}
+ =\ell\frac{\cos\theta}{\sin\theta}\dd\theta,
+\]
+so
+\[
+ \psi_\ell^\ell(r,\theta,\phi)=R_\ell(r)\sin^\ell\theta\,
+ \ee^{\ii\ell\phi}.
+\]
+\textit{Exercise:} starting from $L_-\ket{\ell,-\ell}=0$, obtain
+$\psi_\ell^{-\ell}=R_\ell(r)\sin^\ell\theta\ee^{-\ii\ell\phi}$,
+up to a phase convention.

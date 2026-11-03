@@ -1,0 +1,32 @@
+\notepage{66}{A vector identity for Pauli matrices}
+The identity
+\[
+ \boxed{(\mathbf A\cdot\boldsymbol\sigma)(\mathbf B\cdot\boldsymbol\sigma)
+ = (\mathbf A\cdot\mathbf B)I
+   +\ii(\mathbf A\times\mathbf B)\cdot\boldsymbol\sigma}
+\]
+is useful, for example, in the relativistic quantum mechanics of electrons
+and the Dirac equation. Here the components of $\mathbf A$ and $\mathbf B$
+are numbers, or commute with each other and with the Pauli matrices.
+\smallheading{Derivation}
+Expanding the product gives
+\begin{align*}
+ (\mathbf A\cdot\boldsymbol\sigma)(\mathbf B\cdot\boldsymbol\sigma)
+ &=\left(\sum_i A_i\sigma_i\right)\left(\sum_j B_j\sigma_j\right)\\
+ &=\sum_{i,j}A_iB_j\sigma_i\sigma_j\\
+ &=\sum_i A_iB_i\sigma_i^2
+   +\sum_{(i,j)\in\mathcal C}A_iB_j\sigma_i\sigma_j
+   +\sum_{(i,j)\in\mathcal C}A_jB_i\sigma_j\sigma_i,
+\end{align*}
+where $\mathcal C=\{(1,2),(2,3),(3,1)\}$. The diagonal part is
+$(\mathbf A\cdot\mathbf B)I$. Pairing the off-diagonal terms,
+\begin{align*}
+ \sum_{i\ne j}A_iB_j\sigma_i\sigma_j
+ &=\sum_{(i,j)\in\mathcal C}
+    \left(A_iB_j\sigma_i\sigma_j+A_jB_i\sigma_j\sigma_i\right)\\
+ &=\sum_{(i,j)\in\mathcal C}(A_iB_j-A_jB_i)\sigma_i\sigma_j\\
+ &=\ii\bigl[(A_2B_3-A_3B_2)\sigma_1
+ +(A_3B_1-A_1B_3)\sigma_2\\
+ &\hspace{39mm}+(A_1B_2-A_2B_1)\sigma_3\bigr]\\
+ &=\ii(\mathbf A\times\mathbf B)\cdot\boldsymbol\sigma.
+\end{align*}

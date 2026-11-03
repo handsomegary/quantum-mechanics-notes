@@ -1,0 +1,61 @@
+\notepage{78}{One-dimensional scattering}
+A stationary scattering eigenfunction of $H=T+V$ has an incident wave,
+a reflected wave, and a transmitted wave. For a localized potential,
+the asymptotic wave number is $k_0$ on both sides.
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=0.7cm,>=Latex,font=\small]
+ \draw[->] (-4.5,0)--(4.6,0) node[right] {$x$};
+ \draw[thick] (-4.2,0)--(-1.6,0)
+ plot[smooth] coordinates{(-1.6,0)(-1.2,.7)(-.8,.45)(-.35,1.1)(.1,.65)(.55,.8)(1.2,.35)(1.5,0)}
+ --(4.1,0);
+ \node at (0,1.6) {$V(x)$};
+ \draw[->] (-3.9,1.8)--(-2.5,1.8) node[midway,above] {$A\ee^{\ii k_0x}$};
+ \draw[->] (-2.5,.8)--(-3.9,.8) node[midway,below] {$B\ee^{-\ii k_0x}$};
+ \draw[->] (2.2,1.8)--(3.8,1.8) node[midway,above] {$C\ee^{\ii k_0x}$};
+\end{tikzpicture}
+\end{center}
+The time-dependent picture uses wave packets:
+\begin{enumerate}
+ \item Start with a normalized incident packet $\ket{\Psi}$ whose mean
+       momentum is $\mel{\Psi}{P}{\Psi}=\hbar k_0$.
+ \item Expand it in scattering eigenstates:
+ \[
+  \ket{\Psi}=\int a(k)\ket{\psi_k}\,\dd k,
+  \qquad H\ket{\psi_k}=E_k\ket{\psi_k}.
+ \]
+ \item Evolve each energy component:
+ \[
+  \ket{\Psi(t)}=\int a(k)\ee^{-\ii E_kt/\hbar}\ket{\psi_k}\,\dd k.
+ \]
+ \item Long after scattering, the packet separates into reflected and
+ transmitted parts:
+ \[
+  \ket{\Psi(t\to\infty)}=\ket{\Psi_R}+\ket{\Psi_T},\qquad
+  R=\braket{\Psi_R}{\Psi_R}=\int\abs{\Psi_R(x)}^2\dd x.
+ \]
+\end{enumerate}
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=0.6cm,>=Latex,font=\small]
+ \draw (-4.2,0)--(4.2,0);
+ \draw[thick] plot[smooth] coordinates{(-4,0)(-3.6,.08)(-3.3,.55)(-3,1)(-2.7,.55)(-2.4,.08)(-2,0)};
+ \draw[->] (-2.65,1.3)--(-3.35,1.3);
+ \node at (-3,-.5) {reflected packet};
+ \draw[thick] plot[smooth] coordinates{(-1.6,0)(-1,.3)(-.6,.7)(-.2,.45)(.3,.9)(.8,.45)(1.5,0)};
+ \node at (0,1.1) {localized potential};
+ \draw[thick] plot[smooth] coordinates{(2,0)(2.4,.06)(2.7,.4)(3,.75)(3.3,.4)(3.6,.06)(4,0)};
+ \draw[->] (2.65,1.3)--(3.35,1.3);
+ \node at (3,-.5) {transmitted packet};
+\end{tikzpicture}
+\end{center}
+Equivalently, one solves the stationary problem:
+\[
+ \psi(x)=\begin{cases}
+ A\ee^{\ii k_0x}+B\ee^{-\ii k_0x},&\text{left of the interaction region},\\
+ \text{solution determined by }V(x),&\text{inside the interaction region},\\
+ C\ee^{\ii k_0x},&\text{right of the interaction region}.
+ \end{cases}
+ \qquad R=\frac{|B|^2}{|A|^2}.
+\]
+\editorial{The stationary reflection coefficient is a ratio of
+probability currents, hence squared amplitudes. The displayed formula
+assumes the same asymptotic wave number on both sides.}

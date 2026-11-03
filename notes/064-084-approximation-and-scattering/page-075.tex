@@ -1,0 +1,54 @@
+\notepage{75}{Choosing a basis in the degenerate subspace}
+Let $D$ be the eigenspace of $H^0$ with energy $E_n^0$. Choose an
+orthonormal basis $\{\ket{\bar n^0}\}$ that diagonalizes $H'$ within $D$:
+\[
+ \mel{\bar m^0}{H'}{\bar n^0}
+ =\mel{\bar n^0}{H'}{\bar n^0}\,\delta_{mn}
+ \quad\text{for }E_m^0=E_n^0.
+\]
+The first-order equation is still
+\[
+ H^0\ket{n^1}+H'\ket{\bar n^0}
+ =E_n^0\ket{n^1}+E_n^1\ket{\bar n^0}.
+\]
+For $E_m^0\ne E_n^0$, projection onto $\bra{m^0}$ yields
+\begin{align*}
+ E_m^0\braket{m^0}{n^1}+\mel{m^0}{H'}{\bar n^0}
+ &=E_n^0\braket{m^0}{n^1},\\
+ \braket{m^0}{n^1}
+ &=\frac{\mel{m^0}{H'}{\bar n^0}}{E_n^0-E_m^0}.
+\end{align*}
+Thus
+\[
+ \ket{n^1}=
+ \underbrace{\sum_{E_m^0\ne E_n^0}
+ \frac{\ket{m^0}\mel{m^0}{H'}{\bar n^0}}{E_n^0-E_m^0}}
+ _{\ket{n^1_\perp}\in D^\perp}
+ +\underbrace{\ket{n^1_\parallel}}_{\in D}.
+\]
+For a different basis vector in $D$, the projected equation instead reads
+\[
+ (E_n^0-E_m^0)\braket{\bar m^0}{n^1}
+ =\mel{\bar m^0}{H'}{\bar n^0},\qquad m\ne n,
+\]
+which reduces to $0=0$ after diagonalizing $H'$ in $D$. This includes the
+zero added as an annotation on the source page.
+
+Normalization fixes
+$\operatorname{Re}\braket{\bar n^0}{n^1_\parallel}=0$. Its component
+along $\ket{\bar n^0}$ is therefore $\ii\alpha\ket{\bar n^0}$, with real
+$\alpha$, and can be removed by $\ket n\mapsto\ee^{-\ii\alpha}\ket n$.
+The part determined by the first-order equation is
+\[
+ \ket n=\ket{\bar n^0}
+ +\sum_{E_m^0\ne E_n^0}
+ \frac{\ket{m^0}\mel{m^0}{H'}{\bar n^0}}{E_n^0-E_m^0}
+ +\ket{\eta_D}+O((H')^2),
+\]
+where $\ket{\eta_D}\in D$ is orthogonal to $\ket{\bar n^0}$.
+\editorial{The source drops the entire within-subspace correction using
+an overall-phase argument. Only the parallel component along the chosen
+state can be removed that way. Mixing with other vectors in $D$ is not
+fixed by this first-order equation; it generally requires higher-order
+equations. The source's final sum correctly gives the correction outside
+the degenerate subspace.}

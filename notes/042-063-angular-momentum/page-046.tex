@@ -1,0 +1,53 @@
+\notepage{46}{The endpoints of an angular-momentum ladder}
+For a fixed $\alpha$, successive applications of the ladder operators
+change $\beta$ in steps of $\hbar$:
+\[
+ \cdots,\ \beta-2\hbar,\ \beta-\hbar,\ \beta,\
+ \beta+\hbar,\ \beta+2\hbar,\ \cdots.
+\]
+Classically, $L_z^2\le L^2$. Quantum mechanically, for a normalized state,
+\begin{align*}
+ \alpha-\beta^2
+ &=\mel{\alpha,\beta}{L^2-L_z^2}{\alpha,\beta}\\
+ &=\mel{\alpha,\beta}{L_x^\dagger L_x}{\alpha,\beta}
+  +\mel{\alpha,\beta}{L_y^\dagger L_y}{\alpha,\beta}\ge0.
+\end{align*}
+Hence $\alpha\ge0$ and $-\sqrt\alpha\le\beta\le\sqrt\alpha$.
+The ladder must terminate above and below:
+\[
+ L_+\ket{\alpha,\beta_{\max}}=0,\qquad
+ L_-\ket{\alpha,\beta_{\min}}=0.
+\]
+At the upper endpoint,
+\begin{align*}
+ 0&=\mel{\alpha,\beta_{\max}}{L_-L_+}{\alpha,\beta_{\max}}\\
+  &=\alpha-\beta_{\max}^2-\hbar\beta_{\max},
+\end{align*}
+so $\alpha=\beta_{\max}(\beta_{\max}+\hbar)$.
+Similarly, using $L_+L_-=L^2-L_z^2+\hbar L_z$,
+\[
+ \alpha=\beta_{\min}(\beta_{\min}-\hbar).
+\]
+Equating these expressions and using $\beta_{\max}\ge\beta_{\min}$ yields
+\[
+ \beta_{\min}=-\beta_{\max},\qquad\beta_{\max}\ge0.
+\]
+There is a nonnegative integer $k$ such that
+\[
+ 2\beta_{\max}=\beta_{\max}-\beta_{\min}=k\hbar.
+\]
+Writing $\beta_{\max}=\ell\hbar$ gives
+\[
+ \ell=0,\tfrac12,1,\tfrac32,2,\ldots,
+\]
+the nonnegative integer and half-integer possibilities from the
+commutation algebra alone.
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth,scale=0.85]
+ \draw[->] (0,0)--(8,0) node[right]{$\beta$};
+ \foreach \x/\t in {0.6/{-\ell\hbar},2.3/{\cdots},4/{m\hbar},5.7/{\cdots},7.4/{\ell\hbar}}{
+  \fill (\x,0) circle (2pt);\node[below] at (\x,-0.08){$\t$};}
+ \draw[->] (3.1,0.5)--(4.8,0.5) node[midway,above]{$L_+:\ +\hbar$};
+\end{tikzpicture}
+\end{center}

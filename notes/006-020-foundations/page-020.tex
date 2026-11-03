@@ -1,0 +1,60 @@
+\notepage{20}{Time evolution and position and energy measurements}
+\smallheading{IV. Time evolution}
+Classical evolution follows Hamilton's equations,
+\[
+ \dot x=\frac{\partial\mathcal H}{\partial p},\qquad
+ \dot p=-\frac{\partial\mathcal H}{\partial x}.
+\]
+Quantum evolution follows the Schr\"odinger equation,
+\[
+ \boxed{\ii\hbar\frac{\dd}{\dd t}\ket{\psi(t)}=H\ket{\psi(t)}.}
+\]
+Here $H(X,P)$ is the Hamiltonian operator corresponding to
+$\mathcal H(x,p)$, with an appropriate ordering of noncommuting
+factors when necessary.
+
+\smallheading{States and normalization}
+Use $\braket{\psi}{\psi}=1$ for a given physical state. If a state is
+constructed as $\ket{\psi}=\Omega\ket{\phi}$, its norm need not be 1;
+when it is nonzero, replace it by
+$\ket{\psi}/\sqrt{\braket{\psi}{\psi}}$.
+The position basis is complete and delta normalized:
+\[
+ \braket{x'}{x}=\delta(x-x'),\qquad
+ \int\ket{x}\bra{x}\dd x=I.
+\]
+In three spatial dimensions, write
+$\ket{x,y,z}=\ket{\mathbf r}$. Then
+\[
+ \braket{\mathbf r'}{\mathbf r}
+ =\delta^{(3)}(\mathbf r-\mathbf r'),\qquad
+ \int\ket{\mathbf r}\bra{\mathbf r}\dd^3r=I,
+\]
+\[
+ \ket{\psi}=\int\ket{\mathbf r}\braket{\mathbf r}{\psi}\dd^3r
+ =\int\psi(\mathbf r)\ket{\mathbf r}\dd^3r.
+\]
+
+\smallheading{Position measurement}
+Measuring $(X,Y,Z)$ gives a position in the volume element $\dd^3r$
+with probability
+\[
+ \dd P=\abs{\braket{\mathbf r}{\psi}}^2\dd^3r
+      =\abs{\psi(\mathbf r)}^2\dd^3r.
+\]
+An ideal exact-position outcome is represented formally by
+$\ket{\mathbf r}$. Measurement is a state-selection rule, not simply
+the action $\mathbf R\ket{\psi}$ of the position operator.
+
+\smallheading{Energy measurement}
+For a discrete nondegenerate spectrum,
+\[
+ \ket{\psi}=\sum_n\ket{E_n}\braket{E_n}{\psi},\qquad
+ \phi_n(\mathbf r)=\braket{\mathbf r}{E_n}.
+\]
+An energy measurement gives $E_n$ with probability
+\begin{align*}
+ P(E_n)&=\abs{\braket{E_n}{\psi}}^2\\
+ &=\abs{\int\braket{E_n}{\mathbf r}\braket{\mathbf r}{\psi}\dd^3r}^2
+ =\abs{\int\phi_n(\mathbf r)^*\psi(\mathbf r)\dd^3r}^2.
+\end{align*}

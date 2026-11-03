@@ -1,0 +1,41 @@
+\notepage{28}{Propagators and the Choice of Representation}
+Since $H\ket E=E\ket E$, the spectral expression for $U$ is
+\[
+ U(t)=\sum_E\ee^{-\ii Et/\hbar}\ket E\bra E
+ =\sum_E\ee^{-\ii Ht/\hbar}\ket E\bra E
+ =\ee^{-\ii Ht/\hbar}.
+\]
+In the position basis,
+\begin{align*}
+ \psi(x,t)&=\braket x{\psi(t)}=\mel x{U(t)}{\psi(0)}\\
+ &=\int_{-\infty}^{\infty}\mel x{U(t)}{x'}\psi(x',0)\,\dd x',\\
+ K(x,x';t)&=\mel x{U(t)}{x'}
+ =\sum_E\ee^{-\ii Et/\hbar}\braket xE\braket E{x'}\\
+ &=\sum_E\ee^{-\ii Et/\hbar}\psi_E(x)\psi_E^*(x').
+\end{align*}
+\smallheading{Position in the momentum representation}
+To solve $H\ket E=E\ket E$ for $H=P^2/(2m)+V(X)$, choose a convenient basis.
+Using $\braket px=(2\pi\hbar)^{-1/2}\ee^{-\ii px/\hbar}$,
+\begin{align*}
+ \mel pX\psi
+ &=\int_{-\infty}^{\infty}\braket px\mel xX\psi\,\dd x\\
+ &=\int_{-\infty}^{\infty}\frac{x\ee^{-\ii px/\hbar}}{\sqrt{2\pi\hbar}}
+       \braket x\psi\,\dd x\\
+ &=\ii\hbar\frac{\dd}{\dd p}\int_{-\infty}^{\infty}
+       \frac{\ee^{-\ii px/\hbar}}{\sqrt{2\pi\hbar}}\braket x\psi\,\dd x\\
+ &=\ii\hbar\frac{\dd}{\dd p}\int\braket px\braket x\psi\,\dd x
+ =\ii\hbar\frac{\dd}{\dd p}\braket p\psi.
+\end{align*}
+\smallheading{The energy eigenvalue equation in either basis}
+Writing $\psi_E(x)=\braket xE$ and $\phi_E(p)=\braket pE$,
+\[
+ \left[-\frac{\hbar^2}{2m}\frac{\dd^2}{\dd x^2}+V(x)\right]\psi_E(x)
+ =E\psi_E(x),
+\]
+whereas in momentum space,
+\[
+ \left[\frac{p^2}{2m}+V\!\left(\ii\hbar\frac{\dd}{\dd p}\right)\right]\phi_E(p)
+ =E\phi_E(p).
+\]
+The last operator expression is understood through the appropriate
+operator calculus or Fourier kernel for the chosen potential.

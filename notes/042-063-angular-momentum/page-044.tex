@@ -1,0 +1,50 @@
+\notepage{44}{Rotational invariance and compatible observables}
+Rotational invariance can be expressed through commutators:
+\begin{align*}
+ U_{\hat{\mathbf n}}^\dagger HU_{\hat{\mathbf n}}=H\ \text{for all }\hat{\mathbf n}
+ &\iff\comm{H}{U_{\hat{\mathbf n}}}=0\ \text{for all }\hat{\mathbf n}\\
+ &\iff\comm{H}{L_i}=0\quad(i=x,y,z).
+\end{align*}
+For an infinitesimal coordinate-axis rotation this follows from
+\[
+ 0=\comm{H}{I-\ii\epsilon_iL_i/\hbar}
+ =-\frac{\ii\epsilon_i}{\hbar}\comm{H}{L_i}.
+\]
+Writing $L^2=L_x^2+L_y^2+L_z^2$, it also follows that
+$\comm{H}{L^2}=0$.
+
+\smallheading{Example: the free particle in three dimensions}
+\[
+ H=\frac{\mathbf P^2}{2m},\qquad
+ E=\frac{p_x^2+p_y^2+p_z^2}{2m}.
+\]
+Many momentum states have the same energy. Since
+\[
+ \comm{H}{P_x}=\comm{H}{P_y}=\comm{P_x}{P_y}=0,
+\]
+one may choose simultaneous eigenstates of $H,P_x,P_y$.
+\editorial{These three labels alone do not always remove degeneracy:
+at fixed $E,p_x,p_y$, both signs of
+$p_z=\pm\sqrt{2mE-p_x^2-p_y^2}$ are possible when the square root is
+nonzero. The full momentum vector provides an unambiguous alternative.}
+
+\smallheading{An angular-momentum choice}
+Different components of $\mathbf L$ are incompatible:
+$\comm{L_i}{L_j}\ne0$ for distinct components in general. However,
+$L^2$ is rotationally invariant, and
+\[
+ \comm{L^2}{L_i}=0.
+\]
+Choosing the $z$ axis conventionally,
+\[
+ \comm{H}{L^2}=\comm{H}{L_z}=\comm{L^2}{L_z}=0.
+\]
+Thus a simultaneous basis may be labeled $\ket{E,\alpha,\beta}$, where
+$\alpha$ and $\beta$ are the eigenvalues of $L^2$ and $L_z$.
+Additional degeneracy labels are understood when required.
+
+The same compatible set applies to a rotationally invariant central
+Hamiltonian
+\[
+ H=\frac{\mathbf P^2}{2m}+V(R),\qquad R=\abs{\mathbf R}.
+\]

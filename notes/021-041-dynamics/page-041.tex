@@ -1,0 +1,57 @@
+\notepage{41}{Oscillator Wavefunctions and Heisenberg Motion}
+The ground state satisfies $a\ket0=0$. In position space,
+\[
+ a=\sqrt{\frac{m\omega}{2\hbar}}X
+      +\ii\sqrt{\frac1{2m\omega\hbar}}P,
+ \qquad
+ 0=\mel xa0
+ =\left[\sqrt{\frac{m\omega}{2\hbar}}x
+       +\sqrt{\frac{\hbar}{2m\omega}}\frac{\dd}{\dd x}\right]\braket x0.
+\]
+Use the dimensionless coordinate $y=\sqrt{m\omega/\hbar}\,x$.
+With $\varphi_0(y)$ normalized using $\dd y$,
+\[
+ \left(y+\frac{\dd}{\dd y}\right)\varphi_0=0,
+ \quad\frac{\dd\varphi_0}{\varphi_0}=-y\,\dd y,
+ \quad\varphi_0(y)=\pi^{-1/4}\ee^{-y^2/2}.
+\]
+Equivalently, the normalized position-space wavefunction is
+\[
+ \psi_0(x)=\left(\frac{m\omega}{\pi\hbar}\right)^{1/4}
+          \ee^{-m\omega x^2/(2\hbar)}.
+\]
+Raising generates all higher wavefunctions:
+\begin{align*}
+ \varphi_n(y)
+ &=\frac1{\sqrt{n!}}\mel y{(a^\dagger)^n}0
+ =\frac1{\pi^{1/4}\sqrt{2^n n!}}
+       \left(y-\frac{\dd}{\dd y}\right)^n\ee^{-y^2/2},\\
+ \psi_n(x)&=\left(\frac{m\omega}{\hbar}\right)^{1/4}\varphi_n(y).
+\end{align*}
+\editorial{The source mixes the $x$- and $y$-normalization constants and
+prints a plus sign in the raising derivative. The two normalizations
+are separated above; $a^\dagger=(y-\dd/\dd y)/\sqrt2$.}
+\smallheading{Classical oscillator motion}
+Hamilton's equations are $\dot p=-m\omega^2x$ and $\dot x=p/m$.
+For a linear combination,
+\[
+ \frac{\dd}{\dd t}(\alpha x+\beta p)
+ =-m\omega^2\beta x+\frac\alpha m p.
+\]
+Demanding proportionality imposes
+$\alpha/(-m\omega^2\beta)=\beta/(\alpha/m)$, hence
+$\alpha/\beta=\pm\ii m\omega$.
+Choosing $C=m\omega x+\ii p$ gives
+\[
+ \dot C=-\ii\omega C,\qquad\dot C^*=\ii\omega C^*,\qquad
+ C(t)=C(0)\ee^{-\ii\omega t}.
+\]
+\smallheading{Quantum oscillator motion}
+For $H=\hbar\omega(a^\dagger a+1/2)$,
+\begin{align*}
+ \frac{\dd a}{\dd t}&=\frac1{\ii\hbar}\comm aH=-\ii\omega a,
+ &a(t)&=a(0)\ee^{-\ii\omega t},\\
+ \frac{\dd a^\dagger}{\dd t}&=\frac1{\ii\hbar}\comm{a^\dagger}H
+ =\ii\omega a^\dagger,
+ &a^\dagger(t)&=a^\dagger(0)\ee^{\ii\omega t}.
+\end{align*}

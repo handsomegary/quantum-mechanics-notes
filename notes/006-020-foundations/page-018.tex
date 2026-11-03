@@ -1,0 +1,26 @@
+\notepage{18}{Continuum normalization and the Dirac delta}
+The norm of a function is the special case
+\[
+ \braket{f}{f}=\int_a^b\abs{f(x)}^2\dd x.
+\]
+Discrete orthogonality, $\braket{x_i}{x_j}=0$ for $i\ne j$,
+becomes orthogonality for distinct continuum labels. The completeness
+relation becomes
+\[
+ \int_a^b\ket{x'}\bra{x'}\dd x'=I.
+\]
+Taking its matrix element between $\bra{x}$ and an arbitrary state
+$\ket{f}$ gives
+\begin{align*}
+ \int_a^b\braket{x}{x'}\braket{x'}{f}\dd x'
+ &=\braket{x}{f},\\
+ \int_a^b\braket{x}{x'}f(x')\dd x'&=f(x).
+\end{align*}
+Since this kernel reproduces every suitable test function,
+\[
+ \boxed{\braket{x}{x'}=\delta(x-x').}
+\]
+The Dirac delta vanishes away from $x=x'$ in the distributional
+sense, and its integral action supplies the required normalization.
+The continuum basis vectors are generalized eigenvectors, rather
+than ordinary unit-norm Hilbert-space vectors.

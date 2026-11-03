@@ -1,0 +1,45 @@
+\notepage{61}{Fixed spin and normalization of a spinor wavefunction}
+In the spin-up/down basis, the entries of $S^2$ are
+\[
+ \begin{bmatrix}
+  \mel{+}{S^2}{+}&\mel{+}{S^2}{-}\\
+  \mel{-}{S^2}{+}&\mel{-}{S^2}{-}
+ \end{bmatrix}
+ =\hbar^2\begin{bmatrix}
+  \tfrac12(\tfrac12+1)&0\\
+  0&\tfrac12(\tfrac12+1)
+ \end{bmatrix}
+ =\frac34\hbar^2I_s.
+\]
+Thus $S^2$ acts as the same constant on every state of the
+spin-one-half representation. More generally, intrinsic spin labels
+an elementary particle through the eigenvalue $s(s+1)\hbar^2$, in the
+same sense that charge and rest mass are intrinsic labels. In
+contrast, the orbital quantum number $\ell$ can vary between spatial
+states of the same particle.
+
+\smallheading{Normalization in space and spin}
+Insert the complete product basis into $\braket{\Psi}{\Psi}$:
+\begin{align*}
+ 1&=\braket{\Psi}{\Psi}\\
+  &=\int\dd^3r\sum_{m_s=\pm1/2}
+     \braket{\Psi}{\mathbf r,m_s}
+     \braket{\mathbf r,m_s}{\Psi}\\
+  &=\int\dd^3r\sum_{m_s=\pm1/2}
+     \abs{\braket{\mathbf r,m_s}{\Psi}}^2\\
+  &=\int\left[\abs{\Psi_+(\mathbf r)}^2
+                    +\abs{\Psi_-(\mathbf r)}^2\right]\dd^3r.
+\end{align*}
+Equivalently,
+\[
+ 1=\int\boldsymbol\Psi^\dagger(\mathbf r)
+          \boldsymbol\Psi(\mathbf r)\dd^3r
+ =\int
+ \begin{bmatrix}\Psi_+^*(\mathbf r)&\Psi_-^*(\mathbf r)\end{bmatrix}
+ \begin{bmatrix}\Psi_+(\mathbf r)\\\Psi_-(\mathbf r)\end{bmatrix}
+ \dd^3r.
+\]
+\editorial{The adjoint is a row and the ket representation is a
+column. Their order above gives a scalar norm; the reversed
+column-times-row sketch in the source would instead give an outer
+product matrix.}

@@ -1,0 +1,49 @@
+\notepage{37}{The Harmonic Oscillator: Factorization}
+The energy eigenvalue problem is
+\[
+ \left(\frac{P^2}{2m}+\frac12m\omega^2X^2\right)\ket E=E\ket E.
+\]
+Classically,
+\[
+ \mathcal H=\frac{p^2+m^2\omega^2x^2}{2m}
+ =\frac1{2m}(m\omega x-\ii p)(m\omega x+\ii p).
+\]
+Quantum mechanically the commutator changes this factorization:
+\begin{align*}
+ \frac1{2m}(m\omega X-\ii P)(m\omega X+\ii P)
+ &=\frac1{2m}\left[m^2\omega^2X^2+P^2
+                  +\ii m\omega(XP-PX)\right]\\
+ &=H-\frac{\hbar\omega}{2},
+ \qquad \comm XP=\ii\hbar I.
+\end{align*}
+Introduce
+\[
+ \alpha=\sqrt{\frac{m\omega}{2\hbar}},\qquad
+ \beta=\sqrt{\frac1{2m\omega\hbar}},\qquad
+ \alpha\beta=\frac1{2\hbar}.
+\]
+The factored expression can also be written
+\begin{align*}
+ H-\frac{\hbar\omega}{2}
+ &=\hbar\omega\left[\frac{m\omega}{2\hbar}X^2
+       +\frac1{2m\omega\hbar}P^2+\frac{\ii}{2\hbar}(XP-PX)\right]\\
+ &=\hbar\omega
+ \left(\sqrt{\frac{m\omega}{2\hbar}}X
+       -\ii\sqrt{\frac1{2m\omega\hbar}}P\right)
+ \left(\sqrt{\frac{m\omega}{2\hbar}}X
+       +\ii\sqrt{\frac1{2m\omega\hbar}}P\right)\\
+ &=\hbar\omega(\alpha X-\ii\beta P)(\alpha X+\ii\beta P).
+\end{align*}
+Thus
+\[
+ \boxed{H=\hbar\omega\left[(\alpha X-\ii\beta P)
+                  (\alpha X+\ii\beta P)+\frac12\right].}
+\]
+The commutator of the two factors is
+\begin{align*}
+ \comm{\alpha X+\ii\beta P}{\alpha X-\ii\beta P}
+ &=\comm{\alpha X+\ii\beta P}{\alpha X}
+   +\comm{\alpha X+\ii\beta P}{-\ii\beta P}\\
+ &=\ii\alpha\beta\comm PX-\ii\alpha\beta\comm XP\\
+ &=2\hbar\alpha\beta\,I=I.
+\end{align*}

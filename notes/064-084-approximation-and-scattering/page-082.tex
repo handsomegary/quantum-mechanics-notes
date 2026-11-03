@@ -1,0 +1,48 @@
+\notepage{82}{Time-dependent Green's functions}
+This page uses units $\hbar=1$. The free and full wave equations are
+\[
+ (\ii\partial_t-H_0)\psi^0(\mathbf r,t)=0,\qquad
+ (\ii\partial_t-H_0-V)\psi(\mathbf r,t)=0.
+\]
+Their Green's functions satisfy
+\begin{align*}
+ (\ii\partial_t-H_0)G_0(\mathbf r t,\mathbf r't')
+   &=\delta^{(3)}(\mathbf r-\mathbf r')\delta(t-t'),\\
+ (\ii\partial_t-H_0-V)G(\mathbf r t,\mathbf r't')
+   &=\delta^{(3)}(\mathbf r-\mathbf r')\delta(t-t').
+\end{align*}
+With matching boundary conditions, the two useful integral forms are
+\begin{align*}
+ \psi(\mathbf r,t)&=\psi^0(\mathbf r,t)+
+ \int\dd^3r'\dd t'\,G_0(\mathbf r t,\mathbf r't')
+ V(\mathbf r')\psi(\mathbf r',t'),\\
+ \psi(\mathbf r,t)&=\psi^0(\mathbf r,t)+
+ \int\dd^3r'\dd t'\,G(\mathbf r t,\mathbf r't')
+ V(\mathbf r')\psi^0(\mathbf r',t').
+\end{align*}
+\smallheading{Operator form and boundary conditions}
+For a time-independent full Hamiltonian $H$, put
+\[
+ U(\mathbf r t,\mathbf r't')=
+ \mel{\mathbf r}{\ee^{-\ii H(t-t')}}{\mathbf r'}.
+\]
+The retarded and advanced functions are
+\[
+ G^R=-\ii\Theta(t-t')U,\qquad
+ G^A=+\ii\Theta(t'-t)U.
+\]
+Each satisfies the unit-delta equation, with a different time boundary
+condition. The piecewise expression written in the source is
+\[
+ K=G^R+G^A=
+ \begin{cases}
+ -\ii U,&t>t',\\
+ +\ii U,&t<t'.
+ \end{cases}
+\]
+\editorial{With the delta-function normalization stated above,
+$(\ii\partial_t-H)K=2\delta^{(3)}(\mathbf r-\mathbf r')\delta(t-t')$,
+not a unit delta. Thus the source's unrestricted claim that
+$\alpha G^R+\beta G^A$ is a Green's function needs the condition
+$\alpha+\beta=1$. In particular, the normalized symmetric choice is
+$\tfrac12(G^R+G^A)$. This follows directly from the jump at $t=t'$.}

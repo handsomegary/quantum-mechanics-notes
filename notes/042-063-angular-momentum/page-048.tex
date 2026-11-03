@@ -1,0 +1,45 @@
+\notepage{48}{Total angular momentum and ladder coefficients}
+For general angular momentum, use $\mathbf J$ instead of the orbital
+symbol $\mathbf L$:
+\[
+ J^2\ket{j,m}=j(j+1)\hbar^2\ket{j,m},\qquad
+ J_z\ket{j,m}=m\hbar\ket{j,m}.
+\]
+For a spinless particle, $\mathbf J=\mathbf L$ and $j=\ell$, recovering
+the orbital formulas.
+
+Suppose
+\[
+ J_\pm\ket{j,m}=C_\pm^{jm}\ket{j,m\pm1},\qquad J_-=J_+^\dagger.
+\]
+Taking the adjoint of the raising equation gives
+\[
+ \bra{j,m}J_-=(C_+^{jm})^*\bra{j,m+1}.
+\]
+For normalized eigenstates,
+\begin{align*}
+ \abs{C_+^{jm}}^2
+ &=\mel{j,m}{J_-J_+}{j,m}\\
+ &=\mel{j,m}{J^2-J_z^2-\hbar J_z}{j,m}\\
+ &=\hbar^2\bigl[j(j+1)-m^2-m\bigr]\\
+ &=\hbar^2(j-m)(j+m+1).
+\end{align*}
+Choose the relative phases so that these coefficients are real and
+nonnegative. The analogous calculation for lowering yields
+\[
+ C_+^{jm}=\hbar\sqrt{(j-m)(j+m+1)},\qquad
+ C_-^{jm}=\hbar\sqrt{(j+m)(j-m+1)}.
+\]
+Therefore,
+\[
+ \boxed{J_\pm\ket{j,m}
+ =\hbar\sqrt{(j\mp m)(j\pm m+1)}\ket{j,m\pm1}.}
+\]
+\smallheading{Exercise retained from the notes}
+Calculate $\Delta L_x(t)$ and $\Delta L_y(t)$.
+\editorial{A time-dependent answer requires a state and Hamiltonian.
+For a state $\ket{\ell,m}$ evolving only by an overall energy phase,
+$\langle L_x\rangle=\langle L_y\rangle=0$ and
+$\Delta L_x=\Delta L_y=\hbar\sqrt{[\ell(\ell+1)-m^2]/2}$.
+This states the assumptions rather than assigning an unspecified
+time evolution.}

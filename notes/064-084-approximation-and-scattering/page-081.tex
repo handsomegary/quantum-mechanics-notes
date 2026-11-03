@@ -1,0 +1,47 @@
+\notepage{81}{Introduction to Green's functions}
+{\small\textit{Source reading reminder: Sec.\ 8.2, pp.\ 121--123; the textbook is not identified.}}\par
+For a time-independent one-particle problem, let
+\[
+ H_0(\mathbf r)=-\frac{\hbar^2}{2m}\nabla^2+V_0(\mathbf r),
+ \qquad [E-H_0(\mathbf r)]\psi_E^0(\mathbf r)=0.
+\]
+Define a Green's function by
+\[
+ [E-H_0(\mathbf r)]G_0(\mathbf r,\mathbf r';E)
+ =\delta^{(3)}(\mathbf r-\mathbf r').
+\]
+We wish to solve
+\[
+ [E-H_0(\mathbf r)-V(\mathbf r)]\psi_E(\mathbf r)=0.
+\]
+Insert the delta-function identity into $V\psi_E$:
+\begin{align*}
+ V(\mathbf r)\psi_E(\mathbf r)
+ &=\int\dd^3r'\,\delta^{(3)}(\mathbf r-\mathbf r')
+                   V(\mathbf r')\psi_E(\mathbf r')\\
+ &=\int\dd^3r'\,[E-H_0(\mathbf r)]G_0(\mathbf r,\mathbf r';E)
+                   V(\mathbf r')\psi_E(\mathbf r')\\
+ &=[E-H_0(\mathbf r)]\int\dd^3r'\,G_0(\mathbf r,\mathbf r';E)
+                   V(\mathbf r')\psi_E(\mathbf r').
+\end{align*}
+Since $V\psi_E=(E-H_0)\psi_E$, the difference is a homogeneous solution:
+\[
+ \psi_E(\mathbf r)=f(\mathbf r)+
+ \int\dd^3r'\,G_0(\mathbf r,\mathbf r';E)V(\mathbf r')\psi_E(\mathbf r'),
+ \qquad(E-H_0)f=0.
+\]
+For the prescribed incident channel choose $f=c\psi_E^0$. Requiring the
+same incident normalization when $V\to0$ fixes $c=1$:
+\[
+ \boxed{\psi_E=\psi_E^0+G_0V\psi_E.}
+\]
+Iterating this integral equation gives the formal Born series,
+\begin{align*}
+ \psi_E&=\psi_E^0+G_0V(\psi_E^0+G_0V\psi_E)\\
+ &=\psi_E^0+G_0V\psi_E^0+G_0VG_0V\psi_E^0+\cdots\\
+ &=\sum_{n=0}^{\infty}(G_0V)^n\psi_E^0.
+\end{align*}
+\editorial{Boundary conditions select the homogeneous solution and the
+Green's function. A general homogeneous solution need not be a single
+multiple of one chosen $\psi_E^0$. The series is formal unless its
+convergence or a controlled truncation has been established.}

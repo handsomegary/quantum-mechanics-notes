@@ -1,0 +1,43 @@
+\notepage{9}{The eigenvalue problem}
+In general, $\Omega\ket{v}=\ket{v'}$ changes the direction of a vector.
+An \emph{eigenvector} is a nonzero vector whose direction is unchanged:
+\[
+ \Omega\ket{v}=\omega\ket{v},\qquad \ket{v}\ne0.
+\]
+$\omega$ is its eigenvalue. For example, $I\ket{v}=\ket{v}$ for every
+vector, so every nonzero vector is an eigenvector of $I$ with eigenvalue~1.
+If $\Omega\ket{v}=\omega\ket{v}$, linearity gives
+\[
+ \Omega(\alpha\ket{v})=\omega(\alpha\ket{v})
+\]
+for every nonzero scalar $\alpha$.
+
+\smallheading{The characteristic equation}
+The eigenvalue equation is equivalent to
+\[
+ (\Omega-\omega I)\ket{v}=0.
+\]
+If $\Omega-\omega I$ had an inverse, multiplication by that inverse
+would give $\ket{v}=0$, which is excluded. Thus, in finite dimensions,
+\[
+ \boxed{\det(\Omega-\omega I)=0.}
+\]
+To write this in a basis, insert the identity:
+\begin{align*}
+ 0&=\mel{i}{\Omega-\omega I}{v}\\
+  &=\sum_j\mel{i}{\Omega-\omega I}{j}\braket{j}{v}\\
+  &=\sum_j\bigl(\Omega_{ij}-\omega\delta_{ij}\bigr)v_j,
+ \qquad v_j=\braket{j}{v}.
+\end{align*}
+The determinant condition becomes
+\[
+ \begin{vmatrix}
+ \Omega_{11}-\omega&\Omega_{12}&\cdots&\Omega_{1n}\\
+ \Omega_{21}&\Omega_{22}-\omega&\cdots&\Omega_{2n}\\
+ \vdots&\vdots&\ddots&\vdots\\
+ \Omega_{n1}&\Omega_{n2}&\cdots&\Omega_{nn}-\omega
+ \end{vmatrix}
+ =\sum_{m=0}^{n}c_m\omega^m=0.
+\]
+This polynomial has degree $n$. Its roots are the eigenvalues, which
+are independent of the basis used to calculate the determinant.

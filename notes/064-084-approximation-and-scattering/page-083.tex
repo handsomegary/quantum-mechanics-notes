@@ -1,0 +1,46 @@
+\notepage{83}{The Born approximation and a Fourier-space Green's function}
+For an incident plane wave, the first Born approximation is
+\[
+ \psi_{\mathbf k}(\mathbf r)=\ee^{\ii\mathbf k\cdot\mathbf r}
+ +\frac{2\mu}{\hbar^2}\int\dd^3r'\,
+ G^{(0)}(\mathbf r,\mathbf r')V(\mathbf r')
+ \ee^{\ii\mathbf k\cdot\mathbf r'}+O(V^2).
+\]
+Here the Helmholtz Green's function is defined by
+\[
+ (\nabla^2+k^2)G^{(0)}(\mathbf r,\mathbf r')
+ =\delta^{(3)}(\mathbf r-\mathbf r').
+\]
+Translation invariance allows $G^{(0)}(\mathbf r,\mathbf r')=
+G^{(0)}(\mathbf x)$ with $\mathbf x=\mathbf r-\mathbf r'$:
+\[
+ (\nabla_x^2+k^2)G^{(0)}(\mathbf x)=\delta^{(3)}(\mathbf x).
+\]
+\smallheading{Fourier transform}
+Use the symmetric transform convention
+\[
+ \widetilde G^{(0)}(\mathbf q)
+  =(2\pi)^{-3/2}\int\dd^3x\,
+     \ee^{-\ii\mathbf q\cdot\mathbf x}G^{(0)}(\mathbf x).
+\]
+Transforming the differential equation and integrating the Laplacian
+by parts gives
+\begin{align*}
+ &(2\pi)^{-3/2}\int\dd^3x\,
+ \ee^{-\ii\mathbf q\cdot\mathbf x}(\nabla_x^2+k^2)G^{(0)}(\mathbf x)
+ =(2\pi)^{-3/2},\\
+ &(k^2-q^2)\widetilde G^{(0)}(\mathbf q)=(2\pi)^{-3/2}.
+\end{align*}
+The denominator vanishes on the shell $q^2=k^2$. To select a boundary
+condition, use the prescription $k^2-q^2\mapsto k^2+\ii\epsilon-q^2$,
+with $\epsilon>0$ taken to zero after integration:
+\[
+ \widetilde G^{(0)}(\mathbf q)
+ =\frac{(2\pi)^{-3/2}}{k^2+\ii\epsilon-q^2},\qquad
+ G^{(0)}(\mathbf x)=(2\pi)^{-3/2}
+ \int\dd^3q\,\ee^{\ii\mathbf q\cdot\mathbf x}
+ \widetilde G^{(0)}(\mathbf q).
+\]
+\editorial{For the free reference Hamiltonian, the energy-resolvent
+kernel of note 81 is $(2\mu/\hbar^2)G^{(0)}$. The notation here makes
+the factor in the Born integral explicit.}
